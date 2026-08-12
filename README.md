@@ -1,6 +1,12 @@
-# 👋 Hi, I'm Mahmud Hasan
+<p align="center">
+  <img src="./assets/mahmud-hasan.gif" alt="Mahmud Hasan" />
+</p>
 
-### AI Engineer • Founder • Researcher • Builder
+<p align="center">
+  <strong>AI Engineer • Founder • Researcher • Builder</strong>
+</p>
+
+I'm an AI engineer and founder from Bangladesh, focused on building intelligent systems from the ground up.
 
 I'm an AI engineer and founder from Bangladesh, focused on building intelligent systems from the ground up.
 
