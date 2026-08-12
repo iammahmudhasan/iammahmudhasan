@@ -2,12 +2,6 @@
   <img src="./assets/mahmud-hasan.gif" alt="Mahmud Hasan" />
 </p>
 
-<p align="center">
-  <strong>AI Engineer • Founder • Researcher • Builder</strong>
-</p>
-
-I'm an AI engineer and founder from Bangladesh, focused on building intelligent systems from the ground up.
-
 I'm an AI engineer and founder from Bangladesh, focused on building intelligent systems from the ground up.
 
 My interests sit at the intersection of **Artificial Intelligence, Large Language Models, Agentic AI, Cybersecurity, and AI Systems Engineering**.
