@@ -1,16 +1,24 @@
-## Hi there 👋
+👋 Mahmud Hasan
+AI Engineer • Founder • Researcher
 
-<!--
-**iammahmudhasan/iammahmudhasan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Short 2–3 line introduction
 
-Here are some ideas to get you started:
+🚀 Currently Building
+   Craftly
+   Aeitron
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🧠 Interests
+   LLMs • Agentic AI • Cybersecurity • AI Systems
+
+💻 Tech Stack
+   Python • PyTorch • Rust • TypeScript • Flutter...
+
+⭐ Featured Projects
+   4–6 important projects
+
+📊 GitHub Stats
+
+📚 Currently Learning
+
+🌐 Connect
+   LinkedIn • X • Instagram • Website
