@@ -141,32 +141,32 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 <div align="center">
 
-  <!-- 1. Top: Streak Stats (Black background, Red flame & ring accents, White numbers) -->
+  <!-- 1. Top: Streak Stats (Black background, Cyan flame & ring accents, White numbers) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://streak-stats.demolab.com/?user=iammahmudhasan&background=000000&border=444444&stroke=ff0000&ring=ff0000&fire=ff0000&currStreakLabel=ff0000&sideLabels=ff0000&currStreakNum=ffffff&sideNums=ffffff&dates=888888" alt="GitHub Streak" width="68%" />
+      <img src="https://streak-stats.demolab.com/?user=iammahmudhasan&background=000000&border=444444&stroke=00e5ff&ring=00e5ff&fire=00e5ff&currStreakLabel=00e5ff&sideLabels=00e5ff&currStreakNum=ffffff&sideNums=ffffff&dates=888888" alt="GitHub Streak" width="68%" />
     </a>
   </p>
 
   <br/>
 
-  <!-- 2. Middle Row: Stats & Top Languages Side-by-Side (Black background, Red titles & icons) -->
+  <!-- 2. Middle Row: Stats & Top Languages Side-by-Side (Black background, Cyan titles & icons) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&custom_title=My+GitHub+Statistics&bg_color=000000&border_color=444444&title_color=ff0000&icon_color=ff0000&text_color=ffffff&ring_color=ff0000" alt="My GitHub Statistics" height="150" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&custom_title=My+GitHub+Statistics&bg_color=000000&border_color=444444&title_color=00e5ff&icon_color=00e5ff&text_color=ffffff&ring_color=00e5ff" alt="My GitHub Statistics" height="150" />
     </a>
     &nbsp;
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&custom_title=My+Programming+Languages&bg_color=000000&border_color=444444&title_color=ff0000&text_color=ffffff" alt="My Programming Languages" height="150" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&custom_title=My+Programming+Languages&bg_color=000000&border_color=444444&title_color=00e5ff&text_color=ffffff" alt="My Programming Languages" height="150" />
     </a>
   </p>
 
   <br/>
 
-  <!-- 3. Bottom: Contribution Graph ("My Contributions", Black background, Red line & area fill, White dots) -->
+  <!-- 3. Bottom: Contribution Graph ("My Contributions", Black background, Cyan line & area fill, White dots) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=iammahmudhasan&custom_title=My+Contributions&bg_color=000000&color=ffffff&line=ff0000&point=ffffff&area=true" alt="My Contributions" width="96%" />
+      <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=iammahmudhasan&custom_title=My+Contributions&bg_color=000000&color=ffffff&line=00e5ff&point=ffffff&area=true" alt="My Contributions" width="96%" />
     </a>
   </p>
 
