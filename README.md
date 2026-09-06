@@ -113,28 +113,28 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 <div align="center">
 
-  <!-- 1. Contribution Graph -->
+  <!-- 1. Contribution Graph (Black background, Cyan line, Magenta/Pink points and text) -->
   <a href="https://github.com/iammahmudhasan">
-    <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=iammahmudhasan&theme=react-dark" alt="Mahmud Hasan's Contribution Graph" width="98%" />
+    <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=iammahmudhasan&bg_color=000000&color=fe428e&line=00e5ff&point=fe428e&area=true" alt="Mahmud Hasan's Contribution Graph" width="96%" />
   </a>
 
   <br/><br/>
 
-  <!-- 2. Stats & Streak Side-by-Side -->
+  <!-- 2. Middle Row: Stats & Streak Side-by-Side (Black Stats with Octocat icon & White Streak Card) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&theme=radical" alt="GitHub Stats" height="195" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&hide_title=true&rank_icon=github&bg_color=000000&border_color=30363d&text_color=ffffff&icon_color=ffffff" alt="GitHub Stats" height="175" />
     </a>
     &nbsp;&nbsp;
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://streak-stats.demolab.com/?user=iammahmudhasan&theme=default" alt="GitHub Streak Stats" height="195" />
+      <img src="https://streak-stats.demolab.com/?user=iammahmudhasan&theme=default&border=30363d" alt="GitHub Streak Stats" height="175" />
     </a>
   </p>
 
-  <!-- 3. Most Used Languages -->
+  <!-- 3. Bottom: Most Used Languages (Black background, No title, Compact layout) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&theme=radical" alt="Top Languages" width="62%" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&hide_title=true&bg_color=000000&border_color=30363d&text_color=ffffff" alt="Top Languages" width="60%" />
     </a>
   </p>
 
