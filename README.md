@@ -54,7 +54,7 @@ I approach machine learning from **first principles**: mastering both the founda
 
 ---
 
-### 🔬 Core Research & Engineering Pillars
+###  Core Research & Engineering Pillars
 
 | Area | Focus Topics |
 | :--- | :--- |
@@ -65,7 +65,7 @@ I approach machine learning from **first principles**: mastering both the founda
 
 ---
 
-### 🧩 Architectural Blueprint
+###  Architectural Blueprint
 
 A high-level blueprint of the agent platform ecosystem I actively research and construct:
 
@@ -75,7 +75,7 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 ---
 
-### 🛠️ Tech Stack & Tooling
+###  Tech Stack & Tooling
 
 <p align="left">
   <strong>Artificial Intelligence & Machine Learning</strong><br/>
@@ -109,7 +109,7 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 ---
 
-### 🟪 Analytics
+###  Analytics
 
 <div align="center">
 
@@ -146,64 +146,38 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 ---
 
-### 🎯 Long-Term Vision & Mission
+###  Long-Term Vision & Mission
 
-<div align="center">
-  <p>
-    <i><b>"Build. Break. Understand. Rebuild."</b></i>
-  </p>
-</div>
+> **"Build. Break. Understand. Rebuild."**
 
-<table align="center" width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🚀 Frontier Engineering</h4>
-      <p>
-        Advancing beyond superficial model consumption to architect high-performance, resilient, and self-healing agentic systems from first principles. Focusing on deep mechanics: from transformer internals and token dynamics to autonomous execution loops and distributed compute.
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🇧🇩 Deep Tech from Home (Bangladesh)</h4>
-      <p>
-        Proving that ambitious, globally competitive AI technologies and research can be conceived, engineered, and scaled locally to inspire and empower the next generation of builders, researchers, and engineers.
-      </p>
-    </td>
-  </tr>
-</table>
+* **Frontier Engineering**: Advance beyond superficial model utilization to contribute meaningfully to foundational AI research and resilient agentic infrastructure.
+* **Building from Home (Bangladesh 🇧🇩)**: Proving that ambitious, globally competitive deep tech can be conceived, engineered, and scaled locally to inspire the next generation of engineers and researchers.
 
 ---
 
-### 🤝 Let's Connect
+###  Let's Connect
+
+Feel free to reach out for collaborations on agentic systems, AI research, distributed infrastructure, or startup ventures.
 
 <div align="center">
 
-  <p>
-    <i>Always open to discussions and collaborations on <b>Agentic AI</b>, <b>Frontier Research</b>, <b>Distributed AI Systems</b>, or <b>Startup Ventures</b>.</i>
-  </p>
+  <a href="https://linkedin.com/in/iammahmudhasan">
+    <img src="https://img.shields.io/badge/LinkedIn-iammahmudhasan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="https://x.com/iammahmudhasan">
+    <img src="https://img.shields.io/badge/X%20(Twitter)-@iammahmudhasan-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/iammahmudhasan">
+    <img src="https://img.shields.io/badge/Instagram-@iammahmudhasan-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/iammahmudhasan">
+    <img src="https://img.shields.io/badge/GitHub-iammahmudhasan-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
 
-  <p align="center">
-    <a href="https://linkedin.com/in/iammahmudhasan" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    &nbsp;
-    <a href="https://x.com/iammahmudhasan" target="_blank">
-      <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-    </a>
-    &nbsp;
-    <a href="https://github.com/iammahmudhasan" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    &nbsp;
-    <a href="https://instagram.com/iammahmudhasan" target="_blank">
-      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-    </a>
-  </p>
-
-  <p align="center">
-    <code>@iammahmudhasan</code> on all platforms
-  </p>
-
-  <br/>
+  <br/><br/>
 
   <sub>✨ <i>"Don't just use the future. Build it."</i> ✨</sub>
 
