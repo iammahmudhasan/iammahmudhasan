@@ -203,7 +203,7 @@ Feel free to reach out for collaborations on agentic systems, AI research, distr
 
   <br/><br/>
 
-  <a href="https://facebook.com/iammahmudhasan" target="_blank">
+  <a href="https://facebook.com/iamahmudhasan" target="_blank">
     <img src="https://img.shields.io/badge/Facebook-iammahmudhasan-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
   </a>
 
