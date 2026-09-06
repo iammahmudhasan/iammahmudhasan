@@ -106,6 +106,40 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
   <img src="https://img.shields.io/badge/MinIO%20%2F%20S3-C72C48?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
 </p>
 
+
+---
+
+### 📊 GitHub Activity & Analytics
+
+<div align="center">
+
+  <!-- 1. Contribution Graph -->
+  <a href="https://github.com/iammahmudhasan">
+    <img src="https://github-readme-activity-graph-lake.vercel.app/graph?username=iammahmudhasan&theme=react-dark" alt="Mahmud Hasan's Contribution Graph" width="98%" />
+  </a>
+
+  <br/><br/>
+
+  <!-- 2. Stats & Streak Side-by-Side -->
+  <p align="center">
+    <a href="https://github.com/iammahmudhasan">
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&theme=radical" alt="GitHub Stats" height="195" />
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://github.com/iammahmudhasan">
+      <img src="https://streak-stats.demolab.com/?user=iammahmudhasan&theme=default" alt="GitHub Streak Stats" height="195" />
+    </a>
+  </p>
+
+  <!-- 3. Most Used Languages -->
+  <p align="center">
+    <a href="https://github.com/iammahmudhasan">
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&theme=radical" alt="Top Languages" width="62%" />
+    </a>
+  </p>
+
+</div>
+
 ---
 
 ### 🎯 Long-Term Vision & Mission
