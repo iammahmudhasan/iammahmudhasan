@@ -1,379 +1,205 @@
-<p align="center">
-  <img src="./assets/mahmud-hasan.gif" alt="Mahmud Hasan" />
-</p>
+<div align="center">
 
-I'm an AI engineer and founder from Bangladesh, focused on building intelligent systems from the ground up.
+  <!-- Dynamic Typing Header: Writing effect without local files -->
+  <a href="https://github.com/iammahmudhasan">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=2800&pause=1200&color=6366F1&center=true&vCenter=true&width=620&lines=Hi%2C+I'm+Mahmud+Hasan;AI+Engineer+%26+Founder;Building+Frontier+Agentic+Systems;Engineering+AI+from+First+Principles" alt="Mahmud Hasan - Dynamic Typing Effect" />
+  </a>
 
-My interests sit at the intersection of **Artificial Intelligence, Large Language Models, Agentic AI, Cybersecurity, and AI Systems Engineering**.
+  <p align="center">
+    <strong>Building intelligent systems and autonomous agent infrastructure from first principles.</strong>
+  </p>
 
-I enjoy going beyond simply using AI models — I want to understand **how they work, how they are trained, and how complete AI systems can be engineered around them.**
+  <p align="center">
+    <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Location-Bangladesh%20🇧🇩-2563EB?style=flat-square&logo=google-maps&logoColor=white" alt="Location" /></a>
+    <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Role-Founder%20%40%20Craftly-4F46E5?style=flat-square&logo=rocket&logoColor=white" alt="Role" /></a>
+    <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Focus-Agentic%20AI%20%7C%20AI%20Systems-06B6D4?style=flat-square&logo=target&logoColor=white" alt="Focus" /></a>
+    <a href="https://linkedin.com/in/iammahmudhasan"><img src="https://img.shields.io/badge/Network-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  </p>
 
----
-
-## 🧠 What I'm Working On
-
-I'm currently exploring and building systems around:
-
-* 🤖 Large Language Models (LLMs)
-* 🧠 Agentic AI & Multi-Agent Systems
-* 🔬 AI/ML Research
-* ⚡ AI Systems & Model Architecture
-* 🛡️ AI for Cybersecurity
-* 💻 Agentic Coding Systems
-* 🔎 Retrieval-Augmented Generation (RAG)
-* 🧩 Memory Systems for AI Agents
-* 🏗️ Distributed & Decentralized AI
-* 🐍 Python & PyTorch
-* 🦀 Rust for high-performance AI tooling
-
-My long-term goal is to contribute to the development of **frontier-level AI systems** and build technology from first principles rather than simply depending on existing solutions.
+</div>
 
 ---
 
-# 🚀 What I'm Building
+### ⚡ Executive Summary
 
-## 🤖 Craftly
+I am an **AI Engineer and Founder** based in Bangladesh, dedicated to engineering frontier-grade intelligence systems from the ground up. 
 
-**Craftly** is an AI-focused technology company I'm helping build with a long-term vision of creating powerful AI products and infrastructure.
-
-One of the projects I'm working around is **Craftly Robot** — an AI system designed to move beyond simple chatbot interactions and become capable of performing complex software-building tasks.
-
-I'm also building **Craftly Workspace**, an internal platform designed around:
-
-* Organization management
-* Onboarding
-* Secure identity & access
-* Organizational hierarchy
-* Task management
-* Evidence-based operations
-* Internal communication
-* Resources & training
-* Team collaboration
-
-The long-term vision is to build an ecosystem where people and intelligent systems can work together efficiently.
+My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, Autonomous Software Engineering, Cybersecurity, and High-Performance AI Infrastructure**. Rather than treating modern artificial intelligence merely as an external API layer, my focus is on understanding the core mechanics—how models learn, how inference is optimized, and how resilient, production-ready multi-agent architectures are engineered around them.
 
 ---
 
-## 🧬 Aeitron
+### 🚀 What I'm Building
 
-I'm also involved in building **Aeitron**, a frontier-intelligence focused project exploring areas such as:
+#### 🤖 [Craftly](https://github.com/iammahmudhasan)
+*An AI-focused technology company building intelligent infrastructure and next-generation software building systems.*
 
-* Agentic AI
-* Cybersecurity
-* Intelligent coding systems
-* LLMs
-* AI agents
-* Autonomous reasoning
-* AI infrastructure
+* **Craftly Robot**: An autonomous agentic AI system engineered to transcend simple conversational chat, autonomously understanding codebases, executing complex multi-step development tasks, and verifying output integrity.
+* **Craftly Workspace**: An internal enterprise operations platform centered around evidence-based workflows, verifiable identity & access governance, hierarchical task management, and seamless human-agent collaboration.
 
-I'm particularly interested in building systems that can understand complex repositories, reason about software, execute tasks, generate changes, and verify their own work.
+#### 🧬 [Aeitron](https://github.com/iammahmudhasan)
+*A frontier intelligence research and development project focused on agentic autonomy and cyber defense.*
 
----
-
-# 🔬 AI Research Interests
-
-Some of the areas I'm actively studying and experimenting with:
-
-### Large Language Models
-
-* Transformer architectures
-* Tokenization
-* Embeddings
-* Attention mechanisms
-* Positional encoding
-* Pretraining
-* Fine-tuning
-* Model evaluation
-* Knowledge distillation
-* Mixture-of-Experts (MoE)
-
-### Agentic AI
-
-* Multi-agent architectures
-* Tool use
-* Planning
-* Task graphs
-* Agent memory
-* Context management
-* Autonomous coding
-* Verification loops
-* Agent orchestration
-
-### AI Systems
-
-* Model serving
-* Distributed training
-* GPU computing
-* Data pipelines
-* Inference optimization
-* Memory systems
-* Evaluation infrastructure
-* AI security & guardrails
-
-### Cybersecurity
-
-I'm particularly interested in the intersection of:
-
-**AI × Cybersecurity × Autonomous Agents**
-
-and how intelligent systems can help analyze, defend, and reason about complex software environments.
+* **Autonomous Reasoning & Coding**: Architecting systems that ingest code repositories, plan architectural refactors, implement changes, and self-heal via continuous test & verification loops.
+* **Agentic Cybersecurity**: Engineering intelligent models that reason about complex software landscapes to proactively identify vulnerabilities and defend distributed infrastructure.
 
 ---
 
-# 🏗️ How I Think About AI
+### 🧠 How I Think About AI Systems
 
-I don't want to treat AI as just an API.
-
-I want to understand the entire stack:
+I approach machine learning from **first principles**: mastering both the foundational mathematics and the distributed software engineering required to run scalable, reliable systems.
 
 ```text
-Data
- ↓
-Data Quality & Filtering
- ↓
-Tokenization
- ↓
-Model Architecture
- ↓
-Pretraining
- ↓
-Post-training
- ↓
-Evaluation
- ↓
-Inference
- ↓
-Agents
- ↓
-Tools
- ↓
-Memory
- ↓
-Verification
- ↓
-Production AI System
+┌────────────────────────────────────────────────────────────────────────┐
+│                        THE END-TO-END AI STACK                         │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+               ┌────────────────────▼────────────────────┐
+               │    Data Curation, Quality & Filtering   │
+               └────────────────────┬────────────────────┘
+                                    │
+               ┌────────────────────▼────────────────────┐
+               │  Tokenization & Architecture (Attention)│
+               └────────────────────┬────────────────────┘
+                                    │
+               ┌────────────────────▼────────────────────┐
+               │     Pre-Training & Distributed Compute  │
+               └────────────────────┬────────────────────┘
+                                    │
+               ┌────────────────────▼────────────────────┐
+               │    Post-Training (RLHF, SFT, DPO)       │
+               └────────────────────┬────────────────────┘
+                                    │
+               ┌────────────────────▼────────────────────┐
+               │  Inference Serving, Optimization & MoE  │
+               └────────────────────┬────────────────────┘
+                                    │
+               ┌────────────────────▼────────────────────┐
+               │  Autonomous Agent Runtime & Task Graphs │
+               │   • Dynamic Tool Calling                │
+               │   • Ephemeral & Vectorized Memory       │
+               │   • Self-Correction & Verification Loops│
+               └────────────────────┬────────────────────┘
+                                    │
+               ┌────────────────────▼────────────────────┐
+               │        Production AI System at Scale    │
+               └─────────────────────────────────────────┘
 ```
 
-That's why I'm continuously learning both the **mathematics behind machine learning** and the **engineering required to turn models into real systems**.
+---
+
+### 🔬 Core Research & Engineering Pillars
+
+| Area | Focus Topics |
+| :--- | :--- |
+| **Large Language Models** | Transformers, FlashAttention, Tokenization, Pre-training, SFT / DPO, Model Distillation, Mixture of Experts (MoE) |
+| **Agentic AI** | Multi-Agent Orchestration, Task Graphs, Dynamic Memory, Verification Loops, Autonomous Code Synthesis |
+| **AI Systems & Infra** | Model Serving, Distributed Training (FSDP, DeepSpeed), GPU / CUDA Optimization, Data Pipelines |
+| **Cybersecurity × AI** | Automated Threat Modeling, Autonomous Vulnerability Auditing, Defensive Agentic Intelligence |
 
 ---
 
-# 💻 Tech Stack
+### 🧩 Architectural Blueprint
 
-### AI / Machine Learning
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge\&logo=pytorch\&logoColor=white)
-
-* Python
-* PyTorch
-* Machine Learning
-* Deep Learning
-* LLMs
-* RAG
-* Agentic AI
-* Neural Networks
-
-### Systems & Backend
-
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge\&logo=rust\&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)
-
-* Rust
-* Node.js
-* FastAPI
-* REST APIs
-* Distributed Systems
-* Backend Architecture
-
-### AI Infrastructure
-
-* CUDA
-* GPU Computing
-* Distributed Training
-* FSDP
-* DeepSpeed
-* Model Serving
-* Docker
-* Kubernetes
-* PostgreSQL
-* Redis
-* S3 / MinIO
-
-### Application Development
-
-* Flutter
-* Node.js
-* Python
-* TypeScript
-* Full-stack application development
-
----
-
-# 🧩 Architecture Interests
-
-I'm especially interested in building complete AI platforms composed of multiple specialized systems.
-
-A typical architecture I'm exploring looks like:
+A high-level blueprint of the agent platform ecosystem I actively research and construct:
 
 ```text
-                    ┌────────────────────┐
-                    │     AI Gateway     │
-                    └─────────┬──────────┘
-                              │
-                    ┌─────────▼──────────┐
-                    │ Identity & Access  │
-                    └─────────┬──────────┘
-                              │
-              ┌───────────────▼───────────────┐
-              │        Model Serving          │
-              └───────────────┬───────────────┘
-                              │
-        ┌─────────────────────▼─────────────────────┐
-        │              Agent Runtime                │
-        └───────────────┬───────────┬──────────────┘
-                        │           │
-                ┌───────▼───┐ ┌─────▼─────┐
-                │   Tools   │ │  Memory   │
-                └───────┬───┘ └─────┬─────┘
-                        │           │
-                        └─────┬─────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │ Verification      │
-                    │ & Evaluation      │
-                    └───────────────────┘
+                    ┌──────────────────────────────┐
+                    │          AI Gateway          │
+                    └──────────────┬───────────────┘
+                                   │
+                    ┌──────────────▼───────────────┐
+                    │      Identity & Security     │
+                    └──────────────┬───────────────┘
+                                   │
+                    ┌──────────────▼───────────────┐
+                    │   Model Serving & Routing    │
+                    └──────────────┬───────────────┘
+                                   │
+         ┌─────────────────────────▼─────────────────────────┐
+         │               Autonomous Agent Runtime            │
+         └──────────────┬─────────────────────┬──────────────┘
+                        │                     │
+                ┌───────▼───────┐     ┌───────▼───────┐
+                │ Tool & Action │     │ Memory Engine │
+                │   Execution   │     │  (Vector/RAG) │
+                └───────┬───────┘     └───────┬───────┘
+                        │                     │
+                        └──────────┬──────────┘
+                                   │
+                    ┌──────────────▼───────────────┐
+                    │   Verification, Guardrails   │
+                    │         & Evaluation         │
+                    └──────────────────────────────┘
 ```
 
-I'm fascinated by the engineering challenges involved in making these systems reliable, scalable, secure, and autonomous.
-
 ---
 
-# 📚 Currently Learning
+### 🛠️ Tech Stack & Tooling
 
-I'm continuously strengthening my foundations in:
-
-* Mathematics for Machine Learning
-* Linear Algebra
-* Probability & Statistics
-* Calculus
-* Optimization
-* Deep Learning
-* Transformer architectures
-* LLM training
-* Distributed systems
-* AI infrastructure
-* Cybersecurity
-* Systems programming with Rust
-
-I believe strong AI engineering requires both **mathematical foundations and serious software engineering**.
-
----
-
-# 🛠️ Selected Areas & Projects
-
-Some of the areas I work on across my repositories include:
-
-* AI Engineering systems
-* Agentic AI
-* LLM experimentation
-* RAG systems
-* Memory architectures
-* Cybersecurity AI
-* AI finance applications
-* Full-stack applications
-* Internal business infrastructure
-* Autonomous coding systems
-
-Check out my repositories below to see what I'm currently building and experimenting with.
-
----
-
-# 📊 GitHub
-
-I'm actively using GitHub to document my learning, experiments, research, and engineering work.
-
-I care about:
-
-* Building consistently
-* Open-source experimentation
-* Writing maintainable systems
-* Learning from failures
-* Iterating quickly
-* Sharing what I learn
-
-> **Build. Break. Understand. Rebuild.**
-
----
-
-# 🎯 Long-Term Vision
-
-My long-term goal is to become a world-class AI engineer and researcher capable of building **frontier AI systems from first principles**.
-
-I want to work on problems that are difficult today — especially around:
-
-**Intelligence → Agents → Reasoning → Autonomous Software Engineering → AI Security**
-
-And ultimately, I want to build technology that can have a meaningful impact far beyond a single project.
-
----
-
-# 🌍 Why I'm Building
-
-I'm from Bangladesh, and I believe talented people shouldn't need to leave their home country to build ambitious technology.
-
-One of my long-term ambitions is to help create an environment where young engineers and researchers from Bangladesh can participate in building globally competitive technology.
-
----
-
-# 🤝 Let's Connect
-
-I'm always interested in meeting people who are passionate about:
-
-* Artificial Intelligence
-* Machine Learning
-* LLMs
-* Agentic AI
-* Cybersecurity
-* Open Source
-* Research
-* Startups
-* Software Engineering
-
-### Find me online
-
-**GitHub:** [@iammahmudhasan](https://github.com/iammahmudhasan)
-
-**Instagram:** [@iammahmudhasan](https://instagram.com/iammahmudhasan)
-
-**LinkedIn:** [@iammahmudhasan](https://linkedin.com/in/iammahmudhasan)
-
-**X:** [@iammahmudhasan](https://x.com/iammahmudhasan)
-
----
-
-# ⚡ A Few Things About Me
-
-* 🇧🇩 Building from Bangladesh
-* 🤖 Obsessed with AI systems
-* 🧠 Learning how intelligence can be engineered
-* 🛠️ Building instead of just consuming
-* 🔬 Interested in research and first-principles thinking
-* 🚀 Founder mindset
-* 💻 Engineer mindset
-* 📚 Always learning
-
----
-
-<p align="center">
-
-### **"Don't just use the future. Build it."**
-
+<p align="left">
+  <strong>Artificial Intelligence & Machine Learning</strong><br/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="CUDA" />
+  <img src="https://img.shields.io/badge/RAG-Vector_DBs-6366F1?style=flat-square" alt="RAG" />
+  <img src="https://img.shields.io/badge/Agentic_AI-Multi--Agent-0ea5e9?style=flat-square" alt="Agentic AI" />
 </p>
 
-<p align="center">
-
-⭐ If you find something interesting in my repositories, feel free to explore, star, or contribute.
-
+<p align="left">
+  <strong>High-Performance Systems & Backend</strong><br/>
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
 </p>
+
+<p align="left">
+  <strong>Infrastructure, Distributed Systems & Storage</strong><br/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/DeepSpeed-000000?style=flat-square&logo=microsoft&logoColor=white" alt="DeepSpeed" />
+  <img src="https://img.shields.io/badge/MinIO%20%2F%20S3-C72C48?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
+</p>
+
+---
+
+### 🎯 Long-Term Vision & Mission
+
+> **"Build. Break. Understand. Rebuild."**
+
+* **Frontier Engineering**: Advance beyond superficial model utilization to contribute meaningfully to foundational AI research and resilient agentic infrastructure.
+* **Building from Home (Bangladesh 🇧🇩)**: Proving that ambitious, globally competitive deep tech can be conceived, engineered, and scaled locally to inspire the next generation of engineers and researchers.
+
+---
+
+### 🤝 Let's Connect
+
+Feel free to reach out for collaborations on agentic systems, AI research, distributed infrastructure, or startup ventures.
+
+<div align="center">
+
+  <a href="https://linkedin.com/in/iammahmudhasan">
+    <img src="https://img.shields.io/badge/LinkedIn-iammahmudhasan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="https://x.com/iammahmudhasan">
+    <img src="https://img.shields.io/badge/X%20(Twitter)-@iammahmudhasan-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/iammahmudhasan">
+    <img src="https://img.shields.io/badge/Instagram-@iammahmudhasan-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/iammahmudhasan">
+    <img src="https://img.shields.io/badge/GitHub-iammahmudhasan-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+
+  <br/><br/>
+
+  <sub>✨ <i>"Don't just use the future. Build it."</i> ✨</sub>
+
+</div>
