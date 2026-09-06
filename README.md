@@ -189,25 +189,25 @@ Feel free to reach out for collaborations on agentic systems, AI research, distr
 
 <div align="center">
 
-  <a href="https://linkedin.com/in/iammahmudhasan" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-iammahmudhasan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://x.com/iammahmudhasan" target="_blank">
-    <img src="https://img.shields.io/badge/X%20(Twitter)-@iammahmudhasan-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-  </a>
-  &nbsp;
-  <a href="https://instagram.com/iammahmudhasan" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-@iammahmudhasan-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
+  <p align="center">
+    <a href="https://linkedin.com/in/iammahmudhasan" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-iammahmudhasan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    &nbsp;
+    <a href="https://x.com/iammahmudhasan" target="_blank">
+      <img src="https://img.shields.io/badge/X%20(Twitter)-@iammahmudhasan-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+    </a>
+    &nbsp;
+    <a href="https://instagram.com/iammahmudhasan" target="_blank">
+      <img src="https://img.shields.io/badge/Instagram-@iammahmudhasan-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+    </a>
+    <br/>
+    <a href="https://facebook.com/iamahmudhasan" target="_blank">
+      <img src="https://img.shields.io/badge/Facebook-iamahmudhasan-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+    </a>
+  </p>
 
-  <br/><br/>
-
-  <a href="https://facebook.com/iamahmudhasan" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-iammahmudhasan-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
-  </a>
-
-  <br/><br/>
+  <br/>
 
   <sub><i>"Don't just use the future. Build it."</i></sub>
 
