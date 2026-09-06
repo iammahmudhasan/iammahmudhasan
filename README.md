@@ -20,7 +20,7 @@
 
 ---
 
-### ⚡ Executive Summary
+###  Executive Summary
 
 I am an **AI Engineer and Founder** based in Bangladesh, dedicated to engineering frontier-grade intelligence systems from the ground up. 
 
@@ -28,7 +28,7 @@ My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, 
 
 ---
 
-### 🚀 What I'm Building
+###  What I'm Building
 
 #### 🤖 [Craftly](https://github.com/iammahmudhasan)
 *An AI-focused technology company building intelligent infrastructure and next-generation software building systems.*
@@ -36,7 +36,7 @@ My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, 
 * **Craftly Robot**: An autonomous agentic AI system engineered to transcend simple conversational chat, autonomously understanding codebases, executing complex multi-step development tasks, and verifying output integrity.
 * **Craftly Workspace**: An internal enterprise operations platform centered around evidence-based workflows, verifiable identity & access governance, hierarchical task management, and seamless human-agent collaboration.
 
-#### 🧬 [Aeitron](https://github.com/iammahmudhasan)
+####  [Aeitron](https://github.com/iammahmudhasan)
 *A frontier intelligence research and development project focused on agentic autonomy and cyber defense.*
 
 * **Autonomous Reasoning & Coding**: Architecting systems that ingest code repositories, plan architectural refactors, implement changes, and self-heal via continuous test & verification loops.
@@ -44,7 +44,7 @@ My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, 
 
 ---
 
-### 🧠 How I Think About AI Systems
+###  How I Think About AI Systems
 
 I approach machine learning from **first principles**: mastering both the foundational mathematics and the distributed software engineering required to run scalable, reliable systems.
 
@@ -148,36 +148,62 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 ### 🎯 Long-Term Vision & Mission
 
-> **"Build. Break. Understand. Rebuild."**
+<div align="center">
+  <p>
+    <i><b>"Build. Break. Understand. Rebuild."</b></i>
+  </p>
+</div>
 
-* **Frontier Engineering**: Advance beyond superficial model utilization to contribute meaningfully to foundational AI research and resilient agentic infrastructure.
-* **Building from Home (Bangladesh 🇧🇩)**: Proving that ambitious, globally competitive deep tech can be conceived, engineered, and scaled locally to inspire the next generation of engineers and researchers.
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🚀 Frontier Engineering</h4>
+      <p>
+        Advancing beyond superficial model consumption to architect high-performance, resilient, and self-healing agentic systems from first principles. Focusing on deep mechanics: from transformer internals and token dynamics to autonomous execution loops and distributed compute.
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🇧🇩 Deep Tech from Home (Bangladesh)</h4>
+      <p>
+        Proving that ambitious, globally competitive AI technologies and research can be conceived, engineered, and scaled locally to inspire and empower the next generation of builders, researchers, and engineers.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ### 🤝 Let's Connect
 
-Feel free to reach out for collaborations on agentic systems, AI research, distributed infrastructure, or startup ventures.
-
 <div align="center">
 
-  <a href="https://linkedin.com/in/iammahmudhasan">
-    <img src="https://img.shields.io/badge/LinkedIn-iammahmudhasan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://x.com/iammahmudhasan">
-    <img src="https://img.shields.io/badge/X%20(Twitter)-@iammahmudhasan-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-  </a>
-  &nbsp;
-  <a href="https://instagram.com/iammahmudhasan">
-    <img src="https://img.shields.io/badge/Instagram-@iammahmudhasan-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/iammahmudhasan">
-    <img src="https://img.shields.io/badge/GitHub-iammahmudhasan-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
+  <p>
+    <i>Always open to discussions and collaborations on <b>Agentic AI</b>, <b>Frontier Research</b>, <b>Distributed AI Systems</b>, or <b>Startup Ventures</b>.</i>
+  </p>
 
-  <br/><br/>
+  <p align="center">
+    <a href="https://linkedin.com/in/iammahmudhasan" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    &nbsp;
+    <a href="https://x.com/iammahmudhasan" target="_blank">
+      <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+    </a>
+    &nbsp;
+    <a href="https://github.com/iammahmudhasan" target="_blank">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </a>
+    &nbsp;
+    <a href="https://instagram.com/iammahmudhasan" target="_blank">
+      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+    </a>
+  </p>
+
+  <p align="center">
+    <code>@iammahmudhasan</code> on all platforms
+  </p>
+
+  <br/>
 
   <sub>✨ <i>"Don't just use the future. Build it."</i> ✨</sub>
 
