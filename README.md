@@ -48,42 +48,9 @@ My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, 
 
 I approach machine learning from **first principles**: mastering both the foundational mathematics and the distributed software engineering required to run scalable, reliable systems.
 
-```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                        THE END-TO-END AI STACK                         │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │
-               ┌────────────────────▼────────────────────┐
-               │    Data Curation, Quality & Filtering   │
-               └────────────────────┬────────────────────┘
-                                    │
-               ┌────────────────────▼────────────────────┐
-               │  Tokenization & Architecture (Attention)│
-               └────────────────────┬────────────────────┘
-                                    │
-               ┌────────────────────▼────────────────────┐
-               │     Pre-Training & Distributed Compute  │
-               └────────────────────┬────────────────────┘
-                                    │
-               ┌────────────────────▼────────────────────┐
-               │    Post-Training (RLHF, SFT, DPO)       │
-               └────────────────────┬────────────────────┘
-                                    │
-               ┌────────────────────▼────────────────────┐
-               │  Inference Serving, Optimization & MoE  │
-               └────────────────────┬────────────────────┘
-                                    │
-               ┌────────────────────▼────────────────────┐
-               │  Autonomous Agent Runtime & Task Graphs │
-               │   • Dynamic Tool Calling                │
-               │   • Ephemeral & Vectorized Memory       │
-               │   • Self-Correction & Verification Loops│
-               └────────────────────┬────────────────────┘
-                                    │
-               ┌────────────────────▼────────────────────┐
-               │        Production AI System at Scale    │
-               └─────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="./assets/ai-stack.svg" alt="The End-to-End AI Stack" width="100%" />
+</p>
 
 ---
 
@@ -102,35 +69,9 @@ I approach machine learning from **first principles**: mastering both the founda
 
 A high-level blueprint of the agent platform ecosystem I actively research and construct:
 
-```text
-                    ┌──────────────────────────────┐
-                    │          AI Gateway          │
-                    └──────────────┬───────────────┘
-                                   │
-                    ┌──────────────▼───────────────┐
-                    │      Identity & Security     │
-                    └──────────────┬───────────────┘
-                                   │
-                    ┌──────────────▼───────────────┐
-                    │   Model Serving & Routing    │
-                    └──────────────┬───────────────┘
-                                   │
-         ┌─────────────────────────▼─────────────────────────┐
-         │               Autonomous Agent Runtime            │
-         └──────────────┬─────────────────────┬──────────────┘
-                        │                     │
-                ┌───────▼───────┐     ┌───────▼───────┐
-                │ Tool & Action │     │ Memory Engine │
-                │   Execution   │     │  (Vector/RAG) │
-                └───────┬───────┘     └───────┬───────┘
-                        │                     │
-                        └──────────┬──────────┘
-                                   │
-                    ┌──────────────▼───────────────┐
-                    │   Verification, Guardrails   │
-                    │         & Evaluation         │
-                    └──────────────────────────────┘
-```
+<p align="center">
+  <img src="./assets/architecture-blueprint.svg" alt="Architectural Blueprint" width="100%" />
+</p>
 
 ---
 

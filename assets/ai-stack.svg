@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad-stack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Stepper Rail Gradient -->
+    <linearGradient id="rail-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="35%" stop-color="#38BDF8" />
+      <stop offset="70%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <!-- Card Gradient -->
+    <linearGradient id="stack-card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+
+    <style>
+      .step-num { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 11px; font-weight: 800; fill: #FFFFFF; }
+      .step-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13.5px; font-weight: 700; fill: #F8FAFC; }
+      .step-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; fill: #94A3B8; }
+      .tag { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 9.5px; font-weight: 600; fill: #38BDF8; }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="798" height="518" x="1" y="1" rx="16" fill="url(#bg-grad-stack)" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- Ambient Glows -->
+  <circle cx="80" cy="80" r="120" fill="#6366F1" opacity="0.1" filter="blur(40px)" />
+  <circle cx="700" cy="450" r="140" fill="#10B981" opacity="0.08" filter="blur(40px)" />
+
+  <!-- Timeline Vertical Rail -->
+  <line x1="68" y1="42" x2="68" y2="475" stroke="url(#rail-grad)" stroke-width="3" stroke-linecap="round" />
+
+  <!-- STEP 1 -->
+  <g transform="translate(48, 25)">
+    <circle cx="20" cy="20" r="16" fill="#1E1B4B" stroke="#6366F1" stroke-width="2" />
+    <text x="20" y="24" text-anchor="middle" class="step-num">01</text>
+    <rect x="52" y="2" width="670" height="42" rx="8" fill="url(#stack-card-grad)" stroke="#334155" stroke-width="1" />
+    <text x="70" y="26" class="step-title">Data Curation &amp; Quality Filtering</text>
+    <text x="320" y="26" class="step-desc">— Synthetic Data Gen • Deduplication • Toxicity &amp; Quality Scoring</text>
+  </g>
+
+  <!-- STEP 2 -->
+  <g transform="translate(48, 95)">
+    <circle cx="20" cy="20" r="16" fill="#0C4A6E" stroke="#0284C7" stroke-width="2" />
+    <text x="20" y="24" text-anchor="middle" class="step-num">02</text>
+    <rect x="52" y="2" width="670" height="42" rx="8" fill="url(#stack-card-grad)" stroke="#334155" stroke-width="1" />
+    <text x="70" y="26" class="step-title">Tokenization &amp; Architecture</text>
+    <text x="320" y="26" class="step-desc">— Custom Byte-Pair Encoding • Rotary Embeddings (RoPE) • FlashAttention</text>
+  </g>
+
+  <!-- STEP 3 -->
+  <g transform="translate(48, 165)">
+    <circle cx="20" cy="20" r="16" fill="#164E63" stroke="#06B6D4" stroke-width="2" />
+    <text x="20" y="24" text-anchor="middle" class="step-num">03</text>
+    <rect x="52" y="2" width="670" height="42" rx="8" fill="url(#stack-card-grad)" stroke="#334155" stroke-width="1" />
+    <text x="70" y="26" class="step-title">Pre-Training &amp; Distributed Compute</text>
+    <text x="320" y="26" class="step-desc">— DeepSpeed ZeRO • PyTorch FSDP • Multi-GPU Cluster Orchestration</text>
+  </g>
+
+  <!-- STEP 4 -->
+  <g transform="translate(48, 235)">
+    <circle cx="20" cy="20" r="16" fill="#3B0764" stroke="#A855F7" stroke-width="2" />
+    <text x="20" y="24" text-anchor="middle" class="step-num">04</text>
+    <rect x="52" y="2" width="670" height="42" rx="8" fill="url(#stack-card-grad)" stroke="#334155" stroke-width="1" />
+    <text x="70" y="26" class="step-title">Post-Training &amp; Alignment</text>
+    <text x="320" y="26" class="step-desc">— Supervised Fine-Tuning (SFT) • RLHF / Direct Preference Optimization (DPO)</text>
+  </g>
+
+  <!-- STEP 5 -->
+  <g transform="translate(48, 305)">
+    <circle cx="20" cy="20" r="16" fill="#581C87" stroke="#C084FC" stroke-width="2" />
+    <text x="20" y="24" text-anchor="middle" class="step-num">05</text>
+    <rect x="52" y="2" width="670" height="42" rx="8" fill="url(#stack-card-grad)" stroke="#334155" stroke-width="1" />
+    <text x="70" y="26" class="step-title">Inference Serving &amp; MoE</text>
+    <text x="320" y="26" class="step-desc">— vLLM Serving • Speculative Decoding • Mixture-of-Experts Dynamic Routing</text>
+  </g>
+
+  <!-- STEP 6 -->
+  <g transform="translate(48, 375)">
+    <circle cx="20" cy="20" r="16" fill="#064E3B" stroke="#10B981" stroke-width="2" />
+    <text x="20" y="24" text-anchor="middle" class="step-num">06</text>
+    <rect x="52" y="2" width="670" height="42" rx="8" fill="url(#stack-card-grad)" stroke="#334155" stroke-width="1" />
+    <text x="70" y="26" class="step-title">Autonomous Agent Runtime</text>
+    <text x="320" y="26" class="step-desc">— Task Graphs • Sandboxed Tool Execution • Self-Verification Loops</text>
+  </g>
+
+  <!-- STEP 7 -->
+  <g transform="translate(48, 445)">
+    <circle cx="20" cy="20" r="16" fill="#065F46" stroke="#34D399" stroke-width="2" />
+    <text x="20" y="24" text-anchor="middle" class="step-num">07</text>
+    <rect x="52" y="2" width="670" height="42" rx="8" fill="url(#stack-card-grad)" stroke="#10B981" stroke-width="1.2" />
+    <text x="70" y="26" class="step-title" fill="#34D399">Production AI System at Scale</text>
+    <text x="320" y="26" class="step-desc">— High-Availability Deployment • Security Guardrails • Autonomous Telemetry</text>
+  </g>
+
+</svg>
