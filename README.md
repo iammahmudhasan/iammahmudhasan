@@ -75,7 +75,7 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 ---
 
-###  Tech Stack & Tooling
+### Tech Stack & Tooling
 
 <p align="left">
   <strong>Artificial Intelligence & Machine Learning</strong><br/>
@@ -83,8 +83,21 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
   <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
   <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="CUDA" />
-  <img src="https://img.shields.io/badge/RAG-Vector_DBs-6366F1?style=flat-square" alt="RAG" />
-  <img src="https://img.shields.io/badge/Agentic_AI-Multi--Agent-0ea5e9?style=flat-square" alt="Agentic AI" />
+  <img src="https://img.shields.io/badge/RAG-4F46E5?style=flat-square" alt="RAG" />
+  <img src="https://img.shields.io/badge/Vector_DBs-0ea5e9?style=flat-square" alt="Vector DBs" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" />
+  <img src="https://img.shields.io/badge/LlamaIndex-7C3AED?style=flat-square" alt="LlamaIndex" />
+  <img src="https://img.shields.io/badge/AutoGen-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="AutoGen" />
+  <img src="https://img.shields.io/badge/CrewAI-FF4B4B?style=flat-square" alt="CrewAI" />
+</p>
+
+<p align="left">
+  <strong>LLM Inference & Optimization</strong><br/>
+  <img src="https://img.shields.io/badge/DeepSpeed-000000?style=flat-square&logo=microsoft&logoColor=white" alt="DeepSpeed" />
+  <img src="https://img.shields.io/badge/vLLM-3B82F6?style=flat-square" alt="vLLM" />
+  <img src="https://img.shields.io/badge/TensorRT--LLM-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="TensorRT-LLM" />
+  <img src="https://img.shields.io/badge/Triton_Server-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="Triton Inference Server" />
+  <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white" alt="ONNX" />
 </p>
 
 <p align="left">
@@ -102,8 +115,23 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/DeepSpeed-000000?style=flat-square&logo=microsoft&logoColor=white" alt="DeepSpeed" />
-  <img src="https://img.shields.io/badge/MinIO%20%2F%20S3-C72C48?style=flat-square&logo=minio&logoColor=white" alt="MinIO" />
+  <img src="https://img.shields.io/badge/MinIO%20%2F%20S3-C72C48?style=flat-square&logo=minio&logoColor=white" alt="MinIO / S3" />
+</p>
+
+<p align="left">
+  <strong>MLOps & Experiment Tracking</strong><br/>
+  <img src="https://img.shields.io/badge/Weights_%26_Biases-FFBE00?style=flat-square&logo=weightsandbiases&logoColor=black" alt="Weights & Biases (W&B)" />
+  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow" />
+  <img src="https://img.shields.io/badge/DVC-945DD6?style=flat-square&logo=dvc&logoColor=white" alt="DVC (Data Version Control)" />
+</p>
+
+<p align="left">
+  <strong>AI Workflow, Automation & Cloud</strong><br/>
+  <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n" />
+  <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Apache Airflow" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white" alt="GCP" />
+  <img src="https://img.shields.io/badge/RunPod-673AB7?style=flat-square&logo=runpod&logoColor=white" alt="RunPod" />
 </p>
 
 
