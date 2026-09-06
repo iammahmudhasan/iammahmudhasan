@@ -22,11 +22,11 @@
 
 ### Executive Summary
 
-I build frontier grade intelligence systems and AI native products, from the ground up. My role sits at the intersection of **AI Engineer, COO, and Entrepreneur**.
+I build frontier grade intelligence systems and AI native products, from the ground up. My role sits at the intersection of AI Engineer, COO, and Entrepreneur.
 
-Most of my work centers on **Large Language Models, Agentic AI, Software Engineering, and High Performance AI Infrastructure**. I care about how these systems actually work under the hood—model training, inference optimization, agent design, memory, orchestration, and the production infrastructure that holds it all together.
+Most of my work centers on Large Language Models, Agentic AI, Software Engineering, and High Performance AI Infrastructure. I care about how these systems actually work under the hood model training, inference optimization, agent design, memory, orchestration, and the production infrastructure that holds it all together.
 
-Beyond the engineering side, I spend a good chunk of my time on product strategy, system architecture, and leading teams—taking AI capabilities that are still maturing and turning them into systems that actually hold up in production: scalable, reliable, and built to last. What I'm ultimately trying to do is help shape the next wave of intelligent software, through solid engineering, real experimentation, and a long-term view of where this technology is headed.
+Beyond the engineering side, I spend a good chunk of my time on product strategy, system architecture, and leading teams taking AI capabilities that are still maturing and turning them into systems that actually hold up in production: scalable, reliable, and built to last. What I'm ultimately trying to do is help shape the next wave of intelligent software, through solid engineering, real experimentation, and a long-term view of where this technology is headed.
 
 ---
 
