@@ -2,7 +2,7 @@
 
   <!-- Dynamic Typing Header: Writing effect without local files -->
   <a href="https://github.com/iammahmudhasan">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=2800&pause=1200&color=6366F1&center=true&vCenter=true&width=620&lines=Hi%2C+I'm+Mahmud+Hasan;AI+Engineer+%26+Founder;Building+Frontier+Agentic+Systems;Engineering+AI+from+First+Principles" alt="Mahmud Hasan - Dynamic Typing Effect" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3200&pause=2000&color=00e5ff&center=true&vCenter=true&width=720&lines=Hi%2C+I'm+Mahmud+Hasan.+I'm+an+AI+Engineer" alt="Hi, I'm Mahmud Hasan. I'm an AI Engineer" />
   </a>
 
   <p align="center">
