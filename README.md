@@ -109,34 +109,36 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 ---
 
-### 📊 GitHub Activity & Analytics
+### 🟪 Analytics
 
 <div align="center">
 
-  <!-- 1. Stats & Streak Side-by-Side (Black Stats with Octocat icon & White Streak Card) -->
+  <!-- 1. Top: Streak Stats (Black background, Red flame & ring accents, White numbers) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&hide_title=true&rank_icon=github&bg_color=000000&border_color=30363d&text_color=ffffff&icon_color=ffffff" alt="GitHub Stats" height="175" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://github.com/iammahmudhasan">
-      <img src="https://streak-stats.demolab.com/?user=iammahmudhasan&theme=default&border=30363d" alt="GitHub Streak Stats" height="175" />
-    </a>
-  </p>
-
-  <!-- 2. Most Used Languages (Black background, No title, Compact layout) -->
-  <p align="center">
-    <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&hide_title=true&bg_color=000000&border_color=30363d&text_color=ffffff" alt="Top Languages" width="60%" />
+      <img src="https://streak-stats.demolab.com/?user=iammahmudhasan&background=000000&border=444444&stroke=ff0000&ring=ff0000&fire=ff0000&currStreakLabel=ff0000&sideLabels=ff0000&currStreakNum=ffffff&sideNums=ffffff&dates=888888" alt="GitHub Streak" width="68%" />
     </a>
   </p>
 
   <br/>
 
-  <!-- 3. Contribution Graph (Black background, Cyan line, Magenta/Pink points and text) -->
+  <!-- 2. Middle Row: Stats & Top Languages Side-by-Side (Black background, Red titles & icons) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=iammahmudhasan&bg_color=000000&color=fe428e&line=00e5ff&point=fe428e&area=true" alt="Mahmud Hasan's Contribution Graph" width="96%" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&bg_color=000000&border_color=444444&title_color=ff0000&icon_color=ff0000&text_color=ffffff&ring_color=ff0000" alt="GitHub Stats" height="195" />
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://github.com/iammahmudhasan">
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&bg_color=000000&border_color=444444&title_color=ff0000&text_color=ffffff" alt="Most Used Languages" height="195" />
+    </a>
+  </p>
+
+  <br/>
+
+  <!-- 3. Bottom: Contribution Graph ("My Contributions", Black background, Red line & area fill, White dots) -->
+  <p align="center">
+    <a href="https://github.com/iammahmudhasan">
+      <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=iammahmudhasan&custom_title=My+Contributions&bg_color=000000&color=ffffff&line=ff0000&point=ffffff&area=true" alt="My Contributions" width="96%" />
     </a>
   </p>
 
