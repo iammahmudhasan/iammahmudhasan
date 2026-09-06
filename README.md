@@ -11,9 +11,9 @@
 
   <p align="center">
     <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Location-Bangladesh-2563EB?style=flat-square&logo=google-maps&logoColor=white" alt="Location" /></a>
-    <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Role-Founder%20%40%20Craftly-4F46E5?style=flat-square&logo=rocket&logoColor=white" alt="Role" /></a>
+    <a href="https://craftlyrobot.com" target="_blank"><img src="https://img.shields.io/badge/Role-COO%20%40%20Craftly-4F46E5?style=flat-square&logo=rocket&logoColor=white" alt="Role" /></a>
     <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Focus-Agentic%20AI%20%7C%20AI%20Systems-06B6D4?style=flat-square&logo=target&logoColor=white" alt="Focus" /></a>
-    <a href="https://linkedin.com/in/iammahmudhasan"><img src="https://img.shields.io/badge/Network-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="https://linkedin.com/in/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/Network-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   </p>
 
 </div>
@@ -22,7 +22,7 @@
 
 ### Executive Summary
 
-I am an **AI Engineer and Founder** based in Bangladesh, dedicated to engineering frontier-grade intelligence systems from the ground up. 
+I am an **AI Engineer, COO, and Entrepreneur** based in Bangladesh, dedicated to engineering frontier-grade intelligence systems from the ground up. 
 
 My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, Autonomous Software Engineering, Cybersecurity, and High-Performance AI Infrastructure**. Rather than treating modern artificial intelligence merely as an external API layer, my focus is on understanding the core mechanics—how models learn, how inference is optimized, and how resilient, production-ready multi-agent architectures are engineered around them.
 
@@ -30,7 +30,7 @@ My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, 
 
 ### What I'm Building
 
-#### [Craftly](https://github.com/iammahmudhasan)
+#### [Craftly](https://craftlyrobot.com)
 *An AI-focused technology company building intelligent infrastructure and next-generation software building systems.*
 
 * **Craftly Robot**: An autonomous agentic AI system engineered to transcend simple conversational chat, autonomously understanding codebases, executing complex multi-step development tasks, and verifying output integrity.
