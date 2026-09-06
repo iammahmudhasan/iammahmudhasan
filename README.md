@@ -125,11 +125,11 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
   <!-- 2. Middle Row: Stats & Top Languages Side-by-Side (Black background, Red titles & icons) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&bg_color=000000&border_color=444444&title_color=ff0000&icon_color=ff0000&text_color=ffffff&ring_color=ff0000" alt="GitHub Stats" height="195" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&custom_title=My+GitHub+Statistics&bg_color=000000&border_color=444444&title_color=ff0000&icon_color=ff0000&text_color=ffffff&ring_color=ff0000" alt="My GitHub Statistics" height="150" />
     </a>
-    &nbsp;&nbsp;
+    &nbsp;
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&bg_color=000000&border_color=444444&title_color=ff0000&text_color=ffffff" alt="Most Used Languages" height="195" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&custom_title=My+Programming+Languages&bg_color=000000&border_color=444444&title_color=ff0000&text_color=ffffff" alt="My Programming Languages" height="150" />
     </a>
   </p>
 
