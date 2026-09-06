@@ -38,7 +38,7 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 * **Craftly Robot**: An autonomous agentic AI system engineered to transcend simple conversational chat, autonomously understanding codebases, executing complex multi-step development tasks, and verifying output integrity.
 * **Craftly Workspace**: An internal enterprise operations platform centered around evidence-based workflows, verifiable identity & access governance, hierarchical task management, and seamless human-agent collaboration.
 
-#### [Aeitron](https://github.com/iammahmudhasan)
+#### [Aeitron AI](https://aeitron.com)
 *A frontier intelligence research and development project focused on agentic autonomy and cyber defense.*
 
 * **Autonomous Reasoning & Coding**: Architecting systems that ingest code repositories, plan architectural refactors, implement changes, and self-heal via continuous test & verification loops.
