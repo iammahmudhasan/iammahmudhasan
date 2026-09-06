@@ -44,16 +44,6 @@ My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, 
 
 ---
 
-### How I Think About AI Systems
-
-I approach machine learning from **first principles**: mastering both the foundational mathematics and the distributed software engineering required to run scalable, reliable systems.
-
-<p align="center">
-  <img src="./assets/ai-stack.svg" alt="The End-to-End AI Stack" width="100%" />
-</p>
-
----
-
 ### Core Research & Engineering Pillars
 
 | Area | Focus Topics |
@@ -62,16 +52,6 @@ I approach machine learning from **first principles**: mastering both the founda
 | **Agentic AI** | Multi-Agent Orchestration, Task Graphs, Dynamic Memory, Verification Loops, Autonomous Code Synthesis |
 | **AI Systems & Infra** | Model Serving, Distributed Training (FSDP, DeepSpeed), GPU / CUDA Optimization, Data Pipelines |
 | **Cybersecurity × AI** | Automated Threat Modeling, Autonomous Vulnerability Auditing, Defensive Agentic Intelligence |
-
----
-
-### Architectural Blueprint
-
-A high-level blueprint of the agent platform ecosystem I actively research and construct:
-
-<p align="center">
-  <img src="./assets/architecture-blueprint.svg" alt="Architectural Blueprint" width="100%" />
-</p>
 
 ---
 
