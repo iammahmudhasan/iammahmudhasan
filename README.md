@@ -22,9 +22,11 @@
 
 ### Executive Summary
 
-I am an **AI Engineer, COO, and Entrepreneur** based in Bangladesh, dedicated to engineering frontier-grade intelligence systems from the ground up. 
+I build frontier grade intelligence systems and AI native products, from the ground up. My role sits at the intersection of **AI Engineer, COO, and Entrepreneur**.
 
-My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, Autonomous Software Engineering, Cybersecurity, and High-Performance AI Infrastructure**. Rather than treating modern artificial intelligence merely as an external API layer, my focus is on understanding the core mechanics—how models learn, how inference is optimized, and how resilient, production-ready multi-agent architectures are engineered around them.
+Most of my work centers on **Large Language Models, Agentic AI, Software Engineering, and High Performance AI Infrastructure**. I care about how these systems actually work under the hood—model training, inference optimization, agent design, memory, orchestration, and the production infrastructure that holds it all together.
+
+Beyond the engineering side, I spend a good chunk of my time on product strategy, system architecture, and leading teams—taking AI capabilities that are still maturing and turning them into systems that actually hold up in production: scalable, reliable, and built to last. What I'm ultimately trying to do is help shape the next wave of intelligent software, through solid engineering, real experimentation, and a long-term view of where this technology is headed.
 
 ---
 
