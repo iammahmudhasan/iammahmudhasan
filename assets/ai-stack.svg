@@ -1,269 +1,153 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 550" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 514" width="100%" height="100%">
   <defs>
     <!-- Background Canvas Gradient -->
-    <linearGradient id="stack-canvas-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060813" />
-      <stop offset="50%" stop-color="#0B0F1C" />
-      <stop offset="100%" stop-color="#04060B" />
+    <linearGradient id="stack-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B14" />
+      <stop offset="50%" stop-color="#0B111E" />
+      <stop offset="100%" stop-color="#05080F" />
     </linearGradient>
 
-    <!-- Stepper Rail Vertical Rainbow Gradient -->
-    <linearGradient id="stepper-rail-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#6366F1" />
-      <stop offset="16%" stop-color="#0284C7" />
-      <stop offset="33%" stop-color="#06B6D4" />
-      <stop offset="50%" stop-color="#8B5CF6" />
-      <stop offset="67%" stop-color="#D946EF" />
-      <stop offset="83%" stop-color="#0D9488" />
-      <stop offset="100%" stop-color="#10B981" />
+    <!-- Continuous Stepper Rail Gradient -->
+    <linearGradient id="stepper-rail" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="18%" stop-color="#0EA5E9" />
+      <stop offset="36%" stop-color="#06B6D4" />
+      <stop offset="54%" stop-color="#14B8A6" />
+      <stop offset="72%" stop-color="#0D9488" />
+      <stop offset="90%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
     </linearGradient>
 
-    <!-- Glass Card Gradient -->
-    <linearGradient id="card-glass-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121829" stop-opacity="0.92" />
-      <stop offset="100%" stop-color="#0A0E1A" stop-opacity="0.96" />
+    <!-- Glass Card Surface -->
+    <linearGradient id="glass-surface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0A0E17" stop-opacity="0.95" />
     </linearGradient>
 
-    <!-- Drop Glow for Step 07 Production -->
-    <filter id="glow-production" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="3" stdDeviation="10" flood-color="#10B981" flood-opacity="0.3" />
+    <!-- Subtle Emerald Glow for Final Card -->
+    <filter id="stack-glow-emerald" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#10B981" flood-opacity="0.25" />
     </filter>
 
-    <!-- Dot Grid Pattern -->
-    <pattern id="stack-dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.1" fill="#1E293B" opacity="0.5" />
+    <!-- Subtle Dot Grid Pattern -->
+    <pattern id="stack-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1E293B" opacity="0.4" />
     </pattern>
 
     <style>
-      .hdr-meta { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 10px; font-weight: 700; fill: #64748B; letter-spacing: 1.5px; }
       .step-num { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 11.5px; font-weight: 800; fill: #FFFFFF; }
       .step-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 700; fill: #FFFFFF; }
-      .chip-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 9.5px; font-weight: 600; }
-      .stage-pill { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 9px; font-weight: 800; letter-spacing: 0.5px; }
+      .step-sep { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; fill: #475569; }
+      .step-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; fill: #94A3B8; }
     </style>
   </defs>
 
-  <!-- Outer Frame -->
-  <rect width="838" height="548" x="1" y="1" rx="16" fill="url(#stack-canvas-bg)" stroke="#1E293B" stroke-width="1.2" />
+  <!-- Frame -->
+  <rect width="838" height="512" x="1" y="1" rx="16" fill="url(#stack-bg)" stroke="#1E293B" stroke-width="1.2" />
 
-  <!-- Background Technical Dot Matrix Grid -->
-  <rect width="836" height="546" x="2" y="2" rx="15" fill="url(#stack-dots)" />
-
-  <!-- Ambient Radiant Halos -->
-  <circle cx="90" cy="70" r="130" fill="#6366F1" opacity="0.1" filter="blur(45px)" />
-  <circle cx="750" cy="480" r="150" fill="#10B981" opacity="0.1" filter="blur(45px)" />
-
-  <!-- Technical HUD Top Header Metadata -->
-  <g transform="translate(30, 20)">
-    <circle cx="4" cy="5" r="3" fill="#8B5CF6" />
-    <text x="14" y="8" class="hdr-meta">AI LIFECYCLE // 01-07 CONTINUOUS REFINEMENT PIPELINE</text>
-    <text x="780" y="8" text-anchor="end" class="hdr-meta">FIRST-PRINCIPLES SPEC</text>
-  </g>
+  <!-- Background Grid -->
+  <rect width="836" height="510" x="2" y="2" rx="15" fill="url(#stack-grid)" />
 
   <!-- Continuous Stepper Rail -->
-  <line x1="58" y1="46" x2="58" y2="494" stroke="url(#stepper-rail-grad)" stroke-width="3" stroke-linecap="round" />
+  <line x1="54" y1="44" x2="54" y2="470" stroke="url(#stepper-rail)" stroke-width="2.5" stroke-linecap="round" />
 
   <!-- ==================== STEP 01 ==================== -->
-  <g transform="translate(0, 36)">
-    <!-- Stepper Node -->
-    <circle cx="58" cy="24" r="16" fill="#1E1B4B" stroke="#6366F1" stroke-width="2" />
-    <text x="58" y="28" text-anchor="middle" class="step-num">01</text>
+  <g transform="translate(0, 22)">
+    <circle cx="54" cy="24" r="15" fill="#0F172A" stroke="#3B82F6" stroke-width="1.8" />
+    <text x="54" y="28" text-anchor="middle" class="step-num">01</text>
     
-    <!-- Card Container -->
-    <rect x="94" y="0" width="716" height="48" rx="10" fill="url(#card-glass-bg)" stroke="#334155" stroke-width="1" />
-    <line x1="102" y1="1" x2="802" y2="1" stroke="#FFFFFF" stroke-opacity="0.14" stroke-linecap="round" />
-    <rect x="94" y="0" width="4" height="48" rx="2" fill="#6366F1" />
+    <rect x="86" y="0" width="728" height="48" rx="9" fill="url(#glass-surface)" stroke="#1E293B" stroke-width="1" />
+    <line x1="94" y1="1" x2="806" y2="1" stroke="#FFFFFF" stroke-opacity="0.12" stroke-linecap="round" />
+    <rect x="86" y="0" width="3.5" height="48" rx="1.5" fill="#3B82F6" />
     
-    <!-- Title -->
-    <text x="114" y="29" class="step-title">Data Curation &amp; Quality</text>
-
-    <!-- Chips -->
-    <rect x="345" y="14" width="102" height="20" rx="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="0.8" />
-    <text x="396" y="27.5" text-anchor="middle" class="chip-text" fill="#A5B4FC">Synthetic Data</text>
-
-    <rect x="455" y="14" width="98" height="20" rx="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="0.8" />
-    <text x="504" y="27.5" text-anchor="middle" class="chip-text" fill="#A5B4FC">Deduplication</text>
-
-    <rect x="561" y="14" width="112" height="20" rx="6" fill="#1E1B4B" stroke="#6366F1" stroke-width="0.8" />
-    <text x="617" y="27.5" text-anchor="middle" class="chip-text" fill="#A5B4FC">Quality Scoring</text>
-
-    <!-- Stage Tag -->
-    <rect x="718" y="14" width="76" height="20" rx="10" fill="#1E1B4B" stroke="#6366F1" stroke-width="0.8" />
-    <text x="756" y="27.5" text-anchor="middle" class="stage-pill" fill="#A5B4FC">01 · DATA</text>
+    <text x="106" y="29" class="step-title">Data Curation &amp; Quality Filtering</text>
+    <text x="350" y="29" class="step-sep">—</text>
+    <text x="370" y="29" class="step-desc">Synthetic Data Gen • Deduplication • Toxicity &amp; Quality Scoring</text>
   </g>
 
   <!-- ==================== STEP 02 ==================== -->
-  <g transform="translate(0, 108)">
-    <!-- Stepper Node -->
-    <circle cx="58" cy="24" r="16" fill="#0C4A6E" stroke="#0284C7" stroke-width="2" />
-    <text x="58" y="28" text-anchor="middle" class="step-num">02</text>
+  <g transform="translate(0, 90)">
+    <circle cx="54" cy="24" r="15" fill="#0C2D48" stroke="#0EA5E9" stroke-width="1.8" />
+    <text x="54" y="28" text-anchor="middle" class="step-num">02</text>
     
-    <!-- Card Container -->
-    <rect x="94" y="0" width="716" height="48" rx="10" fill="url(#card-glass-bg)" stroke="#334155" stroke-width="1" />
-    <line x1="102" y1="1" x2="802" y2="1" stroke="#FFFFFF" stroke-opacity="0.14" stroke-linecap="round" />
-    <rect x="94" y="0" width="4" height="48" rx="2" fill="#0284C7" />
+    <rect x="86" y="0" width="728" height="48" rx="9" fill="url(#glass-surface)" stroke="#1E293B" stroke-width="1" />
+    <line x1="94" y1="1" x2="806" y2="1" stroke="#FFFFFF" stroke-opacity="0.12" stroke-linecap="round" />
+    <rect x="86" y="0" width="3.5" height="48" rx="1.5" fill="#0EA5E9" />
     
-    <!-- Title -->
-    <text x="114" y="29" class="step-title">Tokenization &amp; Architecture</text>
-
-    <!-- Chips -->
-    <rect x="345" y="14" width="94" height="20" rx="6" fill="#0C4A6E" stroke="#0284C7" stroke-width="0.8" />
-    <text x="392" y="27.5" text-anchor="middle" class="chip-text" fill="#38BDF8">Custom BPE</text>
-
-    <rect x="447" y="14" width="118" height="20" rx="6" fill="#0C4A6E" stroke="#0284C7" stroke-width="0.8" />
-    <text x="506" y="27.5" text-anchor="middle" class="chip-text" fill="#38BDF8">RoPE Embeddings</text>
-
-    <rect x="573" y="14" width="102" height="20" rx="6" fill="#0C4A6E" stroke="#0284C7" stroke-width="0.8" />
-    <text x="624" y="27.5" text-anchor="middle" class="chip-text" fill="#38BDF8">FlashAttention</text>
-
-    <!-- Stage Tag -->
-    <rect x="718" y="14" width="76" height="20" rx="10" fill="#0C4A6E" stroke="#0284C7" stroke-width="0.8" />
-    <text x="756" y="27.5" text-anchor="middle" class="stage-pill" fill="#38BDF8">02 · ARCH</text>
+    <text x="106" y="29" class="step-title">Tokenization &amp; Architecture</text>
+    <text x="350" y="29" class="step-sep">—</text>
+    <text x="370" y="29" class="step-desc">Custom Byte-Pair Encoding • Rotary Embeddings (RoPE) • FlashAttention</text>
   </g>
 
   <!-- ==================== STEP 03 ==================== -->
-  <g transform="translate(0, 180)">
-    <!-- Stepper Node -->
-    <circle cx="58" cy="24" r="16" fill="#164E63" stroke="#06B6D4" stroke-width="2" />
-    <text x="58" y="28" text-anchor="middle" class="step-num">03</text>
+  <g transform="translate(0, 158)">
+    <circle cx="54" cy="24" r="15" fill="#083344" stroke="#06B6D4" stroke-width="1.8" />
+    <text x="54" y="28" text-anchor="middle" class="step-num">03</text>
     
-    <!-- Card Container -->
-    <rect x="94" y="0" width="716" height="48" rx="10" fill="url(#card-glass-bg)" stroke="#334155" stroke-width="1" />
-    <line x1="102" y1="1" x2="802" y2="1" stroke="#FFFFFF" stroke-opacity="0.14" stroke-linecap="round" />
-    <rect x="94" y="0" width="4" height="48" rx="2" fill="#06B6D4" />
+    <rect x="86" y="0" width="728" height="48" rx="9" fill="url(#glass-surface)" stroke="#1E293B" stroke-width="1" />
+    <line x1="94" y1="1" x2="806" y2="1" stroke="#FFFFFF" stroke-opacity="0.12" stroke-linecap="round" />
+    <rect x="86" y="0" width="3.5" height="48" rx="1.5" fill="#06B6D4" />
     
-    <!-- Title -->
-    <text x="114" y="29" class="step-title">Pre-Training &amp; Compute</text>
-
-    <!-- Chips -->
-    <rect x="345" y="14" width="114" height="20" rx="6" fill="#164E63" stroke="#06B6D4" stroke-width="0.8" />
-    <text x="402" y="27.5" text-anchor="middle" class="chip-text" fill="#22D3EE">DeepSpeed ZeRO</text>
-
-    <rect x="467" y="14" width="98" height="20" rx="6" fill="#164E63" stroke="#06B6D4" stroke-width="0.8" />
-    <text x="516" y="27.5" text-anchor="middle" class="chip-text" fill="#22D3EE">PyTorch FSDP</text>
-
-    <rect x="573" y="14" width="118" height="20" rx="6" fill="#164E63" stroke="#06B6D4" stroke-width="0.8" />
-    <text x="632" y="27.5" text-anchor="middle" class="chip-text" fill="#22D3EE">Multi-GPU Cluster</text>
-
-    <!-- Stage Tag -->
-    <rect x="714" y="14" width="80" height="20" rx="10" fill="#164E63" stroke="#06B6D4" stroke-width="0.8" />
-    <text x="754" y="27.5" text-anchor="middle" class="stage-pill" fill="#22D3EE">03 · TRAIN</text>
+    <text x="106" y="29" class="step-title">Pre-Training &amp; Distributed Compute</text>
+    <text x="350" y="29" class="step-sep">—</text>
+    <text x="370" y="29" class="step-desc">DeepSpeed ZeRO • PyTorch FSDP • Multi-GPU Cluster Orchestration</text>
   </g>
 
   <!-- ==================== STEP 04 ==================== -->
-  <g transform="translate(0, 252)">
-    <!-- Stepper Node -->
-    <circle cx="58" cy="24" r="16" fill="#3B0764" stroke="#8B5CF6" stroke-width="2" />
-    <text x="58" y="28" text-anchor="middle" class="step-num">04</text>
+  <g transform="translate(0, 226)">
+    <circle cx="54" cy="24" r="15" fill="#042F2E" stroke="#14B8A6" stroke-width="1.8" />
+    <text x="54" y="28" text-anchor="middle" class="step-num">04</text>
     
-    <!-- Card Container -->
-    <rect x="94" y="0" width="716" height="48" rx="10" fill="url(#card-glass-bg)" stroke="#334155" stroke-width="1" />
-    <line x1="102" y1="1" x2="802" y2="1" stroke="#FFFFFF" stroke-opacity="0.14" stroke-linecap="round" />
-    <rect x="94" y="0" width="4" height="48" rx="2" fill="#8B5CF6" />
+    <rect x="86" y="0" width="728" height="48" rx="9" fill="url(#glass-surface)" stroke="#1E293B" stroke-width="1" />
+    <line x1="94" y1="1" x2="806" y2="1" stroke="#FFFFFF" stroke-opacity="0.12" stroke-linecap="round" />
+    <rect x="86" y="0" width="3.5" height="48" rx="1.5" fill="#14B8A6" />
     
-    <!-- Title -->
-    <text x="114" y="29" class="step-title">Post-Training &amp; Alignment</text>
-
-    <!-- Chips -->
-    <rect x="345" y="14" width="102" height="20" rx="6" fill="#3B0764" stroke="#8B5CF6" stroke-width="0.8" />
-    <text x="396" y="27.5" text-anchor="middle" class="chip-text" fill="#C084FC">Supervised SFT</text>
-
-    <rect x="455" y="14" width="94" height="20" rx="6" fill="#3B0764" stroke="#8B5CF6" stroke-width="0.8" />
-    <text x="502" y="27.5" text-anchor="middle" class="chip-text" fill="#C084FC">RLHF / DPO</text>
-
-    <rect x="557" y="14" width="124" height="20" rx="6" fill="#3B0764" stroke="#8B5CF6" stroke-width="0.8" />
-    <text x="619" y="27.5" text-anchor="middle" class="chip-text" fill="#C084FC">Reasoning Distill</text>
-
-    <!-- Stage Tag -->
-    <rect x="716" y="14" width="78" height="20" rx="10" fill="#3B0764" stroke="#8B5CF6" stroke-width="0.8" />
-    <text x="755" y="27.5" text-anchor="middle" class="stage-pill" fill="#C084FC">04 · ALIGN</text>
+    <text x="106" y="29" class="step-title">Post-Training &amp; Alignment</text>
+    <text x="350" y="29" class="step-sep">—</text>
+    <text x="370" y="29" class="step-desc">Supervised Fine-Tuning (SFT) • RLHF / Direct Preference Optimization (DPO)</text>
   </g>
 
   <!-- ==================== STEP 05 ==================== -->
-  <g transform="translate(0, 324)">
-    <!-- Stepper Node -->
-    <circle cx="58" cy="24" r="16" fill="#4A044E" stroke="#D946EF" stroke-width="2" />
-    <text x="58" y="28" text-anchor="middle" class="step-num">05</text>
+  <g transform="translate(0, 294)">
+    <circle cx="54" cy="24" r="15" fill="#042F2E" stroke="#0D9488" stroke-width="1.8" />
+    <text x="54" y="28" text-anchor="middle" class="step-num">05</text>
     
-    <!-- Card Container -->
-    <rect x="94" y="0" width="716" height="48" rx="10" fill="url(#card-glass-bg)" stroke="#334155" stroke-width="1" />
-    <line x1="102" y1="1" x2="802" y2="1" stroke="#FFFFFF" stroke-opacity="0.14" stroke-linecap="round" />
-    <rect x="94" y="0" width="4" height="48" rx="2" fill="#D946EF" />
+    <rect x="86" y="0" width="728" height="48" rx="9" fill="url(#glass-surface)" stroke="#1E293B" stroke-width="1" />
+    <line x1="94" y1="1" x2="806" y2="1" stroke="#FFFFFF" stroke-opacity="0.12" stroke-linecap="round" />
+    <rect x="86" y="0" width="3.5" height="48" rx="1.5" fill="#0D9488" />
     
-    <!-- Title -->
-    <text x="114" y="29" class="step-title">Inference Serving &amp; MoE</text>
-
-    <!-- Chips -->
-    <rect x="345" y="14" width="94" height="20" rx="6" fill="#4A044E" stroke="#D946EF" stroke-width="0.8" />
-    <text x="392" y="27.5" text-anchor="middle" class="chip-text" fill="#F472B6">vLLM Serving</text>
-
-    <rect x="447" y="14" width="128" height="20" rx="6" fill="#4A044E" stroke="#D946EF" stroke-width="0.8" />
-    <text x="511" y="27.5" text-anchor="middle" class="chip-text" fill="#F472B6">Speculative Decoding</text>
-
-    <rect x="583" y="14" width="98" height="20" rx="6" fill="#4A044E" stroke="#D946EF" stroke-width="0.8" />
-    <text x="632" y="27.5" text-anchor="middle" class="chip-text" fill="#F472B6">Dynamic MoE</text>
-
-    <!-- Stage Tag -->
-    <rect x="716" y="14" width="78" height="20" rx="10" fill="#4A044E" stroke="#D946EF" stroke-width="0.8" />
-    <text x="755" y="27.5" text-anchor="middle" class="stage-pill" fill="#F472B6">05 · INFER</text>
+    <text x="106" y="29" class="step-title">Inference Serving &amp; MoE</text>
+    <text x="350" y="29" class="step-sep">—</text>
+    <text x="370" y="29" class="step-desc">vLLM Serving • Speculative Decoding • Mixture-of-Experts Dynamic Routing</text>
   </g>
 
   <!-- ==================== STEP 06 ==================== -->
-  <g transform="translate(0, 396)">
-    <!-- Stepper Node -->
-    <circle cx="58" cy="24" r="16" fill="#042F2E" stroke="#0D9488" stroke-width="2" />
-    <text x="58" y="28" text-anchor="middle" class="step-num">06</text>
+  <g transform="translate(0, 362)">
+    <circle cx="54" cy="24" r="15" fill="#022C22" stroke="#10B981" stroke-width="1.8" />
+    <text x="54" y="28" text-anchor="middle" class="step-num">06</text>
     
-    <!-- Card Container -->
-    <rect x="94" y="0" width="716" height="48" rx="10" fill="url(#card-glass-bg)" stroke="#334155" stroke-width="1" />
-    <line x1="102" y1="1" x2="802" y2="1" stroke="#FFFFFF" stroke-opacity="0.14" stroke-linecap="round" />
-    <rect x="94" y="0" width="4" height="48" rx="2" fill="#0D9488" />
+    <rect x="86" y="0" width="728" height="48" rx="9" fill="url(#glass-surface)" stroke="#1E293B" stroke-width="1" />
+    <line x1="94" y1="1" x2="806" y2="1" stroke="#FFFFFF" stroke-opacity="0.12" stroke-linecap="round" />
+    <rect x="86" y="0" width="3.5" height="48" rx="1.5" fill="#10B981" />
     
-    <!-- Title -->
-    <text x="114" y="29" class="step-title">Autonomous Agent Runtime</text>
-
-    <!-- Chips -->
-    <rect x="345" y="14" width="92" height="20" rx="6" fill="#042F2E" stroke="#0D9488" stroke-width="0.8" />
-    <text x="391" y="27.5" text-anchor="middle" class="chip-text" fill="#2DD4BF">Task Graphs</text>
-
-    <rect x="445" y="14" width="118" height="20" rx="6" fill="#042F2E" stroke="#0D9488" stroke-width="0.8" />
-    <text x="504" y="27.5" text-anchor="middle" class="chip-text" fill="#2DD4BF">Sandboxed Tools</text>
-
-    <rect x="571" y="14" width="124" height="20" rx="6" fill="#042F2E" stroke="#0D9488" stroke-width="0.8" />
-    <text x="633" y="27.5" text-anchor="middle" class="chip-text" fill="#2DD4BF">Self-Healing Loops</text>
-
-    <!-- Stage Tag -->
-    <rect x="716" y="14" width="78" height="20" rx="10" fill="#042F2E" stroke="#0D9488" stroke-width="0.8" />
-    <text x="755" y="27.5" text-anchor="middle" class="stage-pill" fill="#2DD4BF">06 · AGENT</text>
+    <text x="106" y="29" class="step-title">Autonomous Agent Runtime</text>
+    <text x="350" y="29" class="step-sep">—</text>
+    <text x="370" y="29" class="step-desc">Task Graphs • Sandboxed Tool Execution • Self-Verification Loops</text>
   </g>
 
   <!-- ==================== STEP 07 ==================== -->
-  <g transform="translate(0, 468)">
-    <!-- Stepper Node -->
-    <circle cx="58" cy="24" r="16" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
-    <text x="58" y="28" text-anchor="middle" class="step-num" fill="#34D399">07</text>
+  <g transform="translate(0, 430)">
+    <circle cx="54" cy="24" r="15" fill="#022C22" stroke="#34D399" stroke-width="2" />
+    <text x="54" y="28" text-anchor="middle" class="step-num" fill="#34D399">07</text>
     
-    <!-- Card Container with Emerald Glow -->
-    <rect x="94" y="0" width="716" height="48" rx="10" fill="url(#card-glass-bg)" stroke="#10B981" stroke-width="1.4" filter="url(#glow-production)" />
-    <line x1="102" y1="1" x2="802" y2="1" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round" />
-    <rect x="94" y="0" width="4" height="48" rx="2" fill="#10B981" />
+    <!-- Step 07 Production Highlight Card -->
+    <rect x="86" y="0" width="728" height="48" rx="9" fill="url(#glass-surface)" stroke="#10B981" stroke-width="1.3" filter="url(#stack-glow-emerald)" />
+    <line x1="94" y1="1" x2="806" y2="1" stroke="#FFFFFF" stroke-opacity="0.18" stroke-linecap="round" />
+    <rect x="86" y="0" width="3.5" height="48" rx="1.5" fill="#10B981" />
     
-    <!-- Title -->
-    <text x="114" y="29" class="step-title" fill="#34D399">Production AI System at Scale</text>
-
-    <!-- Chips -->
-    <rect x="345" y="14" width="120" height="20" rx="6" fill="#022C22" stroke="#10B981" stroke-width="0.8" />
-    <text x="405" y="27.5" text-anchor="middle" class="chip-text" fill="#6EE7B7">High Availability</text>
-
-    <rect x="473" y="14" width="128" height="20" rx="6" fill="#022C22" stroke="#10B981" stroke-width="0.8" />
-    <text x="537" y="27.5" text-anchor="middle" class="chip-text" fill="#6EE7B7">Security Guardrails</text>
-
-    <rect x="609" y="14" width="98" height="20" rx="6" fill="#022C22" stroke="#10B981" stroke-width="0.8" />
-    <text x="658" y="27.5" text-anchor="middle" class="chip-text" fill="#6EE7B7">Telemetry Evals</text>
-
-    <!-- Stage Tag -->
-    <rect x="716" y="14" width="78" height="20" rx="10" fill="#022C22" stroke="#10B981" stroke-width="1" />
-    <text x="755" y="27.5" text-anchor="middle" class="stage-pill" fill="#6EE7B7">07 · SCALE</text>
+    <text x="106" y="29" class="step-title" fill="#34D399">Production AI System at Scale</text>
+    <text x="350" y="29" class="step-sep">—</text>
+    <text x="370" y="29" class="step-desc" fill="#A7F3D0">High-Availability Deployment • Security Guardrails • Autonomous Telemetry</text>
   </g>
 
 </svg>
