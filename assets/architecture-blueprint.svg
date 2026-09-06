@@ -1,160 +1,297 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 610" width="100%" height="100%">
   <defs>
-    <!-- Background Gradients -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B0F19" />
-      <stop offset="100%" stop-color="#030712" />
+    <!-- Background Canvas Gradient -->
+    <linearGradient id="canvas-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060813" />
+      <stop offset="45%" stop-color="#0B0F1C" />
+      <stop offset="100%" stop-color="#04060B" />
     </linearGradient>
 
-    <!-- Card Gradients -->
-    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95" />
+    <!-- Glass Card Gradient -->
+    <linearGradient id="glass-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121829" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#0A0E1A" stop-opacity="0.96" />
     </linearGradient>
 
-    <!-- Glowing Line Gradients -->
-    <linearGradient id="line-indigo-cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+    <!-- Border Gradients -->
+    <linearGradient id="grad-border-ingress" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#6366F1" />
-      <stop offset="100%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#06B6D4" />
     </linearGradient>
-    <linearGradient id="line-cyan-violet" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" />
+
+    <linearGradient id="grad-border-security" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+
+    <linearGradient id="grad-border-serving" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <linearGradient id="grad-border-eval" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Vertical Flow Pipe Gradients -->
+    <linearGradient id="pipe-1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <linearGradient id="pipe-2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
       <stop offset="100%" stop-color="#8B5CF6" />
     </linearGradient>
-    <linearGradient id="line-violet-indigo" x1="0%" y1="0%" x2="0%" y2="100%">
+
+    <linearGradient id="pipe-3" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#8B5CF6" />
       <stop offset="100%" stop-color="#6366F1" />
     </linearGradient>
-    <linearGradient id="line-indigo-emerald" x1="0%" y1="0%" x2="0%" y2="100%">
+
+    <linearGradient id="pipe-4" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#6366F1" />
       <stop offset="100%" stop-color="#10B981" />
     </linearGradient>
 
     <!-- Arrow Markers -->
-    <marker id="arrow-indigo" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38BDF8" />
+    <marker id="m-cyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#06B6D4" />
     </marker>
-    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1 L 8 5 L 0 9 z" fill="#8B5CF6" />
+    <marker id="m-violet" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#8B5CF6" />
     </marker>
-    <marker id="arrow-violet" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1 L 8 5 L 0 9 z" fill="#6366F1" />
+    <marker id="m-indigo" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366F1" />
     </marker>
-    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10B981" />
+    <marker id="m-emerald" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10B981" />
     </marker>
-    <marker id="arrow-sync-left" viewBox="0 0 10 10" refX="4" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-      <path d="M 8 1 L 0 5 L 8 9 z" fill="#A855F7" />
+    <marker id="m-sync-l" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 7 1.5 L 1 5 L 7 8.5 z" fill="#06B6D4" />
     </marker>
-    <marker id="arrow-sync-right" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-      <path d="M 0 1 L 8 5 L 0 9 z" fill="#06B6D4" />
+    <marker id="m-sync-r" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 7 5 L 1 8.5 z" fill="#C084FC" />
     </marker>
 
-    <!-- Glow Filters -->
-    <filter id="glow-indigo" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#6366F1" flood-opacity="0.35" />
+    <!-- Filters & Glows -->
+    <filter id="glow-ingress" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#6366F1" flood-opacity="0.22" />
     </filter>
-    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#10B981" flood-opacity="0.35" />
+    <filter id="glow-eval" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#10B981" flood-opacity="0.25" />
     </filter>
+    <filter id="glow-badge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#6366F1" flood-opacity="0.5" />
+    </filter>
+
+    <!-- Technical Dot Grid Pattern -->
+    <pattern id="tech-dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#1E293B" opacity="0.5" />
+    </pattern>
 
     <style>
-      .node-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 14.5px; fill: #F8FAFC; }
-      .node-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; fill: #94A3B8; }
-      .container-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 11px; font-weight: 700; fill: #A5B4FC; letter-spacing: 1.8px; text-transform: uppercase; }
-      .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 9.5px; font-weight: 600; fill: #38BDF8; }
+      .hdr-meta { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 10px; font-weight: 700; fill: #64748B; letter-spacing: 1.5px; }
+      .node-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 700; fill: #FFFFFF; letter-spacing: -0.2px; }
+      .node-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; font-weight: 400; fill: #94A3B8; }
+      .pill-badge { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 0.8px; }
+      .core-hdr { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 10.5px; font-weight: 800; fill: #A5B4FC; letter-spacing: 2px; }
+      .tech-spec { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 9px; font-weight: 600; }
     </style>
   </defs>
 
-  <!-- Container Box -->
-  <rect width="798" height="578" x="1" y="1" rx="16" fill="url(#bg-grad)" stroke="#1E293B" stroke-width="1.5" />
+  <!-- Outer Frame -->
+  <rect width="838" height="608" x="1" y="1" rx="16" fill="url(#canvas-bg)" stroke="#1E293B" stroke-width="1.2" />
 
-  <!-- Ambient Light Orbs -->
-  <circle cx="400" cy="40" r="160" fill="#6366F1" opacity="0.12" filter="blur(50px)" />
-  <circle cx="200" cy="380" r="120" fill="#06B6D4" opacity="0.08" filter="blur(45px)" />
-  <circle cx="600" cy="380" r="120" fill="#A855F7" opacity="0.08" filter="blur(45px)" />
-  <circle cx="400" cy="530" r="130" fill="#10B981" opacity="0.1" filter="blur(45px)" />
+  <!-- Background Technical Dot Matrix Grid -->
+  <rect width="836" height="606" x="2" y="2" rx="15" fill="url(#tech-dots)" />
 
-  <!-- Connector 1: Gateway to Security -->
-  <line x1="400" y1="82" x2="400" y2="120" stroke="url(#line-indigo-cyan)" stroke-width="2" marker-end="url(#arrow-indigo)" />
+  <!-- Ambient Radiant Halos -->
+  <circle cx="420" cy="65" r="160" fill="#6366F1" opacity="0.12" filter="blur(55px)" />
+  <circle cx="180" cy="400" r="140" fill="#06B6D4" opacity="0.09" filter="blur(50px)" />
+  <circle cx="660" cy="400" r="140" fill="#8B5CF6" opacity="0.09" filter="blur(50px)" />
+  <circle cx="420" cy="545" r="150" fill="#10B981" opacity="0.12" filter="blur(50px)" />
 
-  <!-- Connector 2: Security to Serving -->
-  <line x1="400" y1="174" x2="400" y2="212" stroke="url(#line-cyan-violet)" stroke-width="2" marker-end="url(#arrow-cyan)" />
-
-  <!-- Connector 3: Serving to Runtime -->
-  <line x1="400" y1="266" x2="400" y2="304" stroke="url(#line-violet-indigo)" stroke-width="2" marker-end="url(#arrow-violet)" />
-
-  <!-- Connector 4: Runtime to Verification -->
-  <line x1="400" y1="442" x2="400" y2="480" stroke="url(#line-indigo-emerald)" stroke-width="2" marker-end="url(#arrow-emerald)" />
-
-  <!-- NODE 1: AI Gateway -->
-  <g transform="translate(230, 24)">
-    <rect width="340" height="58" rx="10" fill="url(#card-grad)" stroke="#6366F1" stroke-width="1.5" filter="url(#glow-indigo)" />
-    <circle cx="28" cy="29" r="14" fill="#1E1B4B" stroke="#818CF8" stroke-width="1" />
-    <text x="28" y="34" text-anchor="middle" font-size="14">🌐</text>
-    <text x="54" y="27" class="node-title">AI Gateway</text>
-    <text x="54" y="44" class="node-desc">Ingress Routing • Rate Limiting • Load Balancing</text>
+  <!-- Technical HUD Top Header Metadata -->
+  <g transform="translate(30, 22)">
+    <circle cx="4" cy="5" r="3" fill="#10B981" />
+    <text x="14" y="8" class="hdr-meta">SYS.ARCH // AUTONOMOUS AGENT PLATFORM</text>
+    <text x="780" y="8" text-anchor="end" class="hdr-meta">FIRST-PRINCIPLES SPEC</text>
   </g>
 
-  <!-- NODE 2: Identity & Security -->
-  <g transform="translate(230, 116)">
-    <rect width="340" height="58" rx="10" fill="url(#card-grad)" stroke="#38BDF8" stroke-width="1.5" />
-    <circle cx="28" cy="29" r="14" fill="#082F49" stroke="#38BDF8" stroke-width="1" />
-    <text x="28" y="34" text-anchor="middle" font-size="14">🛡️</text>
-    <text x="54" y="27" class="node-title">Identity, Security &amp; Guardrails</text>
-    <text x="54" y="44" class="node-desc">Auth Verification • Policy Enforcement • Prompt Armor</text>
-  </g>
+  <!-- Flow Conduits (Connecting Vertical Pipes) -->
+  <line x1="420" y1="99" x2="420" y2="135" stroke="url(#pipe-1)" stroke-width="2.5" marker-end="url(#m-cyan)" />
+  <circle cx="420" cy="117" r="3" fill="#06B6D4" />
 
-  <!-- NODE 3: Model Serving & Routing -->
-  <g transform="translate(230, 208)">
-    <rect width="340" height="58" rx="10" fill="url(#card-grad)" stroke="#8B5CF6" stroke-width="1.5" />
-    <circle cx="28" cy="29" r="14" fill="#2E1065" stroke="#A855F7" stroke-width="1" />
-    <text x="28" y="34" text-anchor="middle" font-size="14">⚡</text>
-    <text x="54" y="27" class="node-title">Model Serving &amp; Routing</text>
-    <text x="54" y="44" class="node-desc">vLLM / TensorRT-LLM • Dynamic MoE • Speculative Exec</text>
-  </g>
+  <line x1="420" y1="199" x2="420" y2="235" stroke="url(#pipe-2)" stroke-width="2.5" marker-end="url(#m-violet)" />
+  <circle cx="420" cy="217" r="3" fill="#8B5CF6" />
 
-  <!-- NODE 4: Autonomous Agent Runtime (Outer Container) -->
-  <g transform="translate(70, 304)">
-    <!-- Container Outline -->
-    <rect width="660" height="138" rx="14" fill="#020617" fill-opacity="0.75" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="6 6" />
+  <line x1="420" y1="299" x2="420" y2="335" stroke="url(#pipe-3)" stroke-width="2.5" marker-end="url(#m-indigo)" />
+  <circle cx="420" cy="317" r="3" fill="#6366F1" />
+
+  <line x1="420" y1="479" x2="420" y2="515" stroke="url(#pipe-4)" stroke-width="2.5" marker-end="url(#m-emerald)" />
+  <circle cx="420" cy="497" r="3" fill="#10B981" />
+
+  <!-- ==================== TIER 1: AI GATEWAY & INGRESS ==================== -->
+  <g transform="translate(200, 35)">
+    <rect width="440" height="64" rx="12" fill="url(#glass-card-bg)" stroke="url(#grad-border-ingress)" stroke-width="1.6" filter="url(#glow-ingress)" />
+    <!-- Glass Specular Top Highlight -->
+    <line x1="12" y1="1" x2="428" y2="1" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round" />
     
-    <!-- Header Tag -->
-    <rect x="235" y="-12" width="190" height="24" rx="12" fill="#1E1B4B" stroke="#6366F1" stroke-width="1" />
-    <text x="330" y="4" text-anchor="middle" class="container-title">⚡ AGENT RUNTIME CORE</text>
+    <!-- Vector Icon Badge: Network Globe & Orbit -->
+    <rect x="16" y="14" width="36" height="36" rx="9" fill="#1E1B4B" stroke="#6366F1" stroke-width="1.2" />
+    <circle cx="34" cy="32" r="10" stroke="#818CF8" stroke-width="1.3" fill="none" />
+    <ellipse cx="34" cy="32" rx="4" ry="10" stroke="#818CF8" stroke-width="1.1" fill="none" />
+    <line x1="24" y1="32" x2="44" y2="32" stroke="#818CF8" stroke-width="1.1" />
+    <circle cx="39" cy="27" r="2" fill="#38BDF8" />
 
-    <!-- Left Child: Tools -->
-    <g transform="translate(30, 32)">
-      <rect width="270" height="78" rx="10" fill="url(#card-grad)" stroke="#06B6D4" stroke-width="1.2" />
-      <circle cx="28" cy="39" r="14" fill="#083344" stroke="#06B6D4" stroke-width="1" />
-      <text x="28" y="44" text-anchor="middle" font-size="14">🛠️</text>
-      <text x="52" y="34" class="node-title">Tool &amp; Action Execution</text>
-      <text x="52" y="52" class="node-desc">Sandboxed Code Execution</text>
-      <text x="52" y="67" class="node-desc">API Connectors • File I/O Workflows</text>
+    <!-- Content -->
+    <text x="64" y="32" class="node-title">AI Gateway &amp; Ingress Orchestrator</text>
+    <text x="64" y="49" class="node-sub">Dynamic Semantic Routing • Global Rate Limiting • Load Balancing</text>
+
+    <!-- Status Chip -->
+    <rect x="344" y="20" width="82" height="24" rx="12" fill="#082F49" stroke="#0284C7" stroke-width="1" />
+    <circle cx="357" cy="32" r="3" fill="#38BDF8" />
+    <text x="388" y="35.5" text-anchor="middle" class="pill-badge" fill="#38BDF8">INGRESS</text>
+  </g>
+
+  <!-- ==================== TIER 2: IDENTITY, SECURITY & GUARDRAILS ==================== -->
+  <g transform="translate(200, 135)">
+    <rect width="440" height="64" rx="12" fill="url(#glass-card-bg)" stroke="url(#grad-border-security)" stroke-width="1.6" />
+    <!-- Glass Specular Top Highlight -->
+    <line x1="12" y1="1" x2="428" y2="1" stroke="#FFFFFF" stroke-opacity="0.18" stroke-linecap="round" />
+
+    <!-- Vector Icon Badge: Security Shield -->
+    <rect x="16" y="14" width="36" height="36" rx="9" fill="#082F49" stroke="#06B6D4" stroke-width="1.2" />
+    <path d="M 34 21 L 24 25.5 L 24 32 C 24 38 28.5 42 34 43.5 C 39.5 42 44 38 44 32 L 44 25.5 Z" fill="#0369A1" opacity="0.4" />
+    <path d="M 34 23 L 26 26.5 L 26 32 C 26 36.5 29.5 40 34 41.5 C 38.5 40 42 36.5 42 32 L 42 26.5 Z" stroke="#38BDF8" stroke-width="1.5" fill="none" />
+    <circle cx="34" cy="31" r="2" fill="#22D3EE" />
+
+    <!-- Content -->
+    <text x="64" y="32" class="node-title">Identity, Security &amp; Guardrails</text>
+    <text x="64" y="49" class="node-sub">Mutual TLS • Policy Enforcement • Prompt Armor &amp; Jailbreak Defense</text>
+
+    <!-- Status Chip -->
+    <rect x="336" y="20" width="90" height="24" rx="12" fill="#042F2E" stroke="#0D9488" stroke-width="1" />
+    <circle cx="349" cy="32" r="3" fill="#2DD4BF" />
+    <text x="385" y="35.5" text-anchor="middle" class="pill-badge" fill="#2DD4BF">ZERO-TRUST</text>
+  </g>
+
+  <!-- ==================== TIER 3: MODEL SERVING & ROUTING ==================== -->
+  <g transform="translate(200, 235)">
+    <rect width="440" height="64" rx="12" fill="url(#glass-card-bg)" stroke="url(#grad-border-serving)" stroke-width="1.6" />
+    <!-- Glass Specular Top Highlight -->
+    <line x1="12" y1="1" x2="428" y2="1" stroke="#FFFFFF" stroke-opacity="0.18" stroke-linecap="round" />
+
+    <!-- Vector Icon Badge: Neural Compute Lightning / Engine -->
+    <rect x="16" y="14" width="36" height="36" rx="9" fill="#2E1065" stroke="#8B5CF6" stroke-width="1.2" />
+    <path d="M 36 21 L 27 32 L 33 32 L 32 43 L 41 31 L 35 31 Z" fill="#C084FC" />
+
+    <!-- Content -->
+    <text x="64" y="32" class="node-title">Model Serving &amp; Inference Engine</text>
+    <text x="64" y="49" class="node-sub">vLLM / TensorRT-LLM • Dynamic MoE Routing • Speculative Decoding</text>
+
+    <!-- Status Chip -->
+    <rect x="330" y="20" width="96" height="24" rx="12" fill="#3B0764" stroke="#7E22CE" stroke-width="1" />
+    <circle cx="343" cy="32" r="3" fill="#C084FC" />
+    <text x="382" y="35.5" text-anchor="middle" class="pill-badge" fill="#E879F9">vLLM · MoE</text>
+  </g>
+
+  <!-- ==================== TIER 4: AGENT RUNTIME CORE CONTAINER ==================== -->
+  <g transform="translate(45, 335)">
+    <!-- Container Outline with Tech Corner Accents -->
+    <rect width="750" height="144" rx="16" fill="#050812" fill-opacity="0.88" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="6 5" />
+    
+    <!-- Cyber Tech Corner Brackets -->
+    <path d="M 1 20 L 1 1 L 20 1" stroke="#06B6D4" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 749 20 L 749 1 L 730 1" stroke="#C084FC" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 1 124 L 1 143 L 20 143" stroke="#06B6D4" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 749 124 L 749 143 L 730 143" stroke="#10B981" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+    <!-- Top Centered Floating Badge -->
+    <g transform="translate(265, -13)">
+      <rect width="220" height="26" rx="13" fill="#1E1B4B" stroke="#6366F1" stroke-width="1.3" filter="url(#glow-badge)" />
+      <circle cx="20" cy="13" r="4" fill="#38BDF8" />
+      <text x="120" y="17" text-anchor="middle" class="core-hdr">AGENT RUNTIME CORE</text>
     </g>
 
-    <!-- Bidirectional Connection Between Tools & Memory -->
-    <line x1="305" y1="71" x2="355" y2="71" stroke="#818CF8" stroke-width="1.8" stroke-dasharray="3 3" />
-    <line x1="312" y1="71" x2="348" y2="71" stroke="#818CF8" stroke-width="1.8" marker-start="url(#arrow-sync-left)" marker-end="url(#arrow-sync-right)" />
+    <!-- Sub-Node A: Tool & Action Execution -->
+    <g transform="translate(24, 25)">
+      <rect width="324" height="94" rx="11" fill="url(#glass-card-bg)" stroke="#06B6D4" stroke-width="1.4" />
+      <line x1="8" y1="1" x2="316" y2="1" stroke="#FFFFFF" stroke-opacity="0.15" stroke-linecap="round" />
+      
+      <!-- Terminal / Tool Icon -->
+      <rect x="14" y="16" width="36" height="36" rx="8" fill="#083344" stroke="#06B6D4" stroke-width="1.1" />
+      <path d="M 23 28 L 28 34 L 23 40" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <line x1="31" y1="40" x2="41" y2="40" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" />
 
-    <!-- Right Child: Memory -->
-    <g transform="translate(360, 32)">
-      <rect width="270" height="78" rx="10" fill="url(#card-grad)" stroke="#EC4899" stroke-width="1.2" />
-      <circle cx="28" cy="39" r="14" fill="#500724" stroke="#EC4899" stroke-width="1" />
-      <text x="28" y="44" text-anchor="middle" font-size="14">🧠</text>
-      <text x="52" y="34" class="node-title">Dynamic Memory Engine</text>
-      <text x="52" y="52" class="node-desc">Vector Embeddings &amp; RAG</text>
-      <text x="52" y="67" class="node-desc">Short/Long-Term Episodic Memory</text>
+      <text x="60" y="32" class="node-title" font-size="14">Tool &amp; Action Execution</text>
+      <text x="60" y="49" class="node-sub" font-size="11">Sandboxed Code Execution Engine</text>
+      <text x="60" y="66" class="node-sub" font-size="11">REST / GraphQL Connectors • File I/O Workflows</text>
+      
+      <!-- Pill Badges -->
+      <rect x="60" y="73" width="76" height="15" rx="7.5" fill="#164E63" stroke="#0891B2" stroke-width="0.8" />
+      <text x="98" y="84" text-anchor="middle" class="tech-spec" fill="#67E8F9">SANDBOXED</text>
+      <rect x="142" y="73" width="70" height="15" rx="7.5" fill="#1E293B" stroke="#475569" stroke-width="0.8" />
+      <text x="177" y="84" text-anchor="middle" class="tech-spec" fill="#CBD5E1">WASM / OS</text>
+    </g>
+
+    <!-- Bi-Directional High-Speed Data Bus Interconnect -->
+    <g transform="translate(348, 72)">
+      <line x1="0" y1="0" x2="54" y2="0" stroke="url(#pipe-1)" stroke-width="2.8" stroke-dasharray="3 3" />
+      <line x1="6" y1="0" x2="48" y2="0" stroke="url(#pipe-1)" stroke-width="2.8" marker-start="url(#m-sync-l)" marker-end="url(#m-sync-r)" />
+      <circle cx="27" cy="0" r="10" fill="#0B0F19" stroke="#6366F1" stroke-width="1.2" />
+      <text x="27" y="3.5" text-anchor="middle" font-family="monospace" font-size="8.5" font-weight="800" fill="#A5B4FC">SYNC</text>
+    </g>
+
+    <!-- Sub-Node B: Dynamic Memory Engine -->
+    <g transform="translate(402, 25)">
+      <rect width="324" height="94" rx="11" fill="url(#glass-card-bg)" stroke="#C084FC" stroke-width="1.4" />
+      <line x1="8" y1="1" x2="316" y2="1" stroke="#FFFFFF" stroke-opacity="0.15" stroke-linecap="round" />
+
+      <!-- Synapse / Brain Memory Icon -->
+      <rect x="14" y="16" width="36" height="36" rx="8" fill="#3B0764" stroke="#8B5CF6" stroke-width="1.1" />
+      <circle cx="32" cy="34" r="8" stroke="#C084FC" stroke-width="1.5" fill="#581C87" opacity="0.6" />
+      <circle cx="32" cy="34" r="3.5" fill="#F0ABFC" />
+      <circle cx="24" cy="27" r="1.8" fill="#E879F9" />
+      <circle cx="40" cy="27" r="1.8" fill="#E879F9" />
+      <circle cx="32" cy="45" r="1.8" fill="#E879F9" />
+
+      <text x="60" y="32" class="node-title" font-size="14">Dynamic Memory Engine</text>
+      <text x="60" y="49" class="node-sub" font-size="11">Vector Embeddings &amp; Hybrid RAG</text>
+      <text x="60" y="66" class="node-sub" font-size="11">Short / Long-Term Episodic Memory Graph</text>
+      
+      <!-- Pill Badges -->
+      <rect x="60" y="73" width="76" height="15" rx="7.5" fill="#3B0764" stroke="#7E22CE" stroke-width="0.8" />
+      <text x="98" y="84" text-anchor="middle" class="tech-spec" fill="#F0ABFC">VECTOR RAG</text>
+      <rect x="142" y="73" width="70" height="15" rx="7.5" fill="#1E293B" stroke="#475569" stroke-width="0.8" />
+      <text x="177" y="84" text-anchor="middle" class="tech-spec" fill="#CBD5E1">EPISODIC</text>
     </g>
   </g>
 
-  <!-- NODE 5: Verification & Evaluation -->
-  <g transform="translate(200, 480)">
-    <rect width="400" height="64" rx="10" fill="url(#card-grad)" stroke="#10B981" stroke-width="1.5" filter="url(#glow-emerald)" />
-    <circle cx="32" cy="32" r="15" fill="#022C22" stroke="#10B981" stroke-width="1" />
-    <text x="32" y="38" text-anchor="middle" font-size="15">✅</text>
-    <text x="58" y="29" class="node-title">Verification, Guardrails &amp; Evaluation</text>
-    <text x="58" y="48" class="node-desc">Output Integrity • Autonomous Self-Correction • Regression Evals</text>
+  <!-- ==================== TIER 5: VERIFICATION, GUARDRAILS & EVALUATION ==================== -->
+  <g transform="translate(180, 515)">
+    <rect width="480" height="66" rx="12" fill="url(#glass-card-bg)" stroke="url(#grad-border-eval)" stroke-width="1.8" filter="url(#glow-eval)" />
+    <!-- Glass Specular Top Highlight -->
+    <line x1="12" y1="1" x2="468" y2="1" stroke="#FFFFFF" stroke-opacity="0.25" stroke-linecap="round" />
+
+    <!-- Vector Icon Badge: Verified Shield & Checkmark -->
+    <rect x="18" y="15" width="36" height="36" rx="9" fill="#022C22" stroke="#10B981" stroke-width="1.3" />
+    <path d="M 28 33 L 33 38 L 44 26" stroke="#34D399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Content -->
+    <text x="68" y="33" class="node-title">Verification, Guardrails &amp; Evaluation</text>
+    <text x="68" y="51" class="node-sub">Output Integrity Verification • Autonomous Self-Correction • Regression Evals</text>
+
+    <!-- Status Chip -->
+    <rect x="375" y="21" width="88" height="24" rx="12" fill="#064E3B" stroke="#059669" stroke-width="1" />
+    <circle cx="388" cy="33" r="3" fill="#6EE7B7" />
+    <text x="423" y="36.5" text-anchor="middle" class="pill-badge" fill="#6EE7B7">VERIFIED</text>
   </g>
 
 </svg>

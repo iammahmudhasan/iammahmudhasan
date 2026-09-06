@@ -10,7 +10,7 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Location-Bangladesh%20🇧🇩-2563EB?style=flat-square&logo=google-maps&logoColor=white" alt="Location" /></a>
+    <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Location-Bangladesh-2563EB?style=flat-square&logo=google-maps&logoColor=white" alt="Location" /></a>
     <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Role-Founder%20%40%20Craftly-4F46E5?style=flat-square&logo=rocket&logoColor=white" alt="Role" /></a>
     <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Focus-Agentic%20AI%20%7C%20AI%20Systems-06B6D4?style=flat-square&logo=target&logoColor=white" alt="Focus" /></a>
     <a href="https://linkedin.com/in/iammahmudhasan"><img src="https://img.shields.io/badge/Network-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -20,7 +20,7 @@
 
 ---
 
-###  Executive Summary
+### Executive Summary
 
 I am an **AI Engineer and Founder** based in Bangladesh, dedicated to engineering frontier-grade intelligence systems from the ground up. 
 
@@ -28,15 +28,15 @@ My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, 
 
 ---
 
-###  What I'm Building
+### What I'm Building
 
-#### 🤖 [Craftly](https://github.com/iammahmudhasan)
+#### [Craftly](https://github.com/iammahmudhasan)
 *An AI-focused technology company building intelligent infrastructure and next-generation software building systems.*
 
 * **Craftly Robot**: An autonomous agentic AI system engineered to transcend simple conversational chat, autonomously understanding codebases, executing complex multi-step development tasks, and verifying output integrity.
 * **Craftly Workspace**: An internal enterprise operations platform centered around evidence-based workflows, verifiable identity & access governance, hierarchical task management, and seamless human-agent collaboration.
 
-####  [Aeitron](https://github.com/iammahmudhasan)
+#### [Aeitron](https://github.com/iammahmudhasan)
 *A frontier intelligence research and development project focused on agentic autonomy and cyber defense.*
 
 * **Autonomous Reasoning & Coding**: Architecting systems that ingest code repositories, plan architectural refactors, implement changes, and self-heal via continuous test & verification loops.
@@ -44,7 +44,7 @@ My work sits at the intersection of **Large Language Models (LLMs), Agentic AI, 
 
 ---
 
-###  How I Think About AI Systems
+### How I Think About AI Systems
 
 I approach machine learning from **first principles**: mastering both the foundational mathematics and the distributed software engineering required to run scalable, reliable systems.
 
@@ -54,7 +54,7 @@ I approach machine learning from **first principles**: mastering both the founda
 
 ---
 
-###  Core Research & Engineering Pillars
+### Core Research & Engineering Pillars
 
 | Area | Focus Topics |
 | :--- | :--- |
@@ -65,7 +65,7 @@ I approach machine learning from **first principles**: mastering both the founda
 
 ---
 
-###  Architectural Blueprint
+### Architectural Blueprint
 
 A high-level blueprint of the agent platform ecosystem I actively research and construct:
 
@@ -137,7 +137,7 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
 ---
 
-###  Analytics
+### Analytics
 
 <div align="center">
 
