@@ -115,7 +115,7 @@ A high-level blueprint of the agent platform ecosystem I actively research and c
 
   <!-- 1. Contribution Graph -->
   <a href="https://github.com/iammahmudhasan">
-    <img src="https://github-readme-activity-graph-lake.vercel.app/graph?username=iammahmudhasan&theme=react-dark" alt="Mahmud Hasan's Contribution Graph" width="98%" />
+    <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=iammahmudhasan&theme=react-dark" alt="Mahmud Hasan's Contribution Graph" width="98%" />
   </a>
 
   <br/><br/>
