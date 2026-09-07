@@ -47,6 +47,15 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ---
 
+### Long-Term Vision & Mission
+
+> **"Build. Break. Understand. Rebuild."**
+
+* **Frontier Engineering**: Advance beyond superficial model utilization to contribute meaningfully to foundational AI research and resilient agentic infrastructure.
+* **Building from Home (Bangladesh)**: Proving that ambitious, globally competitive deep tech can be conceived, engineered, and scaled locally to inspire the next generation of engineers and researchers.
+
+---
+
 ### Core Research & Engineering Pillars
 
 | Area | Focus Topics |
@@ -134,15 +143,6 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
   </p>
 
 </div>
-
----
-
-### Long-Term Vision & Mission
-
-> **"Build. Break. Understand. Rebuild."**
-
-* **Frontier Engineering**: Advance beyond superficial model utilization to contribute meaningfully to foundational AI research and resilient agentic infrastructure.
-* **Building from Home (Bangladesh)**: Proving that ambitious, globally competitive deep tech can be conceived, engineered, and scaled locally to inspire the next generation of engineers and researchers.
 
 ---
 
