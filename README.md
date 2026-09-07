@@ -12,7 +12,7 @@
   <p align="center">
     <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Location-Bangladesh-2563EB?style=flat-square&logo=google-maps&logoColor=white" alt="Location" /></a>
     <a href="https://craftlyrobot.com" target="_blank"><img src="https://img.shields.io/badge/Role-COO%20%40%20Craftly-4F46E5?style=flat-square&logo=rocket&logoColor=white" alt="Role" /></a>
-    <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Focus-Agentic%20AI%20%7C%20AI%20Systems-06B6D4?style=flat-square&logo=target&logoColor=white" alt="Focus" /></a>
+    <a href="https://aeitron.com" target="_blank"><img src="https://img.shields.io/badge/Role-Co--founder%20%26%20CEO%20%40%20Aeitron%20AI-06B6D4?style=flat-square&logo=rocket&logoColor=white" alt="Role" /></a>
     <a href="https://linkedin.com/in/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/Network-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   </p>
 
