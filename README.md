@@ -62,40 +62,40 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ### Tech Stack & Tooling
 
-#### 💻 Systems & Programming Languages
+#### 🧠 Artificial Intelligence & Machine Learning
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,rust,ts,bash" alt="Systems & Programming Languages" />
+  <img src="assets/icons/ai-ml.svg" height="48" alt="Artificial Intelligence & Machine Learning" />
 </p>
 
-#### 🤖 AI, Machine Learning & Frameworks
+#### ⚡ LLM Inference & Optimization
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=pytorch,fastapi,flutter,nodejs" alt="AI & Frameworks" />
+  <img src="assets/icons/llm-inference.svg" height="48" alt="LLM Inference & Optimization" />
 </p>
 
-#### ☁️ Cloud Platforms, Containers & DevOps
+#### 🚀 High-Performance Systems & Backend
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,aws,gcp" alt="Cloud & DevOps" />
+  <img src="https://skillicons.dev/icons?i=rust,fastapi,nodejs,ts,flutter" alt="High-Performance Systems & Backend" />
 </p>
 
-#### 🗄️ Databases, Tooling & Architecture
+#### 🏗️ Infrastructure, Distributed Systems & Storage
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,redis,git,github,vscode" alt="Databases, Tooling & Architecture" />
+  <img src="assets/icons/infrastructure.svg" height="48" alt="Infrastructure, Distributed Systems & Storage" />
 </p>
 
-#### ⚡ Frontier AI, LLM Inference & Autonomous Systems
+#### 📊 MLOps & Experiment Tracking
 
 <p align="center">
-  <img src="assets/icons/frontier-ai.svg" height="48" alt="Frontier AI & LLM Inference" />
+  <img src="assets/icons/mlops-tracking.svg" height="48" alt="MLOps & Experiment Tracking" />
 </p>
 
-#### 📊 MLOps, Orchestration & Workflows
+#### ☁️ AI Workflow, Automation & Cloud
 
 <p align="center">
-  <img src="assets/icons/mlops.svg" height="48" alt="MLOps & Workflows" />
+  <img src="assets/icons/workflow-cloud.svg" height="48" alt="AI Workflow, Automation & Cloud" />
 </p>
 
 ---
