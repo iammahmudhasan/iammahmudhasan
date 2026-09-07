@@ -62,37 +62,37 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ### Tech Stack & Tooling
 
-#### 🧠 Artificial Intelligence & Machine Learning
+#### Artificial Intelligence & Machine Learning
 
 <p align="center">
   <img src="assets/icons/ai-ml.svg" height="48" alt="Artificial Intelligence & Machine Learning" />
 </p>
 
-#### ⚡ LLM Inference & Optimization
+#### LLM Inference & Optimization
 
 <p align="center">
   <img src="assets/icons/llm-inference.svg" height="48" alt="LLM Inference & Optimization" />
 </p>
 
-#### 🚀 High-Performance Systems & Backend
+#### High-Performance Systems & Backend
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=rust,fastapi,nodejs,ts,flutter" alt="High-Performance Systems & Backend" />
 </p>
 
-#### 🏗️ Infrastructure, Distributed Systems & Storage
+#### Infrastructure, Distributed Systems & Storage
 
 <p align="center">
   <img src="assets/icons/infrastructure.svg" height="48" alt="Infrastructure, Distributed Systems & Storage" />
 </p>
 
-#### 📊 MLOps & Experiment Tracking
+#### MLOps & Experiment Tracking
 
 <p align="center">
   <img src="assets/icons/mlops-tracking.svg" height="48" alt="MLOps & Experiment Tracking" />
 </p>
 
-#### ☁️ AI Workflow, Automation & Cloud
+#### AI Workflow, Automation & Cloud
 
 <p align="center">
   <img src="assets/icons/workflow-cloud.svg" height="48" alt="AI Workflow, Automation & Cloud" />
