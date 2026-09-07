@@ -62,63 +62,31 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ### Tech Stack & Tooling
 
-<p align="left">
-  <strong>Artificial Intelligence & Machine Learning</strong><br/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="CUDA" />
-  <img src="https://img.shields.io/badge/RAG-4F46E5?style=flat-square" alt="RAG" />
-  <img src="https://img.shields.io/badge/Vector_DBs-0ea5e9?style=flat-square" alt="Vector DBs" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" />
-  <img src="https://img.shields.io/badge/LlamaIndex-7C3AED?style=flat-square" alt="LlamaIndex" />
-  <img src="https://img.shields.io/badge/AutoGen-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="AutoGen" />
-  <img src="https://img.shields.io/badge/CrewAI-FF4B4B?style=flat-square" alt="CrewAI" />
+#### 💻 Systems & Programming Languages
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=go,rust,py,ts,js,cpp,c,java,bash" alt="Systems & Languages" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://skillicons.dev/icons?i=html,css" alt="HTML & CSS" />
 </p>
 
-<p align="left">
-  <strong>LLM Inference & Optimization</strong><br/>
-  <img src="https://img.shields.io/badge/DeepSpeed-000000?style=flat-square&logo=microsoft&logoColor=white" alt="DeepSpeed" />
-  <img src="https://img.shields.io/badge/vLLM-3B82F6?style=flat-square" alt="vLLM" />
-  <img src="https://img.shields.io/badge/TensorRT--LLM-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="TensorRT-LLM" />
-  <img src="https://img.shields.io/badge/Triton_Server-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="Triton Inference Server" />
-  <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white" alt="ONNX" />
+#### 🤖 AI, Machine Learning & Agent Frameworks
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,fastapi,nodejs,react,nextjs,tailwind" alt="AI, ML & Frameworks" />
 </p>
 
-<p align="left">
-  <strong>High-Performance Systems & Backend</strong><br/>
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
+#### ☁️ Cloud Platforms, Containers & DevOps
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=gcp,aws,docker,kubernetes,linux,githubactions,cloudflare,vercel,firebase" alt="Cloud & DevOps" />
 </p>
 
-<p align="left">
-  <strong>Infrastructure, Distributed Systems & Storage</strong><br/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/MinIO%20%2F%20S3-C72C48?style=flat-square&logo=minio&logoColor=white" alt="MinIO / S3" />
-</p>
+#### 🗄️ Databases, Tooling & Architecture
 
-<p align="left">
-  <strong>MLOps & Experiment Tracking</strong><br/>
-  <img src="https://img.shields.io/badge/Weights_%26_Biases-FFBE00?style=flat-square&logo=weightsandbiases&logoColor=black" alt="Weights & Biases (W&B)" />
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow" />
-  <img src="https://img.shields.io/badge/DVC-945DD6?style=flat-square&logo=dvc&logoColor=white" alt="DVC (Data Version Control)" />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,graphql,git,github,vscode,neovim,postman" alt="Databases, Tooling & Architecture" />
 </p>
-
-<p align="left">
-  <strong>AI Workflow, Automation & Cloud</strong><br/>
-  <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n" />
-  <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Apache Airflow" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white" alt="GCP" />
-  <img src="https://img.shields.io/badge/RunPod-673AB7?style=flat-square&logo=runpod&logoColor=white" alt="RunPod" />
-</p>
-
 
 ---
 
@@ -168,34 +136,24 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ---
 
-### Let's Connect
+## 🌐 Connect & Collaborate
 
-Feel free to reach out for collaborations on agentic systems, AI research, distributed infrastructure, or startup ventures.
+<p align="center">
+  <a href="https://github.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GITHUB" /></a>
+  <a href="https://g.dev/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/GOOGLE%20DEVELOPER-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="GOOGLE DEVELOPER" /></a>
+  <a href="https://skills.google" target="_blank"><img src="https://img.shields.io/badge/GOOGLE%20SKILLS-34A853?style=for-the-badge&logo=googlecloud&logoColor=white" alt="GOOGLE SKILLS" /></a>
+  <a href="https://linkedin.com/in/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LINKEDIN" /></a>
+  <a href="https://discord.com" target="_blank"><img src="https://img.shields.io/badge/DISCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="DISCORD" /></a>
+  <a href="https://x.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://facebook.com/iamahmudhasan" target="_blank"><img src="https://img.shields.io/badge/FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="FACEBOOK" /></a>
+</p>
 
-<div align="center">
+<p align="center">
+  <a href="mailto:mah5472651@gmail.com" target="_blank"><img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="EMAIL" /></a>
+</p>
 
-  <p align="center">
-    <a href="https://linkedin.com/in/iammahmudhasan" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-iammahmudhasan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    &nbsp;
-    <a href="https://x.com/iammahmudhasan" target="_blank">
-      <img src="https://img.shields.io/badge/X%20(Twitter)-@iammahmudhasan-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-    </a>
-    &nbsp;
-    <a href="https://instagram.com/iammahmudhasan" target="_blank">
-      <img src="https://img.shields.io/badge/Instagram-@iammahmudhasan-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-    </a>
-  </p>
+---
 
-  <p align="center">
-    <a href="https://facebook.com/iamahmudhasan" target="_blank">
-      <img src="https://img.shields.io/badge/Facebook-iamahmudhasan-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
-    </a>
-  </p>
-
-  <br/>
-
+<p align="center">
   <sub><i>"Don't just use the future. Build it."</i></sub>
-
-</div>
+</p>
