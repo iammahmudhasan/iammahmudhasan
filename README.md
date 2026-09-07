@@ -149,15 +149,15 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 ## Connect & Collaborate
 
 <p align="center">
-  <a href="https://github.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GITHUB" /></a>
-  <a href="https://linkedin.com/in/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LINKEDIN" /></a>
-  <a href="https://x.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-  <a href="https://instagram.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="INSTAGRAM" /></a>
-  <a href="https://facebook.com/iamahmudhasan" target="_blank"><img src="https://img.shields.io/badge/FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="FACEBOOK" /></a>
+  <a href="https://github.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" height="40" alt="GITHUB" /></a>
+  <a href="https://linkedin.com/in/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="40" alt="LINKEDIN" /></a>
+  <a href="https://x.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" height="40" alt="X" /></a>
+  <a href="https://instagram.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-E4405F?style=for-the-badge&logo=instagram&logoColor=white" height="40" alt="INSTAGRAM" /></a>
+  <a href="https://facebook.com/iamahmudhasan" target="_blank"><img src="https://img.shields.io/badge/FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white" height="40" alt="FACEBOOK" /></a>
 </p>
 
 <p align="center">
-  <a href="mailto:mah5472651@gmail.com" target="_blank"><img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="EMAIL" /></a>
+  <a href="mailto:mah5472651@gmail.com" target="_blank"><img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="40" alt="EMAIL" /></a>
 </p>
 
 ---
