@@ -89,31 +89,13 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 #### ⚡ Frontier AI, LLM Inference & Autonomous Systems
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA" />
-  <img src="https://img.shields.io/badge/RAG-4F46E5?style=for-the-badge" alt="RAG" />
-  <img src="https://img.shields.io/badge/Vector_DBs-0ea5e9?style=for-the-badge" alt="Vector DBs" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain" />
-  <img src="https://img.shields.io/badge/LlamaIndex-7C3AED?style=for-the-badge" alt="LlamaIndex" />
-  <img src="https://img.shields.io/badge/AutoGen-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="AutoGen" />
-  <img src="https://img.shields.io/badge/CrewAI-FF4B4B?style=for-the-badge" alt="CrewAI" />
-  <img src="https://img.shields.io/badge/DeepSpeed-000000?style=for-the-badge&logo=microsoft&logoColor=white" alt="DeepSpeed" />
-  <img src="https://img.shields.io/badge/vLLM-3B82F6?style=for-the-badge" alt="vLLM" />
-  <img src="https://img.shields.io/badge/TensorRT--LLM-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="TensorRT-LLM" />
-  <img src="https://img.shields.io/badge/Triton_Server-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Triton Inference Server" />
-  <img src="https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white" alt="ONNX" />
+  <img src="assets/icons/frontier-ai.svg" height="48" alt="Frontier AI & LLM Inference" />
 </p>
 
 #### 📊 MLOps, Orchestration & Workflows
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Weights_%26_Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black" alt="Weights & Biases" />
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow" />
-  <img src="https://img.shields.io/badge/DVC-945DD6?style=for-the-badge&logo=dvc&logoColor=white" alt="DVC" />
-  <img src="https://img.shields.io/badge/MinIO%20%2F%20S3-C72C48?style=for-the-badge&logo=minio&logoColor=white" alt="MinIO / S3" />
-  <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
-  <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Apache Airflow" />
-  <img src="https://img.shields.io/badge/RunPod-673AB7?style=for-the-badge&logo=runpod&logoColor=white" alt="RunPod" />
+  <img src="assets/icons/mlops.svg" height="48" alt="MLOps & Workflows" />
 </p>
 
 ---
