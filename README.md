@@ -51,10 +51,12 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 | Area | Focus Topics |
 | :--- | :--- |
-| **Large Language Models** | Transformers, FlashAttention, Tokenization, Pre-training, SFT / DPO, Model Distillation, Mixture of Experts (MoE) |
-| **Agentic AI** | Multi-Agent Orchestration, Task Graphs, Dynamic Memory, Verification Loops, Autonomous Code Synthesis |
-| **AI Systems & Infra** | Model Serving, Distributed Training (FSDP, DeepSpeed), GPU / CUDA Optimization, Data Pipelines |
-| **Cybersecurity × AI** | Automated Threat Modeling, Autonomous Vulnerability Auditing, Defensive Agentic Intelligence |
+| **Machine Learning & Deep Learning** | Neural Networks, Optimization, Representation Learning, Transformers, Attention, Self Supervised Learning, Reinforcement Learning, Natural Language Processing, Embeddings, Semantic Search |
+| **Large Language Models** | Transformer Architecture, Tokenization, Pre-training, SFT, DPO, RLHF, MoE, Distillation, Quantization, Long Context Models |
+| **Agentic AI & Autonomous Systems** | Multi Agent Orchestration, Planning & Reasoning, Task Graphs, Tool Use, Dynamic Memory, Agent Coordination, Verification Loops, Autonomous Code Generation |
+| **AI Systems & Infrastructure** | Distributed Training, FSDP, DeepSpeed, Model Parallelism, Model Serving, GPU/CUDA Optimization, Inference Optimization, Data Pipelines |
+| **AI Engineering & Evaluation** | RAG, Context Engineering, AI Memory, Model Evaluation, Benchmarking, Observability, Reliability, Guardrails, Red-Teaming, Production AI |
+| **Cybersecurity × AI** | Threat Modeling, Vulnerability Discovery, Secure Code Analysis, AI Assisted Security Research, Autonomous Security Agents, Defensive Intelligence |
 
 ---
 
