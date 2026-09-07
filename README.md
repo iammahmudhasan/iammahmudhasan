@@ -33,16 +33,17 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 ### What I'm Building
 
 #### [Craftly](https://craftlyrobot.com)
-*An AI-focused technology company building intelligent infrastructure and next-generation software building systems.*
+*An AI technology company building intelligent AI system, and AI native infrastructure redefining how people and organizations build, operate, and work with technology.*
 
-* **Craftly Robot**: An autonomous agentic AI system engineered to transcend simple conversational chat, autonomously understanding codebases, executing complex multi-step development tasks, and verifying output integrity.
-* **Craftly Workspace**: An internal enterprise operations platform centered around evidence-based workflows, verifiable identity & access governance, hierarchical task management, and seamless human-agent collaboration.
+* **Craftly Robot**: An agentic AI system built for every domain in the world. It understands complex codebases, and different kind of knowledge that solves real problems.
+* **Craftly Workspace**: An intelligent enterprise operations platform bringing structure, accountability, and automation to organizations through evidence based systems.
 
 #### [Aeitron AI](https://aeitron.com)
-*A frontier intelligence research and development project focused on agentic autonomy and cyber defense.*
+*An AI automation company helping businesses turn repetitive, complex, and time consuming operations into scalable, automated systems.*
 
-* **Autonomous Reasoning & Coding**: Architecting systems that ingest code repositories, plan architectural refactors, implement changes, and self-heal via continuous test & verification loops.
-* **Agentic Cybersecurity**: Engineering intelligent models that reason about complex software landscapes to proactively identify vulnerabilities and defend distributed infrastructure.
+* **AI Automation**: AI powered workflows connecting business processes, applications, data, and teams automating operational work and cutting down manual effort.
+* **Agentic Automation**: Intelligent AI agents that understand business context, make decisions, execute multi step workflows, and coordinate with other systems and agents.
+* **Custom AI Systems**: Tailored automation built with LLMs, AI agents, workflow orchestration, APIs, and modern AI infrastructure solving real business problems.
 
 ---
 
