@@ -146,7 +146,7 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ---
 
-## 🌐 Connect & Collaborate
+## Connect & Collaborate
 
 <p align="center">
   <a href="https://github.com/iammahmudhasan" target="_blank"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GITHUB" /></a>
