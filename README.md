@@ -132,14 +132,10 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
   <br/>
 
-  <!-- 2. Middle Row: Stats & Top Languages Side-by-Side (Black background, Cyan titles & icons) -->
+  <!-- 2. Middle Row: GitHub Statistics (Black background, Cyan titles & icons) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&custom_title=My+GitHub+Statistics&bg_color=000000&border_color=444444&title_color=00e5ff&icon_color=00e5ff&text_color=ffffff&ring_color=00e5ff" alt="My GitHub Statistics" height="150" />
-    </a>
-    &nbsp;
-    <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iammahmudhasan&layout=compact&custom_title=My+Programming+Languages&bg_color=000000&border_color=444444&title_color=00e5ff&text_color=ffffff" alt="My Programming Languages" height="150" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&custom_title=My+GitHub+Statistics&bg_color=000000&border_color=444444&title_color=00e5ff&icon_color=00e5ff&text_color=ffffff&ring_color=00e5ff" alt="My GitHub Statistics" height="165" />
     </a>
   </p>
 
