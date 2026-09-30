@@ -71,40 +71,40 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ### Tech Stack & Tooling
 
-#### Artificial Intelligence & Machine Learning
+<h4 align="center">Artificial Intelligence & Machine Learning</h4>
 
 <p align="center">
-  <img src="assets/icons/ai-ml.svg" height="48" alt="Artificial Intelligence & Machine Learning" />
+  <img src="assets/icons/ai-ml.svg" height="56" alt="Artificial Intelligence & Machine Learning" />
 </p>
 
-#### LLM Inference & Optimization
+<h4 align="center">LLM Inference & Optimization</h4>
 
 <p align="center">
-  <img src="assets/icons/llm-inference.svg" height="48" alt="LLM Inference & Optimization" />
+  <img src="assets/icons/llm-inference.svg" height="56" alt="LLM Inference & Optimization" />
 </p>
 
-#### High-Performance Systems & Backend
+<h4 align="center">High-Performance Systems & Backend</h4>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=rust,fastapi,nodejs,ts,flutter" alt="High-Performance Systems & Backend" />
+  <img src="https://skillicons.dev/icons?i=rust,fastapi,nodejs,ts,flutter" height="56" alt="High-Performance Systems & Backend" />
 </p>
 
-#### Infrastructure, Distributed Systems & Storage
+<h4 align="center">Infrastructure, Distributed Systems & Storage</h4>
 
 <p align="center">
-  <img src="assets/icons/infrastructure.svg" height="48" alt="Infrastructure, Distributed Systems & Storage" />
+  <img src="assets/icons/infrastructure.svg" height="56" alt="Infrastructure, Distributed Systems & Storage" />
 </p>
 
-#### MLOps & Experiment Tracking
+<h4 align="center">MLOps & Experiment Tracking</h4>
 
 <p align="center">
-  <img src="assets/icons/mlops-tracking.svg" height="48" alt="MLOps & Experiment Tracking" />
+  <img src="assets/icons/mlops-tracking.svg" height="56" alt="MLOps & Experiment Tracking" />
 </p>
 
-#### AI Workflow, Automation & Cloud
+<h4 align="center">AI Workflow, Automation & Cloud</h4>
 
 <p align="center">
-  <img src="assets/icons/workflow-cloud.svg" height="48" alt="AI Workflow, Automation & Cloud" />
+  <img src="assets/icons/workflow-cloud.svg" height="56" alt="AI Workflow, Automation & Cloud" />
 </p>
 
 ---
