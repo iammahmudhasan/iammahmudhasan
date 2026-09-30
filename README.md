@@ -152,6 +152,19 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ---
 
+### 🤖 Anthropic AI — Certified Developer
+
+| Certificate | Issuer | Verification |
+| :--- | :--- | :--- |
+| Claude Code in Action | Anthropic | [↗ View Credential](#) |
+| Claude with Google Vertex AI | Anthropic | [↗ View Credential](#) |
+| Claude 101 | Anthropic | ✅ Verified |
+| Claude Code 101 | Anthropic | ✅ Verified |
+| AI Fluency for Students | Anthropic × UCC × Ringling × HEA | ✅ Verified |
+| AI Fluency: Framework & Foundations | Anthropic × UCC × Ringling × HEA | ✅ Verified |
+
+---
+
 ## Connect & Collaborate
 
 <p align="center">
