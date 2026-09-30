@@ -152,16 +152,16 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ---
 
-### 🤖 Anthropic AI — Certified Developer
+### 📜 Licenses & Certifications
 
-| Certificate | Issuer | Verification |
-| :--- | :--- | :--- |
-| Claude Code in Action | Anthropic | [↗ View Credential](#) |
-| Claude with Google Vertex AI | Anthropic | [↗ View Credential](#) |
-| Claude 101 | Anthropic | ✅ Verified |
-| Claude Code 101 | Anthropic | ✅ Verified |
-| AI Fluency for Students | Anthropic × UCC × Ringling × HEA | ✅ Verified |
-| AI Fluency: Framework & Foundations | Anthropic × UCC × Ringling × HEA | ✅ Verified |
+| Certificate | Issuer | Credential ID | Verification |
+| :--- | :--- | :--- | :--- |
+| **Gemini Certified Educator** | Google for Education | `187234186` | [↗ View Credential](https://www.linkedin.com/in/iammahmudhasan/details/certifications/) |
+| **Building with the Claude API** | Anthropic | `t58vjj5sst8y` | [↗ View Credential](https://www.linkedin.com/in/iammahmudhasan/details/certifications/) |
+| **Claude Code in Action** | Anthropic | `xu53acqwhutx` | [↗ View Credential](https://www.linkedin.com/in/iammahmudhasan/details/certifications/) |
+| **Claude Code 101** | Anthropic | `8ofizp9qajew` | [↗ View Credential](https://www.linkedin.com/in/iammahmudhasan/details/certifications/) |
+| **AI Fluency: Framework & Foundations** | Anthropic | `ha8qabobbrgb` | [↗ View Credential](https://www.linkedin.com/in/iammahmudhasan/details/certifications/) |
+| **Claude 101** | Anthropic | `x9quurqyjwq4` | [↗ View Credential](https://www.linkedin.com/in/iammahmudhasan/details/certifications/) |
 
 ---
 
