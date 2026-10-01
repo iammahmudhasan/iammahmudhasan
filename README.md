@@ -59,7 +59,7 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 ### Core Research & Engineering Pillars
 
 <p align="center">
-  <img src="assets/research-pillars.svg" alt="Core Research & Engineering Pillars" width="100%" />
+  <img src="assets/ai-stack-3d.jpg" alt="3D Isometric AI Infrastructure & Architecture Stack" width="100%" />
 </p>
 
 ---
