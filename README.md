@@ -58,14 +58,9 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ### Core Research & Engineering Pillars
 
-| Area | Focus Topics |
-| :--- | :--- |
-| **Machine Learning & Deep Learning** | Neural Networks, Optimization, Representation Learning, Transformers, Attention, Self Supervised Learning, Reinforcement Learning, Natural Language Processing, Embeddings, Semantic Search |
-| **Large Language Models** | Transformer Architecture, Tokenization, Pre-training, SFT, DPO, RLHF, MoE, Distillation, Quantization, Long Context Models |
-| **Agentic AI & Autonomous Systems** | Multi Agent Orchestration, Planning & Reasoning, Task Graphs, Tool Use, Dynamic Memory, Agent Coordination, Verification Loops, Autonomous Code Generation |
-| **AI Systems & Infrastructure** | Distributed Training, FSDP, DeepSpeed, Model Parallelism, Model Serving, GPU/CUDA Optimization, Inference Optimization, Data Pipelines |
-| **AI Engineering & Evaluation** | RAG, Context Engineering, AI Memory, Model Evaluation, Benchmarking, Observability, Reliability, Guardrails, Red-Teaming, Production AI |
-| **Cybersecurity × AI** | Threat Modeling, Vulnerability Discovery, Secure Code Analysis, AI Assisted Security Research, Autonomous Security Agents, Defensive Intelligence |
+<p align="center">
+  <img src="assets/research-pillars.svg" alt="Core Research & Engineering Pillars" width="100%" />
+</p>
 
 ---
 
