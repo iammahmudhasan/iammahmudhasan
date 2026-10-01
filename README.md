@@ -152,7 +152,7 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ---
 
-### 📜 Licenses & Certifications
+### Licenses & Certifications
 
 <div align="center">
 
