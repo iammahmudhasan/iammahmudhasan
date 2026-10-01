@@ -1,374 +1,531 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="700" viewBox="0 0 1260 700">
 
     <style>
       * { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
       .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
       
-      .bg { fill: #00000a; }
+      .bg { fill: #000008; }
       
       /* Glowing animations */
       @keyframes pulse-cyan {
-        0%, 100% { opacity: 0.85; }
-        50% { opacity: 0.35; }
+        0%, 100% { opacity: 0.9; filter: drop-shadow(0 0 3px #00e5ff); }
+        50% { opacity: 0.35; filter: drop-shadow(0 0 1px #00e5ff); }
+      }
+      @keyframes pulse-green {
+        0%, 100% { opacity: 0.9; filter: drop-shadow(0 0 3px #10b981); }
+        50% { opacity: 0.35; filter: drop-shadow(0 0 1px #10b981); }
       }
       @keyframes flow-up {
-        0% { stroke-dashoffset: 40; }
+        0% { stroke-dashoffset: 48; }
         100% { stroke-dashoffset: 0; }
+      }
+      @keyframes flow-right {
+        0% { stroke-dashoffset: 32; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes radar-pulse {
+        0%, 100% { fill-opacity: 0.45; }
+        50% { fill-opacity: 0.25; }
       }
       
       .pulse-c { animation: pulse-cyan 3s ease-in-out infinite; }
-      .flow-beam {
-        stroke-dasharray: 6, 8;
-        animation: flow-up 2.2s linear infinite;
+      .pulse-g { animation: pulse-green 3s ease-in-out infinite; }
+      .radar-area { animation: radar-pulse 4s ease-in-out infinite; }
+      
+      .flow-beam-vertical {
+        stroke-dasharray: 6, 10;
+        animation: flow-up 2.4s linear infinite;
+      }
+      .flow-beam-horizontal {
+        stroke-dasharray: 4, 8;
+        animation: flow-right 2s linear infinite;
       }
       
-      .card-rect {
-        transition: all 0.2s ease;
+      .card-bg {
+        transition: all 0.25s ease;
+      }
+      .card-group:hover .card-bg {
+        fill-opacity: 1;
+        stroke-opacity: 0.7;
       }
     </style>
     
 
     <defs>
-      <!-- Gradient for Radar Chart -->
-      <linearGradient id="radar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.5" />
-        <stop offset="100%" stop-color="#a855f7" stop-opacity="0.25" />
+      <!-- Background Ambient Glows -->
+      <radialGradient id="ambient-cyan" cx="28%" cy="50%" r="45%">
+        <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.06" />
+        <stop offset="100%" stop-color="#000008" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="ambient-purple" cx="80%" cy="30%" r="50%">
+        <stop offset="0%" stop-color="#a855f7" stop-opacity="0.05" />
+        <stop offset="100%" stop-color="#000008" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Radar Gradients -->
+      <linearGradient id="radar-fill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.6" />
+        <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.3" />
+        <stop offset="100%" stop-color="#818cf8" stop-opacity="0.15" />
       </linearGradient>
-      
-      <!-- Platform Gradients -->
+
+      <!-- Platform Glass Gradients (L5 to L1) -->
       <linearGradient id="plat-top-5" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.24" />
-        <stop offset="100%" stop-color="#0369a1" stop-opacity="0.4" />
+        <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.28" />
+        <stop offset="70%" stop-color="#0284c7" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#082f49" stop-opacity="0.35" />
       </linearGradient>
       <linearGradient id="plat-top-4" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#c084fc" stop-opacity="0.22" />
-        <stop offset="100%" stop-color="#581c87" stop-opacity="0.38" />
+        <stop offset="0%" stop-color="#c084fc" stop-opacity="0.25" />
+        <stop offset="70%" stop-color="#7e22ce" stop-opacity="0.14" />
+        <stop offset="100%" stop-color="#3b0764" stop-opacity="0.35" />
       </linearGradient>
       <linearGradient id="plat-top-3" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.20" />
-        <stop offset="100%" stop-color="#0369a1" stop-opacity="0.35" />
+        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.24" />
+        <stop offset="70%" stop-color="#0369a1" stop-opacity="0.14" />
+        <stop offset="100%" stop-color="#0c4a6e" stop-opacity="0.35" />
       </linearGradient>
       <linearGradient id="plat-top-2" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#10b981" stop-opacity="0.22" />
-        <stop offset="100%" stop-color="#064e3b" stop-opacity="0.38" />
+        <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
+        <stop offset="70%" stop-color="#047857" stop-opacity="0.14" />
+        <stop offset="100%" stop-color="#064e3b" stop-opacity="0.35" />
       </linearGradient>
       <linearGradient id="plat-top-1" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.22" />
-        <stop offset="100%" stop-color="#78350f" stop-opacity="0.38" />
+        <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
+        <stop offset="70%" stop-color="#b45309" stop-opacity="0.14" />
+        <stop offset="100%" stop-color="#451a03" stop-opacity="0.35" />
       </linearGradient>
 
-      <!-- Glow Filters -->
-      <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="3" result="blur" />
-        <feMerge>
-          <feMergeNode in="blur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
+      <!-- Specular Shading Gradients for 3D Cube Tops -->
+      <linearGradient id="cube-top-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#67e8f9" />
+        <stop offset="100%" stop-color="#00b4d8" />
+      </linearGradient>
+      <linearGradient id="cube-top-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#e9d5ff" />
+        <stop offset="100%" stop-color="#a855f7" />
+      </linearGradient>
+      <linearGradient id="cube-top-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#bae6fd" />
+        <stop offset="100%" stop-color="#0ea5e9" />
+      </linearGradient>
+      <linearGradient id="cube-top-green" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#a7f3d0" />
+        <stop offset="100%" stop-color="#10b981" />
+      </linearGradient>
+      <linearGradient id="cube-top-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#fde68a" />
+        <stop offset="100%" stop-color="#f59e0b" />
+      </linearGradient>
+
+      <!-- Card Background Vertical Gradient -->
+      <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#0f141c" stop-opacity="0.96" />
+        <stop offset="100%" stop-color="#080c12" stop-opacity="0.96" />
+      </linearGradient>
     </defs>
     
-<rect width="1200" height="680" class="bg" rx="14" stroke="#1f242c" stroke-width="1.5"/>
+<rect width="1260" height="700" class="bg" rx="14" stroke="#1f242c" stroke-width="1.5"/>
+<rect width="1260" height="700" fill="url(#ambient-cyan)" rx="14"/>
+<rect width="1260" height="700" fill="url(#ambient-purple)" rx="14"/>
 
-    <g transform="translate(24, 22)">
+    <g transform="translate(24, 20)">
       <!-- Window Controls -->
-      <circle cx="8" cy="8" r="4.5" fill="#f87171" opacity="0.8"/>
-      <circle cx="24" cy="8" r="4.5" fill="#fbbf24" opacity="0.8"/>
-      <circle cx="40" cy="8" r="4.5" fill="#34d399" opacity="0.8"/>
+      <circle cx="8" cy="8" r="4.5" fill="#f87171" opacity="0.85"/>
+      <circle cx="24" cy="8" r="4.5" fill="#fbbf24" opacity="0.85"/>
+      <circle cx="40" cy="8" r="4.5" fill="#34d399" opacity="0.85"/>
       
       <!-- System Architecture Title -->
-      <text x="64" y="12" fill="#f0f6fc" font-size="13" font-weight="700" letter-spacing="1">SYSTEM ARCHITECTURE // FULL-STACK AI &amp; AUTONOMOUS INFRASTRUCTURE</text>
+      <text x="64" y="12" fill="#f0f6fc" font-size="12.5" font-weight="700" letter-spacing="1.2">SYSTEM TOPOLOGY // FULL-STACK AI &amp; AUTONOMOUS INFRASTRUCTURE</text>
       
       <!-- Live Status Badges -->
-      <g transform="translate(845, -2)">
-        <rect x="0" y="0" width="135" height="22" rx="11" fill="#00e5ff" fill-opacity="0.12" stroke="#00e5ff" stroke-opacity="0.4" stroke-width="1"/>
+      <g transform="translate(865, -2)">
+        <rect x="0" y="0" width="165" height="22" rx="11" fill="#00e5ff" fill-opacity="0.10" stroke="#00e5ff" stroke-opacity="0.4" stroke-width="1"/>
         <circle cx="12" cy="11" r="3.5" fill="#00e5ff" class="pulse-c"/>
-        <text x="22" y="15" fill="#00e5ff" font-size="10" font-weight="700" class="mono" letter-spacing="0.8">ISOMETRIC 3D STACK</text>
+        <text x="22" y="15" fill="#00e5ff" font-size="10" font-weight="700" class="mono" letter-spacing="0.8">ISOMETRIC VIEW (30°)</text>
       </g>
-      <g transform="translate(995, -2)">
-        <rect x="0" y="0" width="155" height="22" rx="11" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
-        <circle cx="12" cy="11" r="3.5" fill="#10b981"/>
+      <g transform="translate(1045, -2)">
+        <rect x="0" y="0" width="165" height="22" rx="11" fill="#10b981" fill-opacity="0.10" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+        <circle cx="12" cy="11" r="3.5" fill="#10b981" class="pulse-g"/>
         <text x="22" y="15" fill="#10b981" font-size="10" font-weight="700" class="mono" letter-spacing="0.8">TOPOLOGY: OPTIMAL</text>
       </g>
       
-      <line x1="0" y1="28" x2="1152" y2="28" stroke="#1e232b" stroke-width="1"/>
+      <line x1="0" y1="28" x2="1212" y2="28" stroke="#1b212b" stroke-width="1"/>
     </g>
     
-<line x1="330.0" y1="430.0" x2="330.0" y2="29.8" stroke="#00e5ff" stroke-opacity="0.25" stroke-width="2.5"/>
-<line x1="330.0" y1="430.0" x2="330.0" y2="29.8" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam"/>
-<line x1="494.5" y1="525.0" x2="494.5" y2="124.8" stroke="#00e5ff" stroke-opacity="0.25" stroke-width="2.5"/>
-<line x1="494.5" y1="525.0" x2="494.5" y2="124.8" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam"/>
-<line x1="330.0" y1="620.0" x2="330.0" y2="219.8" stroke="#00e5ff" stroke-opacity="0.25" stroke-width="2.5"/>
-<line x1="330.0" y1="620.0" x2="330.0" y2="219.8" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam"/>
-<line x1="165.5" y1="525.0" x2="165.5" y2="124.8" stroke="#00e5ff" stroke-opacity="0.25" stroke-width="2.5"/>
-<line x1="165.5" y1="525.0" x2="165.5" y2="124.8" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam"/>
+<g class="ground-grid">
+<line x1="340.0" y1="388.5" x2="651.8" y2="568.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="340.0" y1="388.5" x2="28.2" y2="568.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="301.0" y1="411.0" x2="612.8" y2="591.0" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="379.0" y1="411.0" x2="67.2" y2="591.0" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="262.1" y1="433.5" x2="573.8" y2="613.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="417.9" y1="433.5" x2="106.2" y2="613.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="223.1" y1="456.0" x2="534.9" y2="636.0" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="456.9" y1="456.0" x2="145.1" y2="636.0" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="184.1" y1="478.5" x2="495.9" y2="658.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="495.9" y1="478.5" x2="184.1" y2="658.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="145.1" y1="501.0" x2="456.9" y2="681.0" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="534.9" y1="501.0" x2="223.1" y2="681.0" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="106.2" y1="523.5" x2="417.9" y2="703.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="573.8" y1="523.5" x2="262.1" y2="703.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="67.2" y1="546.0" x2="379.0" y2="726.0" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="612.8" y1="546.0" x2="301.0" y2="726.0" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="28.2" y1="568.5" x2="340.0" y2="748.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+<line x1="651.8" y1="568.5" x2="340.0" y2="748.5" stroke="#1f2937" stroke-opacity="0.35" stroke-width="0.6"/>
+</g>
+<line x1="340.0" y1="442.0" x2="340.0" y2="25.9" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="2.5"/>
+<line x1="340.0" y1="442.0" x2="340.0" y2="25.9" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.2" class="flow-beam-vertical"/>
+<line x1="509.7" y1="540.0" x2="509.7" y2="123.9" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="2.5"/>
+<line x1="509.7" y1="540.0" x2="509.7" y2="123.9" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.2" class="flow-beam-vertical"/>
+<line x1="340.0" y1="638.0" x2="340.0" y2="221.9" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="2.5"/>
+<line x1="340.0" y1="638.0" x2="340.0" y2="221.9" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.2" class="flow-beam-vertical"/>
+<line x1="170.3" y1="540.0" x2="170.3" y2="123.9" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="2.5"/>
+<line x1="170.3" y1="540.0" x2="170.3" y2="123.9" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.2" class="flow-beam-vertical"/>
 <g class="platform-tier">
-<polygon points="148.1,525.0 330.0,630.0 330.0,620.8 148.1,515.8" fill="#080c14" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="0.9"/>
-<polygon points="330.0,630.0 511.9,525.0 511.9,515.8 330.0,620.8" fill="#04070d" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="0.9"/>
-<polygon points="330.0,410.8 511.9,515.8 330.0,620.8 148.1,515.8" fill="url(#plat-top-1)" stroke="#f59e0b" stroke-width="1.5"/>
-<line x1="286.7" y1="435.8" x2="468.6" y2="540.8" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="373.3" y1="435.8" x2="191.4" y2="540.8" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="239.1" y1="463.3" x2="420.9" y2="568.3" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="420.9" y1="463.3" x2="239.1" y2="568.3" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="191.4" y1="490.8" x2="373.3" y2="595.8" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="468.6" y1="490.8" x2="286.7" y2="595.8" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
+<polygon points="152.9,540.0 340.0,648.0 340.0,638.5 152.9,530.5" fill="#0a0f18" stroke="#f59e0b" stroke-opacity="0.5" stroke-width="0.9"/>
+<polygon points="340.0,648.0 527.1,540.0 527.1,530.5 340.0,638.5" fill="#05080e" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="0.9"/>
+<polygon points="340.0,422.5 527.1,530.5 340.0,638.5 152.9,530.5" fill="url(#plat-top-1)" stroke="#f59e0b" stroke-width="1.6"/>
+<line x1="298.4" y1="446.5" x2="485.5" y2="554.5" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="381.6" y1="446.5" x2="194.5" y2="554.5" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="246.5" y1="476.5" x2="433.5" y2="584.5" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="433.5" y1="476.5" x2="246.5" y2="584.5" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="194.5" y1="506.5" x2="381.6" y2="614.5" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="485.5" y1="506.5" x2="298.4" y2="614.5" stroke="#f59e0b" stroke-opacity="0.22" stroke-width="0.8"/>
+<text x="170.3" y="525.8" fill="#f59e0b" font-size="9" font-weight="800" class="mono" opacity="0.8">L1</text>
 </g>
 <g class="iso-cube">
-<polygon points="330.0,455.8 293.6,476.8 293.6,456.6 330.0,435.6" fill="#92400e" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="293.6,476.8 330.0,497.8 330.0,477.6 293.6,456.6" fill="#78350f" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,435.6 366.4,456.6 330.0,477.6 293.6,456.6" fill="#d97706" stroke="#fbbf24" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="340.0,468.5 301.9,490.5 301.9,469.6 340.0,447.6" fill="#92400e" stroke="#fbbf24" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="301.9,490.5 340.0,512.5 340.0,491.6 301.9,469.6" fill="#78350f" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,447.6 378.1,469.6 340.0,491.6 301.9,469.6" fill="url(#cube-top-amber)" stroke="#fbbf24" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="447.6" x2="378.1" y2="469.6" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="447.6" x2="301.9" y2="469.6" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="397.5,494.8 361.2,515.8 361.2,495.6 397.5,474.6" fill="#92400e" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="361.2,515.8 397.5,536.8 397.5,516.6 361.2,495.6" fill="#78350f" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="397.5,474.6 433.9,495.6 397.5,516.6 361.2,495.6" fill="#d97706" stroke="#fbbf24" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="409.3,508.5 371.2,530.5 371.2,509.6 409.3,487.6" fill="#92400e" stroke="#fbbf24" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="371.2,530.5 409.3,552.5 409.3,531.6 371.2,509.6" fill="#78350f" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="409.3,487.6 447.4,509.6 409.3,531.6 371.2,509.6" fill="url(#cube-top-amber)" stroke="#fbbf24" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="409.3" y1="487.6" x2="447.4" y2="509.6" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="409.3" y1="487.6" x2="371.2" y2="509.6" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="262.5,494.8 226.1,515.8 226.1,495.6 262.5,474.6" fill="#92400e" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="226.1,515.8 262.5,536.8 262.5,516.6 226.1,495.6" fill="#78350f" stroke="#fbbf24" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="262.5,474.6 298.8,495.6 262.5,516.6 226.1,495.6" fill="#d97706" stroke="#fbbf24" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="270.7,508.5 232.6,530.5 232.6,509.6 270.7,487.6" fill="#92400e" stroke="#fbbf24" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="232.6,530.5 270.7,552.5 270.7,531.6 232.6,509.6" fill="#78350f" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="270.7,487.6 308.8,509.6 270.7,531.6 232.6,509.6" fill="url(#cube-top-amber)" stroke="#fbbf24" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="270.7" y1="487.6" x2="308.8" y2="509.6" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="270.7" y1="487.6" x2="232.6" y2="509.6" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="330.0,533.8 293.6,554.8 293.6,525.4 330.0,504.4" fill="#b45309" stroke="#fef3c7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="293.6,554.8 330.0,575.8 330.0,546.4 293.6,525.4" fill="#92400e" stroke="#fef3c7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,504.4 366.4,525.4 330.0,546.4 293.6,525.4" fill="#f59e0b" stroke="#fef3c7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="platform-tier">
-<polygon points="148.1,433.0 330.0,538.0 330.0,528.8 148.1,423.8" fill="#080c14" stroke="#10b981" stroke-opacity="0.4" stroke-width="0.9"/>
-<polygon points="330.0,538.0 511.9,433.0 511.9,423.8 330.0,528.8" fill="#04070d" stroke="#10b981" stroke-opacity="0.3" stroke-width="0.9"/>
-<polygon points="330.0,318.8 511.9,423.8 330.0,528.8 148.1,423.8" fill="url(#plat-top-2)" stroke="#10b981" stroke-width="1.5"/>
-<line x1="286.7" y1="343.8" x2="468.6" y2="448.8" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="373.3" y1="343.8" x2="191.4" y2="448.8" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="239.1" y1="371.3" x2="420.9" y2="476.3" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="420.9" y1="371.3" x2="239.1" y2="476.3" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="191.4" y1="398.8" x2="373.3" y2="503.8" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="468.6" y1="398.8" x2="286.7" y2="503.8" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
-</g>
-<g class="iso-cube">
-<polygon points="330.0,355.8 300.6,372.8 300.6,352.6 330.0,335.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="300.6,372.8 330.0,389.8 330.0,369.6 300.6,352.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,335.6 359.4,352.6 330.0,369.6 300.6,352.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="288.4,379.8 259.0,396.8 259.0,364.6 288.4,347.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="259.0,396.8 288.4,413.8 288.4,381.6 259.0,364.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="288.4,347.6 317.9,364.6 288.4,381.6 259.0,364.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="246.9,403.8 217.4,420.8 217.4,400.6 246.9,383.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="217.4,420.8 246.9,437.8 246.9,417.6 217.4,400.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="246.9,383.6 276.3,400.6 246.9,417.6 217.4,400.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="371.6,379.8 342.1,396.8 342.1,364.6 371.6,347.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="342.1,396.8 371.6,413.8 371.6,381.6 342.1,364.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="371.6,347.6 401.0,364.6 371.6,381.6 342.1,364.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="330.0,403.8 300.6,420.8 300.6,400.6 330.0,383.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="300.6,420.8 330.0,437.8 330.0,417.6 300.6,400.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,383.6 359.4,400.6 330.0,417.6 300.6,400.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="288.4,427.8 259.0,444.8 259.0,412.6 288.4,395.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="259.0,444.8 288.4,461.8 288.4,429.6 259.0,412.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="288.4,395.6 317.9,412.6 288.4,429.6 259.0,412.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="413.1,403.8 383.7,420.8 383.7,400.6 413.1,383.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="383.7,420.8 413.1,437.8 413.1,417.6 383.7,400.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="413.1,383.6 442.6,400.6 413.1,417.6 383.7,400.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="371.6,427.8 342.1,444.8 342.1,412.6 371.6,395.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="342.1,444.8 371.6,461.8 371.6,429.6 342.1,412.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="371.6,395.6 401.0,412.6 371.6,429.6 342.1,412.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="330.0,451.8 300.6,468.8 300.6,448.6 330.0,431.6" fill="#059669" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="300.6,468.8 330.0,485.8 330.0,465.6 300.6,448.6" fill="#047857" stroke="#6ee7b7" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,431.6 359.4,448.6 330.0,465.6 300.6,448.6" fill="#10b981" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="340.0,548.5 301.9,570.5 301.9,540.1 340.0,518.1" fill="#b45309" stroke="#fef3c7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="301.9,570.5 340.0,592.5 340.0,562.1 301.9,540.1" fill="#92400e" stroke="#fef3c7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,518.1 378.1,540.1 340.0,562.1 301.9,540.1" fill="url(#cube-top-amber)" stroke="#fef3c7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="518.1" x2="378.1" y2="540.1" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="518.1" x2="301.9" y2="540.1" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="platform-tier">
-<polygon points="148.1,341.0 330.0,446.0 330.0,436.8 148.1,331.8" fill="#080c14" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="0.9"/>
-<polygon points="330.0,446.0 511.9,341.0 511.9,331.8 330.0,436.8" fill="#04070d" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="0.9"/>
-<polygon points="330.0,226.8 511.9,331.8 330.0,436.8 148.1,331.8" fill="url(#plat-top-3)" stroke="#38bdf8" stroke-width="1.5"/>
-<line x1="286.7" y1="251.8" x2="468.6" y2="356.8" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="373.3" y1="251.8" x2="191.4" y2="356.8" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="239.1" y1="279.3" x2="420.9" y2="384.3" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="420.9" y1="279.3" x2="239.1" y2="384.3" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="191.4" y1="306.8" x2="373.3" y2="411.8" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="468.6" y1="306.8" x2="286.7" y2="411.8" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
+<polygon points="152.9,445.0 340.0,553.0 340.0,543.5 152.9,435.5" fill="#0a0f18" stroke="#10b981" stroke-opacity="0.5" stroke-width="0.9"/>
+<polygon points="340.0,553.0 527.1,445.0 527.1,435.5 340.0,543.5" fill="#05080e" stroke="#10b981" stroke-opacity="0.35" stroke-width="0.9"/>
+<polygon points="340.0,327.5 527.1,435.5 340.0,543.5 152.9,435.5" fill="url(#plat-top-2)" stroke="#10b981" stroke-width="1.6"/>
+<line x1="298.4" y1="351.5" x2="485.5" y2="459.5" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="381.6" y1="351.5" x2="194.5" y2="459.5" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="246.5" y1="381.5" x2="433.5" y2="489.5" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="433.5" y1="381.5" x2="246.5" y2="489.5" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="194.5" y1="411.5" x2="381.6" y2="519.5" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="485.5" y1="411.5" x2="298.4" y2="519.5" stroke="#10b981" stroke-opacity="0.22" stroke-width="0.8"/>
+<text x="170.3" y="430.8" fill="#10b981" font-size="9" font-weight="800" class="mono" opacity="0.8">L2</text>
 </g>
 <g class="iso-cube">
-<polygon points="330.0,283.8 297.1,302.8 297.1,277.0 330.0,258.0" fill="#0284c7" stroke="#bae6fd" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="297.1,302.8 330.0,321.8 330.0,296.0 297.1,277.0" fill="#0369a1" stroke="#bae6fd" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,258.0 362.9,277.0 330.0,296.0 297.1,277.0" fill="#38bdf8" stroke="#bae6fd" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="340.0,365.5 309.7,383.0 309.7,362.1 340.0,344.6" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="309.7,383.0 340.0,400.5 340.0,379.6 309.7,362.1" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,344.6 370.3,362.1 340.0,379.6 309.7,362.1" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="344.6" x2="370.3" y2="362.1" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="344.6" x2="309.7" y2="362.1" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="380.2,312.8 347.3,331.8 347.3,293.2 380.2,274.2" fill="#0369a1" stroke="#7dd3fc" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="347.3,331.8 380.2,350.8 380.2,312.2 347.3,293.2" fill="#075985" stroke="#7dd3fc" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="380.2,274.2 413.1,293.2 380.2,312.2 347.3,293.2" fill="#0ea5e9" stroke="#7dd3fc" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="296.7,390.5 266.4,408.0 266.4,373.8 296.7,356.3" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="266.4,408.0 296.7,425.5 296.7,391.3 266.4,373.8" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="296.7,356.3 327.0,373.8 296.7,391.3 266.4,373.8" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="296.7" y1="356.3" x2="327.0" y2="373.8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="296.7" y1="356.3" x2="266.4" y2="373.8" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="279.8,312.8 246.9,331.8 246.9,296.8 279.8,277.8" fill="#0369a1" stroke="#7dd3fc" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="246.9,331.8 279.8,350.8 279.8,315.8 246.9,296.8" fill="#075985" stroke="#7dd3fc" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="279.8,277.8 312.7,296.8 279.8,315.8 246.9,296.8" fill="#0ea5e9" stroke="#7dd3fc" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="253.4,415.5 223.1,433.0 223.1,412.1 253.4,394.6" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="223.1,433.0 253.4,450.5 253.4,429.6 223.1,412.1" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="253.4,394.6 283.7,412.1 253.4,429.6 223.1,412.1" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="253.4" y1="394.6" x2="283.7" y2="412.1" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="253.4" y1="394.6" x2="223.1" y2="412.1" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="330.0,341.8 297.1,360.8 297.1,313.0 330.0,294.0" fill="#0284c7" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="297.1,360.8 330.0,379.8 330.0,332.0 297.1,313.0" fill="#0369a1" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,294.0 362.9,313.0 330.0,332.0 297.1,313.0" fill="#38bdf8" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="383.3,390.5 353.0,408.0 353.0,373.8 383.3,356.3" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="353.0,408.0 383.3,425.5 383.3,391.3 353.0,373.8" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="383.3,356.3 413.6,373.8 383.3,391.3 353.0,373.8" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="383.3" y1="356.3" x2="413.6" y2="373.8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="383.3" y1="356.3" x2="353.0" y2="373.8" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="340.0,415.5 309.7,433.0 309.7,412.1 340.0,394.6" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="309.7,433.0 340.0,450.5 340.0,429.6 309.7,412.1" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,394.6 370.3,412.1 340.0,429.6 309.7,412.1" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="394.6" x2="370.3" y2="412.1" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="394.6" x2="309.7" y2="412.1" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="296.7,440.5 266.4,458.0 266.4,423.8 296.7,406.3" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="266.4,458.0 296.7,475.5 296.7,441.3 266.4,423.8" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="296.7,406.3 327.0,423.8 296.7,441.3 266.4,423.8" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="296.7" y1="406.3" x2="327.0" y2="423.8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="296.7" y1="406.3" x2="266.4" y2="423.8" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="426.6,415.5 396.3,433.0 396.3,412.1 426.6,394.6" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="396.3,433.0 426.6,450.5 426.6,429.6 396.3,412.1" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="426.6,394.6 456.9,412.1 426.6,429.6 396.3,412.1" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="426.6" y1="394.6" x2="456.9" y2="412.1" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="426.6" y1="394.6" x2="396.3" y2="412.1" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="383.3,440.5 353.0,458.0 353.0,423.8 383.3,406.3" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="353.0,458.0 383.3,475.5 383.3,441.3 353.0,423.8" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="383.3,406.3 413.6,423.8 383.3,441.3 353.0,423.8" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="383.3" y1="406.3" x2="413.6" y2="423.8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="383.3" y1="406.3" x2="353.0" y2="423.8" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="340.0,465.5 309.7,483.0 309.7,462.1 340.0,444.6" fill="#059669" stroke="#6ee7b7" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="309.7,483.0 340.0,500.5 340.0,479.6 309.7,462.1" fill="#047857" stroke="#6ee7b7" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,444.6 370.3,462.1 340.0,479.6 309.7,462.1" fill="url(#cube-top-green)" stroke="#6ee7b7" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="444.6" x2="370.3" y2="462.1" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="444.6" x2="309.7" y2="462.1" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="platform-tier">
-<polygon points="148.1,249.0 330.0,354.0 330.0,344.8 148.1,239.8" fill="#080c14" stroke="#a855f7" stroke-opacity="0.4" stroke-width="0.9"/>
-<polygon points="330.0,354.0 511.9,249.0 511.9,239.8 330.0,344.8" fill="#04070d" stroke="#a855f7" stroke-opacity="0.3" stroke-width="0.9"/>
-<polygon points="330.0,134.8 511.9,239.8 330.0,344.8 148.1,239.8" fill="url(#plat-top-4)" stroke="#a855f7" stroke-width="1.5"/>
-<line x1="286.7" y1="159.8" x2="468.6" y2="264.8" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="373.3" y1="159.8" x2="191.4" y2="264.8" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="239.1" y1="187.3" x2="420.9" y2="292.3" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="420.9" y1="187.3" x2="239.1" y2="292.3" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="191.4" y1="214.8" x2="373.3" y2="319.8" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="468.6" y1="214.8" x2="286.7" y2="319.8" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
+<polygon points="152.9,350.0 340.0,458.0 340.0,448.5 152.9,340.5" fill="#0a0f18" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="0.9"/>
+<polygon points="340.0,458.0 527.1,350.0 527.1,340.5 340.0,448.5" fill="#05080e" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="0.9"/>
+<polygon points="340.0,232.5 527.1,340.5 340.0,448.5 152.9,340.5" fill="url(#plat-top-3)" stroke="#38bdf8" stroke-width="1.6"/>
+<line x1="298.4" y1="256.5" x2="485.5" y2="364.5" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="381.6" y1="256.5" x2="194.5" y2="364.5" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="246.5" y1="286.5" x2="433.5" y2="394.5" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="433.5" y1="286.5" x2="246.5" y2="394.5" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="194.5" y1="316.5" x2="381.6" y2="424.5" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="485.5" y1="316.5" x2="298.4" y2="424.5" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="0.8"/>
+<text x="170.3" y="335.8" fill="#38bdf8" font-size="9" font-weight="800" class="mono" opacity="0.8">L3</text>
 </g>
 <g class="iso-cube">
-<polygon points="330.0,205.8 271.1,239.8 271.1,201.2 330.0,167.2" fill="#9333ea" stroke="#f3e8ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="271.1,239.8 330.0,273.8 330.0,235.2 271.1,201.2" fill="#7e22ce" stroke="#f3e8ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,167.2 388.9,201.2 330.0,235.2 271.1,201.2" fill="#c084fc" stroke="#f3e8ff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="340.0,290.5 305.4,310.5 305.4,283.9 340.0,263.9" fill="#0284c7" stroke="#bae6fd" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="305.4,310.5 340.0,330.5 340.0,303.9 305.4,283.9" fill="#0369a1" stroke="#bae6fd" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,263.9 374.6,283.9 340.0,303.9 305.4,283.9" fill="url(#cube-top-blue)" stroke="#bae6fd" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="263.9" x2="374.6" y2="283.9" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="263.9" x2="305.4" y2="283.9" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="330.0,167.8 309.2,179.8 309.2,157.7 330.0,145.7" fill="#7e22ce" stroke="#e9d5ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="309.2,179.8 330.0,191.8 330.0,169.7 309.2,157.7" fill="#6b21a8" stroke="#e9d5ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,145.7 350.8,157.7 330.0,169.7 309.2,157.7" fill="#a855f7" stroke="#e9d5ff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="392.0,320.5 357.3,340.5 357.3,298.7 392.0,278.7" fill="#0369a1" stroke="#7dd3fc" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="357.3,340.5 392.0,360.5 392.0,318.7 357.3,298.7" fill="#075985" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="392.0,278.7 426.6,298.7 392.0,318.7 357.3,298.7" fill="url(#cube-top-blue)" stroke="#7dd3fc" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="392.0" y1="278.7" x2="426.6" y2="298.7" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="392.0" y1="278.7" x2="357.3" y2="298.7" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="433.9,227.8 413.1,239.8 413.1,217.7 433.9,205.7" fill="#7e22ce" stroke="#e9d5ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="413.1,239.8 433.9,251.8 433.9,229.7 413.1,217.7" fill="#6b21a8" stroke="#e9d5ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="433.9,205.7 454.7,217.7 433.9,229.7 413.1,217.7" fill="#a855f7" stroke="#e9d5ff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="288.0,320.5 253.4,340.5 253.4,302.5 288.0,282.5" fill="#0369a1" stroke="#7dd3fc" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="253.4,340.5 288.0,360.5 288.0,322.5 253.4,302.5" fill="#075985" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="288.0,282.5 322.7,302.5 288.0,322.5 253.4,302.5" fill="url(#cube-top-blue)" stroke="#7dd3fc" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="288.0" y1="282.5" x2="322.7" y2="302.5" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="288.0" y1="282.5" x2="253.4" y2="302.5" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="226.1,227.8 205.3,239.8 205.3,217.7 226.1,205.7" fill="#7e22ce" stroke="#e9d5ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="205.3,239.8 226.1,251.8 226.1,229.7 205.3,217.7" fill="#6b21a8" stroke="#e9d5ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="226.1,205.7 246.9,217.7 226.1,229.7 205.3,217.7" fill="#a855f7" stroke="#e9d5ff" stroke-width="1.1" stroke-linejoin="round"/>
-</g>
-<g class="iso-cube">
-<polygon points="330.0,287.8 309.2,299.8 309.2,274.0 330.0,262.0" fill="#7e22ce" stroke="#e9d5ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="309.2,299.8 330.0,311.8 330.0,286.0 309.2,274.0" fill="#6b21a8" stroke="#e9d5ff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,262.0 350.8,274.0 330.0,286.0 309.2,274.0" fill="#a855f7" stroke="#e9d5ff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="340.0,350.5 305.4,370.5 305.4,319.2 340.0,299.2" fill="#0284c7" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="305.4,370.5 340.0,390.5 340.0,339.2 305.4,319.2" fill="#0369a1" stroke="#ffffff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,299.2 374.6,319.2 340.0,339.2 305.4,319.2" fill="url(#cube-top-blue)" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="299.2" x2="374.6" y2="319.2" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="299.2" x2="305.4" y2="319.2" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="platform-tier">
-<polygon points="148.1,157.0 330.0,262.0 330.0,252.8 148.1,147.8" fill="#080c14" stroke="#00e5ff" stroke-opacity="0.4" stroke-width="0.9"/>
-<polygon points="330.0,262.0 511.9,157.0 511.9,147.8 330.0,252.8" fill="#04070d" stroke="#00e5ff" stroke-opacity="0.3" stroke-width="0.9"/>
-<polygon points="330.0,42.8 511.9,147.8 330.0,252.8 148.1,147.8" fill="url(#plat-top-5)" stroke="#00e5ff" stroke-width="1.5"/>
-<line x1="286.7" y1="67.8" x2="468.6" y2="172.8" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="373.3" y1="67.8" x2="191.4" y2="172.8" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="239.1" y1="95.3" x2="420.9" y2="200.3" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="420.9" y1="95.3" x2="239.1" y2="200.3" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="191.4" y1="122.8" x2="373.3" y2="227.8" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
-<line x1="468.6" y1="122.8" x2="286.7" y2="227.8" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
-</g>
-<line x1="330.0" y1="84.4" x2="395.8" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="84.4" x2="330.0" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="84.4" x2="264.2" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="84.4" x2="330.0" y2="174.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="395.8" y1="132.4" x2="330.0" y2="84.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="395.8" y1="132.4" x2="330.0" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="395.8" y1="132.4" x2="264.2" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="395.8" y1="132.4" x2="330.0" y2="174.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="132.4" x2="330.0" y2="84.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="132.4" x2="395.8" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="132.4" x2="264.2" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="132.4" x2="330.0" y2="174.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="264.2" y1="132.4" x2="330.0" y2="84.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="264.2" y1="132.4" x2="395.8" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="264.2" y1="132.4" x2="330.0" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="264.2" y1="132.4" x2="330.0" y2="174.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="174.4" x2="330.0" y2="84.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="174.4" x2="395.8" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="174.4" x2="330.0" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<line x1="330.0" y1="174.4" x2="264.2" y2="132.4" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.2"/>
-<g class="iso-cube">
-<polygon points="330.0,99.8 305.8,113.8 305.8,78.8 330.0,64.8" fill="#00b4d8" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="305.8,113.8 330.0,127.8 330.0,92.8 305.8,78.8" fill="#0077b6" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,64.8 354.2,78.8 330.0,92.8 305.8,78.8" fill="#00e5ff" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="152.9,255.0 340.0,363.0 340.0,353.5 152.9,245.5" fill="#0a0f18" stroke="#a855f7" stroke-opacity="0.5" stroke-width="0.9"/>
+<polygon points="340.0,363.0 527.1,255.0 527.1,245.5 340.0,353.5" fill="#05080e" stroke="#a855f7" stroke-opacity="0.35" stroke-width="0.9"/>
+<polygon points="340.0,137.5 527.1,245.5 340.0,353.5 152.9,245.5" fill="url(#plat-top-4)" stroke="#a855f7" stroke-width="1.6"/>
+<line x1="298.4" y1="161.5" x2="485.5" y2="269.5" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="381.6" y1="161.5" x2="194.5" y2="269.5" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="246.5" y1="191.5" x2="433.5" y2="299.5" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="433.5" y1="191.5" x2="246.5" y2="299.5" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="194.5" y1="221.5" x2="381.6" y2="329.5" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="485.5" y1="221.5" x2="298.4" y2="329.5" stroke="#a855f7" stroke-opacity="0.22" stroke-width="0.8"/>
+<text x="170.3" y="240.8" fill="#a855f7" font-size="9" font-weight="800" class="mono" opacity="0.8">L4</text>
 </g>
 <g class="iso-cube">
-<polygon points="395.8,147.8 371.6,161.8 371.6,126.8 395.8,112.8" fill="#00b4d8" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="371.6,161.8 395.8,175.8 395.8,140.8 371.6,126.8" fill="#0077b6" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="395.8,112.8 420.1,126.8 395.8,140.8 371.6,126.8" fill="#00e5ff" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="340.0,209.5 277.6,245.5 277.6,203.7 340.0,167.7" fill="#9333ea" stroke="#f3e8ff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="277.6,245.5 340.0,281.5 340.0,239.7 277.6,203.7" fill="#7e22ce" stroke="#f3e8ff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,167.7 402.4,203.7 340.0,239.7 277.6,203.7" fill="url(#cube-top-purple)" stroke="#f3e8ff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="167.7" x2="402.4" y2="203.7" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="167.7" x2="277.6" y2="203.7" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="330.0,147.8 305.8,161.8 305.8,126.8 330.0,112.8" fill="#00b4d8" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="305.8,161.8 330.0,175.8 330.0,140.8 305.8,126.8" fill="#0077b6" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,112.8 354.2,126.8 330.0,140.8 305.8,126.8" fill="#00e5ff" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="340.0,171.5 318.3,184.0 318.3,160.2 340.0,147.8" fill="#7e22ce" stroke="#e9d5ff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="318.3,184.0 340.0,196.5 340.0,172.8 318.3,160.2" fill="#6b21a8" stroke="#e9d5ff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,147.8 361.7,160.2 340.0,172.8 318.3,160.2" fill="url(#cube-top-purple)" stroke="#e9d5ff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="147.8" x2="361.7" y2="160.2" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="147.8" x2="318.3" y2="160.2" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="264.2,147.8 239.9,161.8 239.9,126.8 264.2,112.8" fill="#00b4d8" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="239.9,161.8 264.2,175.8 264.2,140.8 239.9,126.8" fill="#0077b6" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="264.2,112.8 288.4,126.8 264.2,140.8 239.9,126.8" fill="#00e5ff" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="446.5,233.0 424.9,245.5 424.9,221.8 446.5,209.2" fill="#7e22ce" stroke="#e9d5ff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="424.9,245.5 446.5,258.0 446.5,234.2 424.9,221.8" fill="#6b21a8" stroke="#e9d5ff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="446.5,209.2 468.2,221.8 446.5,234.2 424.9,221.8" fill="url(#cube-top-purple)" stroke="#e9d5ff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="446.5" y1="209.2" x2="468.2" y2="221.8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="446.5" y1="209.2" x2="424.9" y2="221.8" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
 <g class="iso-cube">
-<polygon points="330.0,189.8 305.8,203.8 305.8,168.8 330.0,154.8" fill="#00b4d8" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="305.8,203.8 330.0,217.8 330.0,182.8 305.8,168.8" fill="#0077b6" stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="330.0,154.8 354.2,168.8 330.0,182.8 305.8,168.8" fill="#00e5ff" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="233.5,233.0 211.8,245.5 211.8,221.8 233.5,209.2" fill="#7e22ce" stroke="#e9d5ff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="211.8,245.5 233.5,258.0 233.5,234.2 211.8,221.8" fill="#6b21a8" stroke="#e9d5ff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="233.5,209.2 255.1,221.8 233.5,234.2 211.8,221.8" fill="url(#cube-top-purple)" stroke="#e9d5ff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="233.5" y1="209.2" x2="255.1" y2="221.8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="233.5" y1="209.2" x2="211.8" y2="221.8" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
 </g>
+<g class="iso-cube">
+<polygon points="340.0,294.5 318.3,307.0 318.3,280.4 340.0,267.9" fill="#7e22ce" stroke="#e9d5ff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="318.3,307.0 340.0,319.5 340.0,292.9 318.3,280.4" fill="#6b21a8" stroke="#e9d5ff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,267.9 361.7,280.4 340.0,292.9 318.3,280.4" fill="url(#cube-top-purple)" stroke="#e9d5ff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="267.9" x2="361.7" y2="280.4" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="267.9" x2="318.3" y2="280.4" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="platform-tier">
+<polygon points="152.9,160.0 340.0,268.0 340.0,258.5 152.9,150.5" fill="#0a0f18" stroke="#00e5ff" stroke-opacity="0.5" stroke-width="0.9"/>
+<polygon points="340.0,268.0 527.1,160.0 527.1,150.5 340.0,258.5" fill="#05080e" stroke="#00e5ff" stroke-opacity="0.35" stroke-width="0.9"/>
+<polygon points="340.0,42.5 527.1,150.5 340.0,258.5 152.9,150.5" fill="url(#plat-top-5)" stroke="#00e5ff" stroke-width="1.6"/>
+<line x1="298.4" y1="66.5" x2="485.5" y2="174.5" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="381.6" y1="66.5" x2="194.5" y2="174.5" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="246.5" y1="96.5" x2="433.5" y2="204.5" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="433.5" y1="96.5" x2="246.5" y2="204.5" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="194.5" y1="126.5" x2="381.6" y2="234.5" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
+<line x1="485.5" y1="126.5" x2="298.4" y2="234.5" stroke="#00e5ff" stroke-opacity="0.22" stroke-width="0.8"/>
+<text x="170.3" y="145.8" fill="#00e5ff" font-size="9" font-weight="800" class="mono" opacity="0.8">L5</text>
+</g>
+<line x1="340.0" y1="83.2" x2="409.3" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="83.2" x2="340.0" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="83.2" x2="270.7" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="83.2" x2="340.0" y2="177.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="409.3" y1="133.2" x2="340.0" y2="83.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="409.3" y1="133.2" x2="340.0" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="409.3" y1="133.2" x2="270.7" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="409.3" y1="133.2" x2="340.0" y2="177.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="133.2" x2="340.0" y2="83.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="133.2" x2="409.3" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="133.2" x2="270.7" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="133.2" x2="340.0" y2="177.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="270.7" y1="133.2" x2="340.0" y2="83.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="270.7" y1="133.2" x2="409.3" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="270.7" y1="133.2" x2="340.0" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="270.7" y1="133.2" x2="340.0" y2="177.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="177.2" x2="340.0" y2="83.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="177.2" x2="409.3" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="177.2" x2="340.0" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<line x1="340.0" y1="177.2" x2="270.7" y2="133.2" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
+<g class="iso-cube">
+<polygon points="340.0,100.5 314.0,115.5 314.0,77.5 340.0,62.5" fill="#00b4d8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="314.0,115.5 340.0,130.5 340.0,92.5 314.0,77.5" fill="#0077b6" stroke="#ffffff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,62.5 366.0,77.5 340.0,92.5 314.0,77.5" fill="url(#cube-top-cyan)" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="62.5" x2="366.0" y2="77.5" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="62.5" x2="314.0" y2="77.5" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="409.3,150.5 383.3,165.5 383.3,127.5 409.3,112.5" fill="#00b4d8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="383.3,165.5 409.3,180.5 409.3,142.5 383.3,127.5" fill="#0077b6" stroke="#ffffff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="409.3,112.5 435.3,127.5 409.3,142.5 383.3,127.5" fill="url(#cube-top-cyan)" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="409.3" y1="112.5" x2="435.3" y2="127.5" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="409.3" y1="112.5" x2="383.3" y2="127.5" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="340.0,150.5 314.0,165.5 314.0,127.5 340.0,112.5" fill="#00b4d8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="314.0,165.5 340.0,180.5 340.0,142.5 314.0,127.5" fill="#0077b6" stroke="#ffffff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,112.5 366.0,127.5 340.0,142.5 314.0,127.5" fill="url(#cube-top-cyan)" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="112.5" x2="366.0" y2="127.5" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="112.5" x2="314.0" y2="127.5" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="270.7,150.5 244.7,165.5 244.7,127.5 270.7,112.5" fill="#00b4d8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="244.7,165.5 270.7,180.5 270.7,142.5 244.7,127.5" fill="#0077b6" stroke="#ffffff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="270.7,112.5 296.7,127.5 270.7,142.5 244.7,127.5" fill="url(#cube-top-cyan)" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="270.7" y1="112.5" x2="296.7" y2="127.5" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="270.7" y1="112.5" x2="244.7" y2="127.5" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<g class="iso-cube">
+<polygon points="340.0,194.5 314.0,209.5 314.0,171.5 340.0,156.5" fill="#00b4d8" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="314.0,209.5 340.0,224.5 340.0,186.5 314.0,171.5" fill="#0077b6" stroke="#ffffff" stroke-opacity="0.5" stroke-width="0.75" stroke-linejoin="round"/>
+<polygon points="340.0,156.5 366.0,171.5 340.0,186.5 314.0,171.5" fill="url(#cube-top-cyan)" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round"/>
+<line x1="340.0" y1="156.5" x2="366.0" y2="171.5" stroke="#ffffff" stroke-opacity="0.6" stroke-width="0.9"/>
+<line x1="340.0" y1="156.5" x2="314.0" y2="171.5" stroke="#ffffff" stroke-opacity="0.4" stroke-width="0.8"/>
+</g>
+<circle cx="340.0" cy="125.6" r="4" fill="#ffffff" class="pulse-c"/>
+<circle cx="340.0" cy="125.6" r="8" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.6"/>
 
         <g class="leader-line">
-          <circle cx="420.9" cy="195.7" r="3" fill="#00e5ff" stroke="#ffffff" stroke-width="1"/>
-          <polyline points="420.9,195.7 560,195.7 560,120.0 590,120.0" 
-                    fill="none" stroke="#00e5ff" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="3,3"/>
-          <circle cx="590" cy="120.0" r="2.5" fill="#00e5ff"/>
+          <!-- Platform Reticle Target -->
+          <circle cx="433.5" cy="199.7" r="4" fill="#00e5ff" stroke="#ffffff" stroke-width="1.2"/>
+          <circle cx="433.5" cy="199.7" r="7" fill="none" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+          
+          <!-- Polyline with animated pulse -->
+          <polyline points="433.5,199.7 581,199.7 581,119.0 615,119.0" 
+                    fill="none" stroke="#00e5ff" stroke-opacity="0.30" stroke-width="1.2"/>
+          <polyline points="433.5,199.7 581,199.7 581,119.0 615,119.0" 
+                    fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam-horizontal"/>
+          
+          <circle cx="615" cy="119.0" r="2.5" fill="#00e5ff"/>
         </g>
         
 
-        <g transform="translate(590, 72)">
-          <rect x="0" y="0" width="585" height="96" rx="8" 
-                fill="#0d1117" fill-opacity="0.95" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
-          <rect x="0" y="0" width="4" height="96" rx="2" fill="#00e5ff"/>
+        <g class="card-group" transform="translate(615, 70)">
+          <!-- Card Backdrop -->
+          <rect x="0" y="0" width="618" height="98" rx="8" 
+                class="card-bg" fill="url(#card-grad)" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
           
-          <!-- Layer Badge -->
+          <!-- Left Color Accent Glow Bar -->
+          <rect x="0" y="0" width="4.5" height="98" rx="2" fill="#00e5ff"/>
+          
+          <!-- Top Row: Tier Badge + Title + Telemetry Metric -->
           <rect x="14" y="12" width="34" height="18" rx="4" fill="#00e5ff" fill-opacity="0.14" stroke="#00e5ff" stroke-width="0.8"/>
           <text x="31" y="25" fill="#00e5ff" font-size="11" font-weight="800" text-anchor="middle" class="mono">L5</text>
           
-          <!-- Layer Title -->
-          <text x="56" y="26" fill="#f0f6fc" font-size="13" font-weight="700" letter-spacing="0.5">AUTONOMOUS AGENTS &amp; SWARMS</text>
+          <text x="56" y="26" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.4">AUTONOMOUS AGENTS &amp; SWARMS</text>
           
-          <!-- Metric Tag (Top Right) -->
-          <text x="571" y="25" fill="#00e5ff" font-size="10" font-weight="700" text-anchor="end" class="mono">DECISION ACCURACY: 99.4%</text>
+          <!-- Right Live Telemetry Metric -->
+          <g transform="translate(604, 20)">
+            <text x="0" y="5" fill="#00e5ff" font-size="10" font-weight="700" text-anchor="end" class="mono">DECISION ACCURACY: 99.4%</text>
+          </g>
           
-          <!-- Subtitle / Architecture Role -->
-          <text x="14" y="48" fill="#8b949e" font-size="11" font-weight="400">Multi-Agent Orchestration • ReAct Planning • Self-Correction Loops</text>
+          <!-- Middle Row: Architectural Role -->
+          <text x="14" y="47" fill="#8b949e" font-size="10.5" font-weight="500" class="mono">// MULTI-AGENT ORCHESTRATION • REACT PLANNING • REFLECTION LOOPS</text>
           
-          <!-- Tech Pill Badges -->
-          <g transform="translate(14, 62)">
+          <!-- Bottom Row: Tech Stack Pills -->
+          <g transform="translate(14, 63)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="98.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="49.25" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Craftly Robot</text>
+              <rect x="0" y="0" width="103.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#00e5ff"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Craftly Robot</text>
             </g>
             
 
-            <g transform="translate(104.5, 0)">
-              <rect x="0" y="0" width="53.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="26.5" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">CrewAI</text>
+            <g transform="translate(109.8, 0)">
+              <rect x="0" y="0" width="77.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#38bdf8"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">LangGraph</text>
             </g>
             
 
-            <g transform="translate(163.5, 0)">
-              <rect x="0" y="0" width="72.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="36.25" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">LangGraph</text>
+            <g transform="translate(193.2, 0)">
+              <rect x="0" y="0" width="57.599999999999994" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#818cf8"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">CrewAI</text>
             </g>
             
 
-            <g transform="translate(242.0, 0)">
-              <rect x="0" y="0" width="66.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="33.0" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Tool Use</text>
+            <g transform="translate(256.79999999999995, 0)">
+              <rect x="0" y="0" width="110.39999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#c084fc"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Tool Use &amp; MCP</text>
             </g>
             
 
-            <g transform="translate(314.0, 0)">
-              <rect x="0" y="0" width="92.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="46.0" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">MCP Protocol</text>
+            <g transform="translate(373.19999999999993, 0)">
+              <rect x="0" y="0" width="77.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#34d399"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Auto-Eval</text>
             </g>
             
 
@@ -377,62 +534,78 @@
         
 
         <g class="leader-line">
-          <circle cx="420.9" cy="287.7" r="3" fill="#c084fc" stroke="#ffffff" stroke-width="1"/>
-          <polyline points="420.9,287.7 560,287.7 560,230.0 590,230.0" 
-                    fill="none" stroke="#c084fc" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="3,3"/>
-          <circle cx="590" cy="230.0" r="2.5" fill="#c084fc"/>
+          <!-- Platform Reticle Target -->
+          <circle cx="433.5" cy="294.8" r="4" fill="#c084fc" stroke="#ffffff" stroke-width="1.2"/>
+          <circle cx="433.5" cy="294.8" r="7" fill="none" stroke="#c084fc" stroke-width="0.8" opacity="0.5"/>
+          
+          <!-- Polyline with animated pulse -->
+          <polyline points="433.5,294.8 581,294.8 581,231.0 615,231.0" 
+                    fill="none" stroke="#c084fc" stroke-opacity="0.30" stroke-width="1.2"/>
+          <polyline points="433.5,294.8 581,294.8 581,231.0 615,231.0" 
+                    fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam-horizontal"/>
+          
+          <circle cx="615" cy="231.0" r="2.5" fill="#c084fc"/>
         </g>
         
 
-        <g transform="translate(590, 182)">
-          <rect x="0" y="0" width="585" height="96" rx="8" 
-                fill="#0d1117" fill-opacity="0.95" stroke="#c084fc" stroke-opacity="0.32" stroke-width="1.2"/>
-          <rect x="0" y="0" width="4" height="96" rx="2" fill="#c084fc"/>
+        <g class="card-group" transform="translate(615, 182)">
+          <!-- Card Backdrop -->
+          <rect x="0" y="0" width="618" height="98" rx="8" 
+                class="card-bg" fill="url(#card-grad)" stroke="#c084fc" stroke-opacity="0.32" stroke-width="1.2"/>
           
-          <!-- Layer Badge -->
+          <!-- Left Color Accent Glow Bar -->
+          <rect x="0" y="0" width="4.5" height="98" rx="2" fill="#c084fc"/>
+          
+          <!-- Top Row: Tier Badge + Title + Telemetry Metric -->
           <rect x="14" y="12" width="34" height="18" rx="4" fill="#c084fc" fill-opacity="0.14" stroke="#c084fc" stroke-width="0.8"/>
           <text x="31" y="25" fill="#c084fc" font-size="11" font-weight="800" text-anchor="middle" class="mono">L4</text>
           
-          <!-- Layer Title -->
-          <text x="56" y="26" fill="#f0f6fc" font-size="13" font-weight="700" letter-spacing="0.5">FRONTIER LLMS &amp; DEEP REASONING</text>
+          <text x="56" y="26" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.4">FRONTIER LLMS &amp; DEEP REASONING</text>
           
-          <!-- Metric Tag (Top Right) -->
-          <text x="571" y="25" fill="#c084fc" font-size="10" font-weight="700" text-anchor="end" class="mono">THROUGHPUT: 184 tok/s</text>
+          <!-- Right Live Telemetry Metric -->
+          <g transform="translate(604, 20)">
+            <text x="0" y="5" fill="#c084fc" font-size="10" font-weight="700" text-anchor="end" class="mono">THROUGHPUT: 184 tok/s</text>
+          </g>
           
-          <!-- Subtitle / Architecture Role -->
-          <text x="14" y="48" fill="#8b949e" font-size="11" font-weight="400">Chain-of-Thought • Fine-Tuning (LoRA / QLoRA) • Context Engines</text>
+          <!-- Middle Row: Architectural Role -->
+          <text x="14" y="47" fill="#8b949e" font-size="10.5" font-weight="500" class="mono">// CHAIN-OF-THOUGHT • FINE-TUNING (LoRA / QLoRA) • CONTEXT ENGINES</text>
           
-          <!-- Tech Pill Badges -->
-          <g transform="translate(14, 62)">
+          <!-- Bottom Row: Tech Stack Pills -->
+          <g transform="translate(14, 63)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="85.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="42.75" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">DeepSeek-R1</text>
+              <rect x="0" y="0" width="90.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#c084fc"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">DeepSeek-R1</text>
             </g>
             
 
-            <g transform="translate(91.5, 0)">
-              <rect x="0" y="0" width="79.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="39.5" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Claude 3.7</text>
+            <g transform="translate(96.6, 0)">
+              <rect x="0" y="0" width="84.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#f43f5e"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Claude 3.7</text>
             </g>
             
 
-            <g transform="translate(176.5, 0)">
-              <rect x="0" y="0" width="59.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="29.75" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Llama 3</text>
+            <g transform="translate(186.6, 0)">
+              <rect x="0" y="0" width="64.19999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#38bdf8"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Llama 3</text>
             </g>
             
 
-            <g transform="translate(242.0, 0)">
-              <rect x="0" y="0" width="85.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="42.75" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">HuggingFace</text>
+            <g transform="translate(256.79999999999995, 0)">
+              <rect x="0" y="0" width="90.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#fbbf24"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">HuggingFace</text>
             </g>
             
 
-            <g transform="translate(333.5, 0)">
-              <rect x="0" y="0" width="40.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="20.0" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">vLLM</text>
+            <g transform="translate(353.4, 0)">
+              <rect x="0" y="0" width="44.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#00e5ff"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">vLLM</text>
             </g>
             
 
@@ -441,62 +614,78 @@
         
 
         <g class="leader-line">
-          <circle cx="420.9" cy="379.7" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1"/>
-          <polyline points="420.9,379.7 560,379.7 560,340.0 590,340.0" 
-                    fill="none" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="3,3"/>
-          <circle cx="590" cy="340.0" r="2.5" fill="#38bdf8"/>
+          <!-- Platform Reticle Target -->
+          <circle cx="433.5" cy="389.8" r="4" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+          <circle cx="433.5" cy="389.8" r="7" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.5"/>
+          
+          <!-- Polyline with animated pulse -->
+          <polyline points="433.5,389.8 581,389.8 581,343.0 615,343.0" 
+                    fill="none" stroke="#38bdf8" stroke-opacity="0.30" stroke-width="1.2"/>
+          <polyline points="433.5,389.8 581,389.8 581,343.0 615,343.0" 
+                    fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam-horizontal"/>
+          
+          <circle cx="615" cy="343.0" r="2.5" fill="#38bdf8"/>
         </g>
         
 
-        <g transform="translate(590, 292)">
-          <rect x="0" y="0" width="585" height="96" rx="8" 
-                fill="#0d1117" fill-opacity="0.95" stroke="#38bdf8" stroke-opacity="0.32" stroke-width="1.2"/>
-          <rect x="0" y="0" width="4" height="96" rx="2" fill="#38bdf8"/>
+        <g class="card-group" transform="translate(615, 294)">
+          <!-- Card Backdrop -->
+          <rect x="0" y="0" width="618" height="98" rx="8" 
+                class="card-bg" fill="url(#card-grad)" stroke="#38bdf8" stroke-opacity="0.32" stroke-width="1.2"/>
           
-          <!-- Layer Badge -->
+          <!-- Left Color Accent Glow Bar -->
+          <rect x="0" y="0" width="4.5" height="98" rx="2" fill="#38bdf8"/>
+          
+          <!-- Top Row: Tier Badge + Title + Telemetry Metric -->
           <rect x="14" y="12" width="34" height="18" rx="4" fill="#38bdf8" fill-opacity="0.14" stroke="#38bdf8" stroke-width="0.8"/>
           <text x="31" y="25" fill="#38bdf8" font-size="11" font-weight="800" text-anchor="middle" class="mono">L3</text>
           
-          <!-- Layer Title -->
-          <text x="56" y="26" fill="#f0f6fc" font-size="13" font-weight="700" letter-spacing="0.5">HIGH-PERFORMANCE INFERENCE &amp; RUNTIMES</text>
+          <text x="56" y="26" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.4">HIGH-PERFORMANCE INFERENCE &amp; RUNTIMES</text>
           
-          <!-- Metric Tag (Top Right) -->
-          <text x="571" y="25" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="end" class="mono">LATENCY P99: 12ms</text>
+          <!-- Right Live Telemetry Metric -->
+          <g transform="translate(604, 20)">
+            <text x="0" y="5" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="end" class="mono">LATENCY P99: 12ms</text>
+          </g>
           
-          <!-- Subtitle / Architecture Role -->
-          <text x="14" y="48" fill="#8b949e" font-size="11" font-weight="400">vLLM Engine • TensorRT-LLM • Kernel Tuning (CUDA / C++ / Rust)</text>
+          <!-- Middle Row: Architectural Role -->
+          <text x="14" y="47" fill="#8b949e" font-size="10.5" font-weight="500" class="mono">// LOW-LATENCY SERVING • TENSORRT-LLM • KERNEL TUNING (CUDA / C++ / RUST)</text>
           
-          <!-- Tech Pill Badges -->
-          <g transform="translate(14, 62)">
+          <!-- Bottom Row: Tech Stack Pills -->
+          <g transform="translate(14, 63)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="40.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="20.0" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">vLLM</text>
+              <rect x="0" y="0" width="90.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#00e5ff"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">vLLM Engine</text>
             </g>
             
 
-            <g transform="translate(46.0, 0)">
-              <rect x="0" y="0" width="66.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="33.0" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">TensorRT</text>
+            <g transform="translate(96.6, 0)">
+              <rect x="0" y="0" width="97.19999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#10b981"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">TensorRT-LLM</text>
             </g>
             
 
-            <g transform="translate(118.0, 0)">
-              <rect x="0" y="0" width="105.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="52.5" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Triton Serving</text>
+            <g transform="translate(199.79999999999998, 0)">
+              <rect x="0" y="0" width="110.39999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#38bdf8"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Triton Serving</text>
             </g>
             
 
-            <g transform="translate(229.0, 0)">
-              <rect x="0" y="0" width="40.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="20.0" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">CUDA</text>
+            <g transform="translate(316.2, 0)">
+              <rect x="0" y="0" width="70.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#a3e635"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">CUDA C++</text>
             </g>
             
 
-            <g transform="translate(275.0, 0)">
-              <rect x="0" y="0" width="85.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="42.75" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Rust Engine</text>
+            <g transform="translate(393.0, 0)">
+              <rect x="0" y="0" width="77.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#f97316"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Rust Core</text>
             </g>
             
 
@@ -505,62 +694,78 @@
         
 
         <g class="leader-line">
-          <circle cx="420.9" cy="471.7" r="3" fill="#10b981" stroke="#ffffff" stroke-width="1"/>
-          <polyline points="420.9,471.7 560,471.7 560,450.0 590,450.0" 
-                    fill="none" stroke="#10b981" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="3,3"/>
-          <circle cx="590" cy="450.0" r="2.5" fill="#10b981"/>
+          <!-- Platform Reticle Target -->
+          <circle cx="433.5" cy="484.8" r="4" fill="#10b981" stroke="#ffffff" stroke-width="1.2"/>
+          <circle cx="433.5" cy="484.8" r="7" fill="none" stroke="#10b981" stroke-width="0.8" opacity="0.5"/>
+          
+          <!-- Polyline with animated pulse -->
+          <polyline points="433.5,484.8 581,484.8 581,455.0 615,455.0" 
+                    fill="none" stroke="#10b981" stroke-opacity="0.30" stroke-width="1.2"/>
+          <polyline points="433.5,484.8 581,484.8 581,455.0 615,455.0" 
+                    fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam-horizontal"/>
+          
+          <circle cx="615" cy="455.0" r="2.5" fill="#10b981"/>
         </g>
         
 
-        <g transform="translate(590, 402)">
-          <rect x="0" y="0" width="585" height="96" rx="8" 
-                fill="#0d1117" fill-opacity="0.95" stroke="#10b981" stroke-opacity="0.32" stroke-width="1.2"/>
-          <rect x="0" y="0" width="4" height="96" rx="2" fill="#10b981"/>
+        <g class="card-group" transform="translate(615, 406)">
+          <!-- Card Backdrop -->
+          <rect x="0" y="0" width="618" height="98" rx="8" 
+                class="card-bg" fill="url(#card-grad)" stroke="#10b981" stroke-opacity="0.32" stroke-width="1.2"/>
           
-          <!-- Layer Badge -->
+          <!-- Left Color Accent Glow Bar -->
+          <rect x="0" y="0" width="4.5" height="98" rx="2" fill="#10b981"/>
+          
+          <!-- Top Row: Tier Badge + Title + Telemetry Metric -->
           <rect x="14" y="12" width="34" height="18" rx="4" fill="#10b981" fill-opacity="0.14" stroke="#10b981" stroke-width="0.8"/>
           <text x="31" y="25" fill="#10b981" font-size="11" font-weight="800" text-anchor="middle" class="mono">L2</text>
           
-          <!-- Layer Title -->
-          <text x="56" y="26" fill="#f0f6fc" font-size="13" font-weight="700" letter-spacing="0.5">DISTRIBUTED CLUSTERS &amp; DATA HIGHWAY</text>
+          <text x="56" y="26" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.4">DISTRIBUTED CLUSTERS &amp; DATA HIGHWAY</text>
           
-          <!-- Metric Tag (Top Right) -->
-          <text x="571" y="25" fill="#10b981" font-size="10" font-weight="700" text-anchor="end" class="mono">CLUSTER UPTIME: 99.99%</text>
+          <!-- Right Live Telemetry Metric -->
+          <g transform="translate(604, 20)">
+            <text x="0" y="5" fill="#10b981" font-size="10" font-weight="700" text-anchor="end" class="mono">CLUSTER UPTIME: 99.99%</text>
+          </g>
           
-          <!-- Subtitle / Architecture Role -->
-          <text x="14" y="48" fill="#8b949e" font-size="11" font-weight="400">Distributed GPU Training (Ray) • Kubernetes • Vector Stores</text>
+          <!-- Middle Row: Architectural Role -->
+          <text x="14" y="47" fill="#8b949e" font-size="10.5" font-weight="500" class="mono">// DISTRIBUTED GPU TRAINING (RAY) • KUBERNETES • HIGH-THROUGHPUT PIPELINES</text>
           
-          <!-- Tech Pill Badges -->
-          <g transform="translate(14, 62)">
+          <!-- Bottom Row: Tech Stack Pills -->
+          <g transform="translate(14, 63)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="53.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="26.5" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Docker</text>
+              <rect x="0" y="0" width="57.599999999999994" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#38bdf8"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Docker</text>
             </g>
             
 
-            <g transform="translate(59.0, 0)">
-              <rect x="0" y="0" width="79.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="39.5" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Kubernetes</text>
+            <g transform="translate(63.599999999999994, 0)">
+              <rect x="0" y="0" width="84.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#3b82f6"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Kubernetes</text>
             </g>
             
 
-            <g transform="translate(144.0, 0)">
-              <rect x="0" y="0" width="66.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="33.0" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Ray Core</text>
+            <g transform="translate(153.6, 0)">
+              <rect x="0" y="0" width="70.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#06b6d4"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Ray Core</text>
             </g>
             
 
-            <g transform="translate(216.0, 0)">
-              <rect x="0" y="0" width="53.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="26.5" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Milvus</text>
+            <g transform="translate(230.39999999999998, 0)">
+              <rect x="0" y="0" width="77.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#10b981"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Milvus DB</text>
             </g>
             
 
-            <g transform="translate(275.0, 0)">
-              <rect x="0" y="0" width="98.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="49.25" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Redis Cluster</text>
+            <g transform="translate(313.79999999999995, 0)">
+              <rect x="0" y="0" width="103.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#ef4444"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Redis Cluster</text>
             </g>
             
 
@@ -569,62 +774,78 @@
         
 
         <g class="leader-line">
-          <circle cx="420.9" cy="563.7" r="3" fill="#fbbf24" stroke="#ffffff" stroke-width="1"/>
-          <polyline points="420.9,563.7 560,563.7 560,560.0 590,560.0" 
-                    fill="none" stroke="#fbbf24" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="3,3"/>
-          <circle cx="590" cy="560.0" r="2.5" fill="#fbbf24"/>
+          <!-- Platform Reticle Target -->
+          <circle cx="433.5" cy="579.8" r="4" fill="#fbbf24" stroke="#ffffff" stroke-width="1.2"/>
+          <circle cx="433.5" cy="579.8" r="7" fill="none" stroke="#fbbf24" stroke-width="0.8" opacity="0.5"/>
+          
+          <!-- Polyline with animated pulse -->
+          <polyline points="433.5,579.8 581,579.8 581,567.0 615,567.0" 
+                    fill="none" stroke="#fbbf24" stroke-opacity="0.30" stroke-width="1.2"/>
+          <polyline points="433.5,579.8 581,579.8 581,567.0 615,567.0" 
+                    fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.2" class="flow-beam-horizontal"/>
+          
+          <circle cx="615" cy="567.0" r="2.5" fill="#fbbf24"/>
         </g>
         
 
-        <g transform="translate(590, 512)">
-          <rect x="0" y="0" width="585" height="96" rx="8" 
-                fill="#0d1117" fill-opacity="0.95" stroke="#fbbf24" stroke-opacity="0.32" stroke-width="1.2"/>
-          <rect x="0" y="0" width="4" height="96" rx="2" fill="#fbbf24"/>
+        <g class="card-group" transform="translate(615, 518)">
+          <!-- Card Backdrop -->
+          <rect x="0" y="0" width="618" height="98" rx="8" 
+                class="card-bg" fill="url(#card-grad)" stroke="#fbbf24" stroke-opacity="0.32" stroke-width="1.2"/>
           
-          <!-- Layer Badge -->
+          <!-- Left Color Accent Glow Bar -->
+          <rect x="0" y="0" width="4.5" height="98" rx="2" fill="#fbbf24"/>
+          
+          <!-- Top Row: Tier Badge + Title + Telemetry Metric -->
           <rect x="14" y="12" width="34" height="18" rx="4" fill="#fbbf24" fill-opacity="0.14" stroke="#fbbf24" stroke-width="0.8"/>
           <text x="31" y="25" fill="#fbbf24" font-size="11" font-weight="800" text-anchor="middle" class="mono">L1</text>
           
-          <!-- Layer Title -->
-          <text x="56" y="26" fill="#f0f6fc" font-size="13" font-weight="700" letter-spacing="0.5">AI SAFETY, GUARDRAILS &amp; EVALUATION</text>
+          <text x="56" y="26" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.4">AI SAFETY, GUARDRAILS &amp; EVALUATION</text>
           
-          <!-- Metric Tag (Top Right) -->
-          <text x="571" y="25" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="end" class="mono">AUDIT: ZERO DISCREPANCY</text>
+          <!-- Right Live Telemetry Metric -->
+          <g transform="translate(604, 20)">
+            <text x="0" y="5" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="end" class="mono">AUDIT: ZERO DISCREPANCY</text>
+          </g>
           
-          <!-- Subtitle / Architecture Role -->
-          <text x="14" y="48" fill="#8b949e" font-size="11" font-weight="400">Constitutional Alignment • Red Teaming • Automated Benchmark Tracing</text>
+          <!-- Middle Row: Architectural Role -->
+          <text x="14" y="47" fill="#8b949e" font-size="10.5" font-weight="500" class="mono">// CONSTITUTIONAL ALIGNMENT • RED TEAMING • REAL-TIME OBSERVABILITY</text>
           
-          <!-- Tech Pill Badges -->
-          <g transform="translate(14, 62)">
+          <!-- Bottom Row: Tech Stack Pills -->
+          <g transform="translate(14, 63)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="111.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="55.75" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">NeMo Guardrails</text>
+              <rect x="0" y="0" width="117.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#fbbf24"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">NeMo Guardrails</text>
             </g>
             
 
-            <g transform="translate(117.5, 0)">
-              <rect x="0" y="0" width="85.5" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="42.75" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Llama Guard</text>
+            <g transform="translate(123.0, 0)">
+              <rect x="0" y="0" width="90.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#f59e0b"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Llama Guard</text>
             </g>
             
 
-            <g transform="translate(209.0, 0)">
-              <rect x="0" y="0" width="53.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="26.5" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">MLflow</text>
+            <g transform="translate(219.6, 0)">
+              <rect x="0" y="0" width="57.599999999999994" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#06b6d4"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">MLflow</text>
             </g>
             
 
-            <g transform="translate(268.0, 0)">
-              <rect x="0" y="0" width="79.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="39.5" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Ragas Eval</text>
+            <g transform="translate(283.2, 0)">
+              <rect x="0" y="0" width="84.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#ec4899"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Ragas Eval</text>
             </g>
             
 
-            <g transform="translate(353.0, 0)">
-              <rect x="0" y="0" width="118.0" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-              <text x="59.0" y="14" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle">Weights &amp; Biases</text>
+            <g transform="translate(373.2, 0)">
+              <rect x="0" y="0" width="123.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="9" cy="10" r="2.2" fill="#facc15"/>
+              <text x="16" y="13.8" fill="#e2e8f0" font-size="10" font-weight="500">Weights &amp; Biases</text>
             </g>
             
 
@@ -632,41 +853,49 @@
         </g>
         
 
-    <g transform="translate(24, 72)">
+    <g transform="translate(24, 68)">
       <!-- Radar Card Frame -->
-      <rect x="0" y="0" width="190" height="185" rx="8" fill="#0d1117" fill-opacity="0.9" stroke="#30363d" stroke-width="1"/>
-      <text x="12" y="20" fill="#8b949e" font-size="10" font-weight="700" class="mono" letter-spacing="1">RADAR // CAPABILITIES</text>
+      <rect x="0" y="0" width="205" height="195" rx="9" fill="#080c14" fill-opacity="0.94" stroke="#212836" stroke-width="1.2"/>
+      
+      <!-- Radar Header -->
+      <circle cx="14" cy="18" r="3" fill="#00e5ff" class="pulse-c"/>
+      <text x="23" y="22" fill="#e2e8f0" font-size="10.5" font-weight="700" class="mono" letter-spacing="1">RADAR // CAPABILITY</text>
     
-<polygon points="95.0,88.0 105.4,94.0 105.4,106.0 95.0,112.0 84.6,106.0 84.6,94.0" fill="none" stroke="#21262d" stroke-width="0.8"/>
-<polygon points="95.0,76.0 115.8,88.0 115.8,112.0 95.0,124.0 74.2,112.0 74.2,88.0" fill="none" stroke="#21262d" stroke-width="0.8"/>
-<polygon points="95.0,64.0 126.2,82.0 126.2,118.0 95.0,136.0 63.8,118.0 63.8,82.0" fill="none" stroke="#21262d" stroke-width="0.8"/>
-<polygon points="95.0,52.0 136.6,76.0 136.6,124.0 95.0,148.0 53.4,124.0 53.4,76.0" fill="none" stroke="#21262d" stroke-width="0.8"/>
-<line x1="95" y1="100" x2="95.0" y2="52.0" stroke="#21262d" stroke-width="0.8"/>
-<line x1="95" y1="100" x2="136.6" y2="76.0" stroke="#21262d" stroke-width="0.8"/>
-<line x1="95" y1="100" x2="136.6" y2="124.0" stroke="#21262d" stroke-width="0.8"/>
-<line x1="95" y1="100" x2="95.0" y2="148.0" stroke="#21262d" stroke-width="0.8"/>
-<line x1="95" y1="100" x2="53.4" y2="124.0" stroke="#21262d" stroke-width="0.8"/>
-<line x1="95" y1="100" x2="53.4" y2="76.0" stroke="#21262d" stroke-width="0.8"/>
+<polygon points="102.0,95.0 113.3,101.5 113.3,114.5 102.0,121.0 90.7,114.5 90.7,101.5" fill="none" stroke="#334155" stroke-opacity="0.22" stroke-width="0.8" stroke-dasharray="2,2"/>
+<polygon points="102.0,82.0 124.5,95.0 124.5,121.0 102.0,134.0 79.5,121.0 79.5,95.0" fill="none" stroke="#334155" stroke-opacity="0.22" stroke-width="0.8" stroke-dasharray="2,2"/>
+<polygon points="102.0,69.0 135.8,88.5 135.8,127.5 102.0,147.0 68.2,127.5 68.2,88.5" fill="none" stroke="#334155" stroke-opacity="0.22" stroke-width="0.8" stroke-dasharray="2,2"/>
+<polygon points="102.0,56.0 147.0,82.0 147.0,134.0 102.0,160.0 57.0,134.0 57.0,82.0" fill="none" stroke="#334155" stroke-opacity="0.45" stroke-width="0.8" stroke-dasharray="2,2"/>
+<line x1="102" y1="108" x2="102.0" y2="56.0" stroke="#334155" stroke-opacity="0.35" stroke-width="0.8"/>
+<line x1="102" y1="108" x2="147.0" y2="82.0" stroke="#334155" stroke-opacity="0.35" stroke-width="0.8"/>
+<line x1="102" y1="108" x2="147.0" y2="134.0" stroke="#334155" stroke-opacity="0.35" stroke-width="0.8"/>
+<line x1="102" y1="108" x2="102.0" y2="160.0" stroke="#334155" stroke-opacity="0.35" stroke-width="0.8"/>
+<line x1="102" y1="108" x2="57.0" y2="134.0" stroke="#334155" stroke-opacity="0.35" stroke-width="0.8"/>
+<line x1="102" y1="108" x2="57.0" y2="82.0" stroke="#334155" stroke-opacity="0.35" stroke-width="0.8"/>
 
-      <polygon points="95.0,54.4 133.2,77.9 134.9,123.0 95.0,145.1 54.3,123.5 57.6,78.4" fill="url(#radar-grad)" stroke="#00e5ff" stroke-width="1.8"/>
+      <polygon points="102.0,58.1 144.3,83.6 145.7,133.2 102.0,157.4 57.9,133.5 60.6,84.1" fill="url(#radar-fill-grad)" class="radar-area" stroke="#00e5ff" stroke-width="1.8"/>
     
-<circle cx="95.0" cy="54.4" r="2.5" fill="#00e5ff"/>
-<text x="95.0" y="47.4" fill="#8b949e" font-size="8.5" font-weight="600" text-anchor="middle" class="mono">Autonomy</text>
-<circle cx="133.2" cy="77.9" r="2.5" fill="#00e5ff"/>
-<text x="140.2" y="80.9" fill="#8b949e" font-size="8.5" font-weight="600" text-anchor="start" class="mono">Reasoning</text>
-<circle cx="134.9" cy="123.0" r="2.5" fill="#00e5ff"/>
-<text x="141.9" y="130.0" fill="#8b949e" font-size="8.5" font-weight="600" text-anchor="start" class="mono">Throughput</text>
-<circle cx="95.0" cy="145.1" r="2.5" fill="#00e5ff"/>
-<text x="95.0" y="158.1" fill="#8b949e" font-size="8.5" font-weight="600" text-anchor="middle" class="mono">Infra</text>
-<circle cx="54.3" cy="123.5" r="2.5" fill="#00e5ff"/>
-<text x="47.3" y="130.5" fill="#8b949e" font-size="8.5" font-weight="600" text-anchor="end" class="mono">Safety</text>
-<circle cx="57.6" cy="78.4" r="2.5" fill="#00e5ff"/>
-<text x="50.6" y="81.4" fill="#8b949e" font-size="8.5" font-weight="600" text-anchor="end" class="mono">Memory</text>
-</g>
+<circle cx="102.0" cy="58.1" r="2.8" fill="#ffffff" stroke="#00e5ff" stroke-width="1.2"/>
+<text x="102.0" y="50.1" fill="#94a3b8" font-size="8.8" font-weight="600" text-anchor="middle" class="mono">Autonomy</text>
+<circle cx="144.3" cy="83.6" r="2.8" fill="#ffffff" stroke="#00e5ff" stroke-width="1.2"/>
+<text x="152.3" y="86.6" fill="#94a3b8" font-size="8.8" font-weight="600" text-anchor="start" class="mono">Reasoning</text>
+<circle cx="145.7" cy="133.2" r="2.8" fill="#ffffff" stroke="#00e5ff" stroke-width="1.2"/>
+<text x="153.7" y="141.2" fill="#94a3b8" font-size="8.8" font-weight="600" text-anchor="start" class="mono">Throughput</text>
+<circle cx="102.0" cy="157.4" r="2.8" fill="#ffffff" stroke="#00e5ff" stroke-width="1.2"/>
+<text x="102.0" y="171.4" fill="#94a3b8" font-size="8.8" font-weight="600" text-anchor="middle" class="mono">Infra</text>
+<circle cx="57.9" cy="133.5" r="2.8" fill="#ffffff" stroke="#00e5ff" stroke-width="1.2"/>
+<text x="49.9" y="141.5" fill="#94a3b8" font-size="8.8" font-weight="600" text-anchor="end" class="mono">Safety</text>
+<circle cx="60.6" cy="84.1" r="2.8" fill="#ffffff" stroke="#00e5ff" stroke-width="1.2"/>
+<text x="52.6" y="87.1" fill="#94a3b8" font-size="8.8" font-weight="600" text-anchor="end" class="mono">Memory</text>
 
-    <g transform="translate(24, 660)">
-      <text x="0" y="0" fill="#484f58" font-size="10" class="mono">MAHMUD HASAN // ARCHITECTURE MATRIX v3.2</text>
-      <text x="1152" y="0" fill="#484f58" font-size="10" text-anchor="end" class="mono">STATUS: OPTIMAL [100% OPERATIONAL]</text>
+      <line x1="12" y1="169" x2="193" y2="169" stroke="#1f2937" stroke-width="0.8"/>
+      <text x="14" y="184" fill="#64748b" font-size="9" class="mono">INDEX: <tspan fill="#00e5ff" font-weight="700">96.8 / 100</tspan></text>
+      <text x="191" y="184" fill="#10b981" font-size="9" font-weight="700" text-anchor="end" class="mono">TIER-1 S-RANK</text>
+    </g>
+    
+
+    <g transform="translate(24, 682)">
+      <text x="0" y="0" fill="#475569" font-size="10" class="mono">MAHMUD HASAN // ARCHITECTURE TOPOLOGY v3.5 • 5 ACTIVE TIERS</text>
+      <text x="1212" y="0" fill="#475569" font-size="10" text-anchor="end" class="mono">RUNTIMES: vLLM + TRITON + RAY CLUSTERS // SYSTEM 100% HEALTHY</text>
     </g>
     
 </svg>
