@@ -6,7 +6,6 @@
       
       .bg { fill: #000008; }
       
-      /* Glowing animations */
       @keyframes pulse-cyan {
         0%, 100% { opacity: 0.9; }
         50% { opacity: 0.35; }
@@ -135,15 +134,12 @@
 <rect width="1320" height="750" fill="url(#ambient-purple)" rx="14"/>
 
     <g transform="translate(24, 20)">
-      <!-- Window Controls -->
       <circle cx="8" cy="8" r="4.5" fill="#f87171" opacity="0.85"/>
       <circle cx="24" cy="8" r="4.5" fill="#fbbf24" opacity="0.85"/>
       <circle cx="40" cy="8" r="4.5" fill="#34d399" opacity="0.85"/>
       
-      <!-- Core Research & Engineering Pillars Title -->
       <text x="64" y="12" fill="#f0f6fc" font-size="13" font-weight="700" letter-spacing="1.2">CORE RESEARCH &amp; ENGINEERING PILLARS // FRONTIER AI &amp; AUTONOMOUS SYSTEMS</text>
       
-      <!-- Status Badges -->
       <g transform="translate(930, -2)">
         <rect x="0" y="0" width="160" height="22" rx="11" fill="#00e5ff" fill-opacity="0.10" stroke="#00e5ff" stroke-opacity="0.4" stroke-width="1"/>
         <circle cx="12" cy="11" r="3.5" fill="#00e5ff" class="pulse-c"/>
@@ -509,7 +505,6 @@
         
 
         <g class="card-group" transform="translate(575, 62)">
-          <!-- Glassmorphic Card Background -->
           <rect x="0" y="0" width="715" height="94" rx="8" 
                 fill="url(#card-grad)" stroke="#00e5ff" stroke-opacity="0.32" stroke-width="1.2"/>
           <rect x="0" y="0" width="4" height="94" rx="2" fill="#00e5ff"/>
@@ -520,50 +515,50 @@
           
           <text x="56" y="25" fill="#ffffff" font-size="13.2" font-weight="700" letter-spacing="0.3">AGENTIC AI &amp; AUTONOMOUS SYSTEMS</text>
           
-          <!-- Right Clean Status Pill -->
+          <!-- Right Pillar Index Tag -->
           <g transform="translate(699, 20)">
-            <text x="0" y="5" fill="#00e5ff" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">● CORE FOCUS</text>
+            <text x="0" y="5" fill="#00e5ff" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">PILLAR P6</text>
           </g>
           
-          <!-- Architectural Role -->
-          <text x="14" y="46" fill="#8b949e" font-size="10.2" font-weight="500" class="mono">// MULTI-AGENT ORCHESTRATION • PLANNING &amp; REASONING • DYNAMIC MEMORY</text>
+          <!-- Focus Topics Line - 100% Mahmud's Exact Words -->
+          <text x="14" y="46" fill="#94a3b8" font-size="10.2" font-weight="500">Focus: Multi Agent Orchestration • Planning &amp; Reasoning • Task Graphs • Dynamic Memory</text>
           
-          <!-- Tech Stack Pills - generous spacing, zero overflow -->
+          <!-- Tech Stack Pills - 100% Mahmud's Exact Topics -->
           <g transform="translate(14, 61)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="136.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <rect x="0" y="0" width="178.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#00e5ff"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Multi-Agent Swarms</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Multi Agent Orchestration</text>
             </g>
             
 
-            <g transform="translate(142.8, 0)">
-              <rect x="0" y="0" width="110.39999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(184.0, 0)">
+              <rect x="0" y="0" width="146.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#38bdf8"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Tool Use &amp; MCP</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Planning &amp; Reasoning</text>
             </g>
             
 
-            <g transform="translate(259.2, 0)">
-              <rect x="0" y="0" width="110.39999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(336.0, 0)">
+              <rect x="0" y="0" width="88.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#818cf8"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Dynamic Memory</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Task Graphs</text>
             </g>
             
 
-            <g transform="translate(375.59999999999997, 0)">
-              <rect x="0" y="0" width="143.39999999999998" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(430.4, 0)">
+              <rect x="0" y="0" width="69.2" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#c084fc"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Autonomous Code Gen</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Tool Use</text>
             </g>
             
 
-            <g transform="translate(525.0, 0)">
-              <rect x="0" y="0" width="117.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(505.59999999999997, 0)">
+              <rect x="0" y="0" width="107.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#34d399"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Self-Correction</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Dynamic Memory</text>
             </g>
             
 
@@ -582,7 +577,6 @@
         
 
         <g class="card-group" transform="translate(575, 166)">
-          <!-- Glassmorphic Card Background -->
           <rect x="0" y="0" width="715" height="94" rx="8" 
                 fill="url(#card-grad)" stroke="#c084fc" stroke-opacity="0.32" stroke-width="1.2"/>
           <rect x="0" y="0" width="4" height="94" rx="2" fill="#c084fc"/>
@@ -593,50 +587,50 @@
           
           <text x="56" y="25" fill="#ffffff" font-size="13.2" font-weight="700" letter-spacing="0.3">LARGE LANGUAGE MODELS</text>
           
-          <!-- Right Clean Status Pill -->
+          <!-- Right Pillar Index Tag -->
           <g transform="translate(699, 20)">
-            <text x="0" y="5" fill="#c084fc" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">● ACTIVE RESEARCH</text>
+            <text x="0" y="5" fill="#c084fc" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">PILLAR P5</text>
           </g>
           
-          <!-- Architectural Role -->
-          <text x="14" y="46" fill="#8b949e" font-size="10.2" font-weight="500" class="mono">// TRANSFORMER ARCHITECTURE • PRE-TRAINING • SFT • DPO / RLHF • REASONING</text>
+          <!-- Focus Topics Line - 100% Mahmud's Exact Words -->
+          <text x="14" y="46" fill="#94a3b8" font-size="10.2" font-weight="500">Focus: Transformer Architecture • Tokenization • Pre-training • SFT • DPO • RLHF</text>
           
-          <!-- Tech Stack Pills - generous spacing, zero overflow -->
+          <!-- Tech Stack Pills - 100% Mahmud's Exact Topics -->
           <g transform="translate(14, 61)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="123.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <rect x="0" y="0" width="171.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#c084fc"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Transformer Arch</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Transformer Architecture</text>
             </g>
             
 
-            <g transform="translate(129.6, 0)">
-              <rect x="0" y="0" width="136.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(177.60000000000002, 0)">
+              <rect x="0" y="0" width="133.2" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#f43f5e"/>
               <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Pre-training &amp; SFT</text>
             </g>
             
 
-            <g transform="translate(272.4, 0)">
-              <rect x="0" y="0" width="84.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(316.8, 0)">
+              <rect x="0" y="0" width="82.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#38bdf8"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">DPO / RLHF</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">DPO &amp; RLHF</text>
             </g>
             
 
-            <g transform="translate(362.4, 0)">
-              <rect x="0" y="0" width="117.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(404.8, 0)">
+              <rect x="0" y="0" width="133.2" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#fbbf24"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Reasoning &amp; CoT</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">MoE &amp; Distillation</text>
             </g>
             
 
-            <g transform="translate(485.4, 0)">
-              <rect x="0" y="0" width="90.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
-              <circle cx="8.5" cy="10" r="2.2" fill="#00e5ff"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">LoRA / PEFT</text>
+            <g transform="translate(544.0, 0)">
+              <rect x="0" y="0" width="94.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="8.5" cy="10" r="2.2" fill="#34d399"/>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Quantization</text>
             </g>
             
 
@@ -655,7 +649,6 @@
         
 
         <g class="card-group" transform="translate(575, 270)">
-          <!-- Glassmorphic Card Background -->
           <rect x="0" y="0" width="715" height="94" rx="8" 
                 fill="url(#card-grad)" stroke="#38bdf8" stroke-opacity="0.32" stroke-width="1.2"/>
           <rect x="0" y="0" width="4" height="94" rx="2" fill="#38bdf8"/>
@@ -666,50 +659,43 @@
           
           <text x="56" y="25" fill="#ffffff" font-size="13.2" font-weight="700" letter-spacing="0.3">MACHINE LEARNING &amp; DEEP LEARNING</text>
           
-          <!-- Right Clean Status Pill -->
+          <!-- Right Pillar Index Tag -->
           <g transform="translate(699, 20)">
-            <text x="0" y="5" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">● FOUNDATIONAL</text>
+            <text x="0" y="5" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">PILLAR P4</text>
           </g>
           
-          <!-- Architectural Role -->
-          <text x="14" y="46" fill="#8b949e" font-size="10.2" font-weight="500" class="mono">// NEURAL NETWORKS • REPRESENTATION LEARNING • REINFORCEMENT LEARNING</text>
+          <!-- Focus Topics Line - 100% Mahmud's Exact Words -->
+          <text x="14" y="46" fill="#94a3b8" font-size="10.2" font-weight="500">Focus: Neural Networks • Optimization • Representation Learning • Transformers • Attention</text>
           
-          <!-- Tech Stack Pills - generous spacing, zero overflow -->
+          <!-- Tech Stack Pills - 100% Mahmud's Exact Topics -->
           <g transform="translate(14, 61)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="117.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <rect x="0" y="0" width="114.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#38bdf8"/>
               <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Neural Networks</text>
             </g>
             
 
-            <g transform="translate(123.0, 0)">
-              <rect x="0" y="0" width="97.19999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(120.0, 0)">
+              <rect x="0" y="0" width="94.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#00e5ff"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Transformers</text>
-            </g>
-            
-
-            <g transform="translate(226.2, 0)">
-              <rect x="0" y="0" width="110.39999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
-              <circle cx="8.5" cy="10" r="2.2" fill="#818cf8"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Representation</text>
-            </g>
-            
-
-            <g transform="translate(342.59999999999997, 0)">
-              <rect x="0" y="0" width="163.2" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
-              <circle cx="8.5" cy="10" r="2.2" fill="#34d399"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Reinforcement Learning</text>
-            </g>
-            
-
-            <g transform="translate(511.79999999999995, 0)">
-              <rect x="0" y="0" width="97.19999999999999" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
-              <circle cx="8.5" cy="10" r="2.2" fill="#f59e0b"/>
               <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Optimization</text>
+            </g>
+            
+
+            <g transform="translate(220.8, 0)">
+              <rect x="0" y="0" width="165.2" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="8.5" cy="10" r="2.2" fill="#818cf8"/>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Representation Learning</text>
+            </g>
+            
+
+            <g transform="translate(392.0, 0)">
+              <rect x="0" y="0" width="171.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="8.5" cy="10" r="2.2" fill="#34d399"/>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Self Supervised Learning</text>
             </g>
             
 
@@ -728,7 +714,6 @@
         
 
         <g class="card-group" transform="translate(575, 374)">
-          <!-- Glassmorphic Card Background -->
           <rect x="0" y="0" width="715" height="94" rx="8" 
                 fill="url(#card-grad)" stroke="#10b981" stroke-opacity="0.32" stroke-width="1.2"/>
           <rect x="0" y="0" width="4" height="94" rx="2" fill="#10b981"/>
@@ -739,50 +724,43 @@
           
           <text x="56" y="25" fill="#ffffff" font-size="13.2" font-weight="700" letter-spacing="0.3">AI SYSTEMS &amp; INFRASTRUCTURE</text>
           
-          <!-- Right Clean Status Pill -->
+          <!-- Right Pillar Index Tag -->
           <g transform="translate(699, 20)">
-            <text x="0" y="5" fill="#10b981" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">● HIGH-PERF ENGINE</text>
+            <text x="0" y="5" fill="#10b981" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">PILLAR P3</text>
           </g>
           
-          <!-- Architectural Role -->
-          <text x="14" y="46" fill="#8b949e" font-size="10.2" font-weight="500" class="mono">// DISTRIBUTED TRAINING • GPU / CUDA TUNING • HIGH-PERFORMANCE SERVING</text>
+          <!-- Focus Topics Line - 100% Mahmud's Exact Words -->
+          <text x="14" y="46" fill="#94a3b8" font-size="10.2" font-weight="500">Focus: Distributed Training • FSDP • DeepSpeed • Model Parallelism • Model Serving</text>
           
-          <!-- Tech Stack Pills - generous spacing, zero overflow -->
+          <!-- Tech Stack Pills - 100% Mahmud's Exact Topics -->
           <g transform="translate(14, 61)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="150.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <rect x="0" y="0" width="146.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#38bdf8"/>
               <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Distributed Training</text>
             </g>
             
 
-            <g transform="translate(156.0, 0)">
-              <rect x="0" y="0" width="136.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(152.0, 0)">
+              <rect x="0" y="0" width="120.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#10b981"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">CUDA Kernel Tuning</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">FSDP &amp; DeepSpeed</text>
             </g>
             
 
-            <g transform="translate(298.8, 0)">
-              <rect x="0" y="0" width="103.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(278.4, 0)">
+              <rect x="0" y="0" width="126.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#06b6d4"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Model Serving</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Model Parallelism</text>
             </g>
             
 
-            <g transform="translate(408.6, 0)">
-              <rect x="0" y="0" width="143.39999999999998" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(411.2, 0)">
+              <rect x="0" y="0" width="152.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#a3e635"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">High-Perf Inference</text>
-            </g>
-            
-
-            <g transform="translate(558.0, 0)">
-              <rect x="0" y="0" width="103.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
-              <circle cx="8.5" cy="10" r="2.2" fill="#f97316"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Cluster Infra</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">GPU/CUDA Optimization</text>
             </g>
             
 
@@ -801,7 +779,6 @@
         
 
         <g class="card-group" transform="translate(575, 478)">
-          <!-- Glassmorphic Card Background -->
           <rect x="0" y="0" width="715" height="94" rx="8" 
                 fill="url(#card-grad)" stroke="#fb7185" stroke-opacity="0.32" stroke-width="1.2"/>
           <rect x="0" y="0" width="4" height="94" rx="2" fill="#fb7185"/>
@@ -812,50 +789,50 @@
           
           <text x="56" y="25" fill="#ffffff" font-size="13.2" font-weight="700" letter-spacing="0.3">AI ENGINEERING &amp; EVALUATION</text>
           
-          <!-- Right Clean Status Pill -->
+          <!-- Right Pillar Index Tag -->
           <g transform="translate(699, 20)">
-            <text x="0" y="5" fill="#fb7185" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">● PRODUCTION VERIFIED</text>
+            <text x="0" y="5" fill="#fb7185" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">PILLAR P2</text>
           </g>
           
-          <!-- Architectural Role -->
-          <text x="14" y="46" fill="#8b949e" font-size="10.2" font-weight="500" class="mono">// RAG &amp; CONTEXT ENGINEERING • MODEL EVALUATION • OBSERVABILITY • RELIABILITY</text>
+          <!-- Focus Topics Line - 100% Mahmud's Exact Words -->
+          <text x="14" y="46" fill="#94a3b8" font-size="10.2" font-weight="500">Focus: RAG • Context Engineering • AI Memory • Model Evaluation • Benchmarking</text>
           
-          <!-- Tech Stack Pills - generous spacing, zero overflow -->
+          <!-- Tech Stack Pills - 100% Mahmud's Exact Topics -->
           <g transform="translate(14, 61)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="103.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <rect x="0" y="0" width="37.2" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#fb7185"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">RAG Pipelines</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">RAG</text>
             </g>
             
 
-            <g transform="translate(109.8, 0)">
-              <rect x="0" y="0" width="143.39999999999998" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(43.2, 0)">
+              <rect x="0" y="0" width="139.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#f43f5e"/>
               <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Context Engineering</text>
             </g>
             
 
-            <g transform="translate(259.2, 0)">
-              <rect x="0" y="0" width="123.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(188.8, 0)">
+              <rect x="0" y="0" width="75.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#fbbf24"/>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">AI Memory</text>
+            </g>
+            
+
+            <g transform="translate(270.4, 0)">
+              <rect x="0" y="0" width="120.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <circle cx="8.5" cy="10" r="2.2" fill="#38bdf8"/>
               <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Model Evaluation</text>
             </g>
             
 
-            <g transform="translate(388.79999999999995, 0)">
-              <rect x="0" y="0" width="103.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(396.79999999999995, 0)">
+              <rect x="0" y="0" width="190.8" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#06b6d4"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Observability</text>
-            </g>
-            
-
-            <g transform="translate(498.59999999999997, 0)">
-              <rect x="0" y="0" width="156.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
-              <circle cx="8.5" cy="10" r="2.2" fill="#e879f9"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Hallucination Defense</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Observability &amp; Reliability</text>
             </g>
             
 
@@ -874,7 +851,6 @@
         
 
         <g class="card-group" transform="translate(575, 582)">
-          <!-- Glassmorphic Card Background -->
           <rect x="0" y="0" width="715" height="94" rx="8" 
                 fill="url(#card-grad)" stroke="#fbbf24" stroke-opacity="0.32" stroke-width="1.2"/>
           <rect x="0" y="0" width="4" height="94" rx="2" fill="#fbbf24"/>
@@ -885,50 +861,43 @@
           
           <text x="56" y="25" fill="#ffffff" font-size="13.2" font-weight="700" letter-spacing="0.3">CYBERSECURITY × AI</text>
           
-          <!-- Right Clean Status Pill -->
+          <!-- Right Pillar Index Tag -->
           <g transform="translate(699, 20)">
-            <text x="0" y="5" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">● ADVERSARIAL DEFENSE</text>
+            <text x="0" y="5" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="end" class="mono" letter-spacing="0.5">PILLAR P1</text>
           </g>
           
-          <!-- Architectural Role -->
-          <text x="14" y="46" fill="#8b949e" font-size="10.2" font-weight="500" class="mono">// THREAT MODELING • VULNERABILITY DISCOVERY • PROMPT INJECTION DEFENSE</text>
+          <!-- Focus Topics Line - 100% Mahmud's Exact Words -->
+          <text x="14" y="46" fill="#94a3b8" font-size="10.2" font-weight="500">Focus: Threat Modeling • Vulnerability Discovery • Secure Code Analysis</text>
           
-          <!-- Tech Stack Pills - generous spacing, zero overflow -->
+          <!-- Tech Stack Pills - 100% Mahmud's Exact Topics -->
           <g transform="translate(14, 61)">
         
 
             <g transform="translate(0, 0)">
-              <rect x="0" y="0" width="117.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+              <rect x="0" y="0" width="114.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#fbbf24"/>
               <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Threat Modeling</text>
             </g>
             
 
-            <g transform="translate(123.0, 0)">
-              <rect x="0" y="0" width="169.79999999999998" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(120.0, 0)">
+              <rect x="0" y="0" width="165.2" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#f59e0b"/>
               <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Vulnerability Discovery</text>
             </g>
             
 
-            <g transform="translate(298.79999999999995, 0)">
-              <rect x="0" y="0" width="117.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(291.20000000000005, 0)">
+              <rect x="0" y="0" width="146.0" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#06b6d4"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Security Agents</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Secure Code Analysis</text>
             </g>
             
 
-            <g transform="translate(421.79999999999995, 0)">
-              <rect x="0" y="0" width="176.39999999999998" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
+            <g transform="translate(443.20000000000005, 0)">
+              <rect x="0" y="0" width="184.4" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
               <circle cx="8.5" cy="10" r="2.2" fill="#ec4899"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Prompt Injection Defense</text>
-            </g>
-            
-
-            <g transform="translate(604.1999999999999, 0)">
-              <rect x="0" y="0" width="90.6" height="20" rx="10" fill="#131822" stroke="#252d3d" stroke-width="0.8"/>
-              <circle cx="8.5" cy="10" r="2.2" fill="#facc15"/>
-              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Red Teaming</text>
+              <text x="15.5" y="13.8" fill="#e2e8f0" font-size="9.8" font-weight="500">Autonomous Security Agents</text>
             </g>
             
 
