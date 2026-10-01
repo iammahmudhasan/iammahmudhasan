@@ -6,10 +6,6 @@
   </a>
 
   <p align="center">
-    <strong>Building intelligent systems and autonomous agent infrastructure from first principles.</strong>
-  </p>
-
-  <p align="center">
     <a href="https://github.com/iammahmudhasan"><img src="https://img.shields.io/badge/Location-Bangladesh-2563EB?style=flat-square&logo=google-maps&logoColor=white" alt="Location" /></a>
     <a href="https://craftlyrobot.com" target="_blank"><img src="https://img.shields.io/badge/Role-COO%20%40%20Craftly-4F46E5?style=flat-square&logo=rocket&logoColor=white" alt="Role" /></a>
     <a href="https://aeitron.com" target="_blank"><img src="https://img.shields.io/badge/Role-Co--founder%20%26%20CEO%20%40%20Aeitron%20AI-06B6D4?style=flat-square&logo=rocket&logoColor=white" alt="Role" /></a>
