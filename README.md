@@ -54,10 +54,6 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
 ### Core Research & Engineering Pillars
 
-<p align="center">
-  <img src="assets/isometric-ai-stack.svg" alt="3D Isometric AI Infrastructure & Architecture Stack" width="100%" />
-</p>
-
 | Area | Focus Topics |
 | :--- | :--- |
 | **Machine Learning & Deep Learning** | Neural Networks, Optimization, Representation Learning, Transformers, Attention, Self Supervised Learning, Reinforcement Learning, Natural Language Processing, Embeddings, Semantic Search |
