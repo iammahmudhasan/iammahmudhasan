@@ -28,6 +28,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
+      - name: Patch 3D Landscape with Real Languages and Total Contributions
+        run: python scripts/patch_3d_profile.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
       - name: Commit & Push Changes
         run: |
           git config user.name "github-actions[bot]"
