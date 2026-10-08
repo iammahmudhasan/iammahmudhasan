@@ -115,16 +115,7 @@ Beyond the engineering side, I spend a good chunk of my time on product strategy
 
   <br/>
 
-  <!-- 2. Middle Row: GitHub Statistics (Black background, Cyan titles & icons) -->
-  <p align="center">
-    <a href="https://github.com/iammahmudhasan">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iammahmudhasan&show_icons=true&custom_title=My+GitHub+Statistics&bg_color=000000&border_color=444444&title_color=00e5ff&icon_color=00e5ff&text_color=ffffff&ring_color=00e5ff" alt="My GitHub Statistics" height="165" />
-    </a>
-  </p>
-
-  <br/>
-
-  <!-- 3. Bottom: Contribution Graph ("My Contributions", Black background, Cyan line & area fill, White dots) -->
+  <!-- 2. Bottom: Contribution Graph ("My Contributions", Black background, Cyan line & area fill, White dots) -->
   <p align="center">
     <a href="https://github.com/iammahmudhasan">
       <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=iammahmudhasan&custom_title=My+Contributions&bg_color=000000&color=ffffff&line=00e5ff&point=ffffff&area=true" alt="My Contributions" width="96%" />
